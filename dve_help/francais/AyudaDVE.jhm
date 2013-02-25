@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<!DOCTYPE map
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/map_1_0.dtd">
+<map version="1.0">
+
+
+<!-- Topics -->
+   <mapID target="Indice" url="tutorialdve/Indice.htm"/>
+   <mapID target="DVE1" url="tutorialdve/DVE1.htm"/>
+   <mapID target="DVE2" url="tutorialdve/DVE2.htm"/>
+   <mapID target="DVE3" url="tutorialdve/DVE3.htm"/>
+   <mapID target="objeto_media" url="tutorialdve/objeto_media.htm"/>
+   <mapID target="contenedor" url="tutorialdve/contenedor.htm"/>
+   <mapID target="panel" url="tutorialdve/panel.htm"/>
+   <mapID target="frame_propiedades" url="tutorialdve/frame_propiedades.htm"/>
+   <mapID target="Interacciones" url="tutorialdve/Interacciones.htm"/>
+   <mapID target="Acciones" url="tutorialdve/Acciones.htm"/>
+   <mapID target="Menu_Curso" url="tutorialdve/Menu_Curso.htm"/>
+   <mapID target="Menu_Frame" url="tutorialdve/Menu_Frame.htm"/>
+
+<!-- Index Bookmarks -->
+
+
+</map>

@@ -1,0 +1,172 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Crucigrama</title>
+</head>
+
+<body>
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">
+    <p align="center">
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+Crucigrama</b></u></font></td>
+    <td width="34%">
+    <p align="right"><a href="#" onclick="javascript:window.print();">
+        <img border="0" src="print.gif" width="100" height="26"></a></td>
+  </tr>
+</table>
+</b></u></font>
+<p align="justify"><font face="Arial">En este tipo de crucigrama el alumno completa las palabras 
+escribiendo mediante el teclado directamente en los huecos. La definición 
+correspondiente al hueco activo aparecerá en un cuadro, y opcionalmente podemos 
+hacer que también aparezca una imagen.</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>ELEMENTOS NECESARIOS</p>
+</u></font>
+<p align="justify"><font face="Arial">1. </font></b><font face="Arial">Panel con Nombre &quot;<i><b>Main</b></i>&quot;.</font></p>
+<b>
+<p align="justify"><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;<b><i>Main</i></b>&quot;, 
+un Marco y dentro de él un objeto con nombre &quot;<b><i>Crossword</i></b>&quot; vinculado a 
+un fichero de texto que tiene que tener un formato especial (ver más abajo). El 
+tamaño del crucigrama se ajustará automáticamente al tamaño de este <i>objeto</i>, 
+y el tamaño de los números que indican las definiciones se puede regular con el 
+tamaño de la fuente del objeto.</font></p>
+<b>
+<p align="justify"><font face="Arial">3. </font></b><font face="Arial">Dentro del panel &quot;<b><i>Main</i></b>&quot;, 
+un objeto de texto con Nombre &quot;<i><b>Definitions</b></i>&quot; que es en el que aparecerán las 
+definiciones. En este objeto debemos escribir las palabras 
+&quot;Horizontal&quot; y &quot;Vertical&quot; separadas por una barra vertical. Estas palabras 
+servirán de encabezamiento a las definiciones (se pueden escribir en cualquier 
+idioma). </font></p>
+<font COLOR="#ff0000">
+<p align="justify"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo: </font></font><b>
+<font face="Arial">Texto </font><font COLOR="#0000ff"><font face="Arial">
+Horizontal|Vertical</font></p>
+</font>
+<p align="justify"><font face="Arial">4. </font></b><font face="Arial">Dentro del panel &quot;<i><b>Main</b></i>&quot;, 
+dos objetos con Nombres &quot;Across&quot; (horizontales) y &quot;Down&quot; (verticales) que 
+servirán para mostrar las imágenes que queramos asociar a las definiciones (esto 
+es opcional, no es necesario si nuestro crucigrama se va a basar sólo en 
+definiciones de texto)</font></p>
+<b>
+<p align="justify"><font face="Arial">5. </font></b><font face="Arial">Objeto con acción &quot;<b><i>verify</i></b>&quot; 
+o &quot;<b><i>check</i></b>&quot; y valor &quot;<b><i>Panel(Main)</i></b>&quot; que corrige las respuestas del alumno. La acción 
+&quot;<b><i>verify</i></b>&quot; (botón <i>Comprobar</i>) comprueba las respuestas correctas e 
+incorrectas y las marca mediante distintos colores (azul correcto, rojo 
+incorrecto), mientras que la acción &quot;<i><b>check</b></i>&quot; (botón <i>Corregir</i>) deja las 
+respuestas correctas y borra las incorrectas. Lo más habitual es usar sólo una 
+de las dos opciones y eliminar la otra.</font></p>
+<b>
+<p align="justify"><font face="Arial">6. </font></b><font face="Arial">Objeto con acción &quot;<i><b>clear</b></i>&quot; 
+o &quot;<b><i>clearAll</i></b>&quot; y valor &quot;<b><i>Panel(Main)</i></b>&quot; que permite al alumno borrar lo escrito en 
+los huecos (botón <i>Borrar</i>). La acción &quot;<i><b>clear</b></i>&quot; solo se aplica a la tarjeta 
+activa, mientras que &quot;<b><i>clearAll</i></b>&quot; se aplicaría a todas las tarjetas del panel (si 
+hay más de una).</font></p>
+<b>
+<p align="justify"><font face="Arial">7. </font></b><font face="Arial">También se puede incluir 
+un objeto con acción &quot;<b><i>solve</i></b>&quot; y valor &quot;<b><i>Panel(Main)</i></b>&quot; que completará las 
+letras que falten del crucigrama, pero marcándolas en rojo.</font></p>
+<p align="justify"><font face="Arial">NOTA: Todos los demás elementos que componen esta 
+plantilla (los botones de ayuda e instrucciones, el icono de la mano para pasar 
+al siguiente ejercicio, etc.) no son necesarios, están ahí para servir de 
+ejemplo. Elimina los que no vayas a usar para tu ejercicio (como por ejemplo el 
+botón que abre esta explicación).</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>FICHERO DE TEXTO DEL CRUCIGRAMA</p>
+</u></font></b>
+<p align="justify"><font face="Arial">La definición del crucigrama debe ser un fichero de texto 
+en formato <b>txt</b>, que debe tener los siguientes elementos:</font></p>
+<p align="justify"><font face="Arial">a) Tamaño de la cuadrícula (ejemplo: <font COLOR="#ff0000">
+<b>10x10</b></font>)</font></p>
+<p align="justify"><font face="Arial">b) En las siguientes líneas definiremos la estructura:</font></p>
+<p align="justify"><font face="Arial">Los dos corchetes (<font COLOR="#ff0000"><b>[ ]</b></font>) 
+indican 
+la existencia de un cuadro. Si es un cuadro negro se escribe un asterisco detrás 
+de los corchetes (<font COLOR="#ff0000"><b>[ ]*</b></font>). Si es un cuadro en 
+el que se puede escribir, se pondrá la letra correcta detrás de los corchetes (<font COLOR="#ff0000"><b>[ 
+]A</b></font>). En la primera letra de cada definición debemos poner un número 
+que servirá para asociarlo con la definición; este número se pone entre los 
+corchetes (<font COLOR="#ff0000"><b>[ 6]C</b></font>).</font></p>
+<p align="justify"><font face="Arial">c) Finalmente se incluyen las definiciones, encabezadas 
+por las palabras &quot;Across&quot; (horizontales) y &quot;Down&quot; (verticales). El texto de las 
+definiciones debe comenzar con el número que le hayamos puesto delante de la 
+primera letra de cada definición. La definición se compone de una primera parte de 
+texto, y, opcionalmente, podemos también asociarla con una imagen (o un texto 
+adicional). Estas dos partes deben ir separadas por una barra vertical. (<font COLOR="#ff0000"><b>Numero. 
+Texto de la definición | ruta de la imagen asociada</b></font>)</font></p>
+<p align="justify"><font face="Arial">Comprueba lo explicado en este ejemplo de crucigrama 
+musical:</font></p>
+<font FACE="Courier New" COLOR="#009200"><b>
+<p><img border="0" src="crossfile.gif" width="570" height="292"></p>
+</b></font>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>PARÁMETROS CONFIGURABLES</p>
+</b></u></font><b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">verify</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">anyTime/atEnd</font></p>
+</font></b>
+<p align="justify"><font face="Arial"><b>a) anyTime:</b> el alumno puede comprobar la corrección de sus 
+respuestas en cualquier momento</font></p>
+<p align="justify"><font face="Arial"><b>b) atEnd:</b> no puede comprobar las respuestas hasta que complete 
+todas las casillas del crucigrama</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">check</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">anyTime/atEnd</font></p>
+</font></b>
+<p align="justify"><font face="Arial"><b>a) anyTime:</b> el alumno puede 
+corregir en cualquier momento</font></p>
+<p align="justify"><font face="Arial"><b>b) atEnd:</b> no se puede corregir 
+hasta que completen todas las casillas del crucigrama</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">ActiveBorderColor</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color del borde de la casilla que se encuentra activa. Los 
+parámetros de color aceptan valores hexadecimales (ejemplo: FFA02D) y también de 
+texto (&quot;red&quot;, &quot;cyan&quot;, &quot;blue&quot;, &quot;black&quot;, &quot;yellow&quot;, &quot;green&quot;, &quot;magenta&quot;, &quot;gray&quot;, &quot;lightgray&quot;, 
+&quot;white&quot;, &quot;orange&quot;).</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">CorrectColor</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color del texto de los huecos rellenados correctamente. 
+Por defecto azul.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">WrongColor</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color del texto de los huecos rellenados incorrectamente. 
+Por defecto rojo.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">verifyText</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">(texto)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Permite personalizar el texto de la ventana que aparece al 
+corregir el ejercicio. Se pueden usar distintas variables. Por ejemplo, para 
+obtener un texto donde diga el número de aciertos, errores y puntuación (en 
+porcentaje) habría que escribir lo siguiente en la ventana valores:</font></p>
+<font SIZE="3" COLOR="#0000ff" face="Arial">
+<p align="justify"><i>&nbsp;&nbsp;&nbsp;&nbsp; Has conseguido <b>#correct </b>aciertos y <b>#wrong
+</b>errores. Puntuación: <b>#score </b>%</i></p>
+</font><b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">caseSensitive </font></font><font COLOR="#008000">
+<font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Permite decidir si queremos que el programa distinga entre 
+mayúsculas y minúsculas, y si admite caracteres especiales. Al tratarse de un 
+crucigrama, lo más habitual es deshabilitar este parámetro (valor: <i><b>no</b></i>).</font></p>
+
+</body>
+
+</html>

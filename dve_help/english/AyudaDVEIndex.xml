@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/index_1_0.dtd">
+
+<index version="1.0">
+
+<indexitem text="Versión inglés">
+
+	
+<indexitemtext="Index" target="Indice"/>
+<indexitemtext="1. Structure of a Malted Sample lesson or Project" target="DVE1"/>
+<indexitemtext="2. Malted (DVE). My first project" target="DVE2"/>
+<indexitemtext="3. Basic items to create a Frame" target="DVE3"/>
+<indexitemtext="4. The Media Object" target="objeto_media"/>
+<indexitemtext="5. The Container" target="contenedor"/>
+<indexitemtext="6. The Panel" target="panel"/>
+<indexitemtext="7. Frame Properties" target="frame_propiedades"/>
+<indexitemtext="- Interactions and Templates" target="Interacciones"/>
+<indexitemtext="- Media Object Actions" target="Acciones"/>
+<indexitemtext="- Malted Editor Menu(DVE) - Frame Management" target="Menu_Frame"/>
+<indexitemtext="- Malted Editor Menu(DVE) - Course Management" target="Menu_Curso"/>
+</index>
+

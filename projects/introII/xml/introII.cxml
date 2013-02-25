@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE COURSE SYSTEM "../../templates/dtd/Course.dtd">
+<COURSE
+   NAME="introII.cxml"
+   TITLE="introII.cxml"
+   DESCRIPTION=""
+   STRUCTURE="linear"
+   VERSION="1.2"
+   START="0"
+   >
+   <FRAME NAME="0" SCRIPT="introII.xml" >
+      <LINK NAME="next" DESTINATION="System" />
+   </FRAME>
+</COURSE>

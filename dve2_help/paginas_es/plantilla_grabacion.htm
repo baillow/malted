@@ -1,0 +1,148 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Malted - Plantilla Grabación</title>
+<style fprolloverstyle>A:hover {color: #66FFFF; font-weight: bold}
+</style>
+</head>
+
+<body bgcolor="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="800">
+    <tr>
+      <td>
+      <p align="center">
+      <img border="0" src="../images/titulo_grabacion.gif" width="153" height="27"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+La plantilla Grabación no está basada en ninguna interacción especial del 
+      programa, sino que usa las acciones de grabar y reproducir que se pueden 
+      asociar a cualquier objeto.</font></p>
+<p style="margin-left: 80; margin-right: 80" align="center">
+      <img border="0" src="../images/plant_grabacion01.gif" width="417" height="252" hspace="10"></p>
+<p style="margin-left: 80; margin-right: 80" align="center">
+      &nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">ELEMENTOS NECESARIOS</p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">1. </font></b><font face="Arial">En esta plantilla no es 
+necesario un panel con Nombre &quot;<i><b>Main</b></i>&quot;, ya que no está basada en ninguna 
+interacción del programa. Solo usaremos un panel si queremos presentar varias 
+tarjetas en el ejercicio.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">2. </font></b><font face="Arial">Objeto con acción 
+&quot;<i><b>record</b></i>&quot; o &quot;<i><b>autoRecord</b></i>&quot; asociado 
+a un evento y como valor el nombre del fichero que queramos grabar (no es 
+necesario que exista previamente). Ejemplo:</font></p>
+<p align="justify" style="margin-left: 150; margin-right: 80">
+<font face="Arial">evento:<b> clic (onClick)<br>
+</b>acción: <b>record</b> <b><br>
+</b>
+valor:<b> audio</b><b>/</b><b>frase2.mp3</b>
+
+(el programa puede grabar en 
+formato <b>wav</b> y <b>mp3</b>).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Veamos las diferencias entre las acciones &quot;<i><b>record</b></i>&quot; y &quot;<i><b>autoRecord</b></i>&quot;:</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">record</font></b><font face="Arial"><b>:</b> al usar esta opción 
+aparece la grabadora de Malted, con los botones de grabar, reproducir, etc. Con 
+ella podemos controlar la grabación mediante un interfaz gráfico:</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_grabacion02.gif" width="360" height="179" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">autoRecord</font></b><font face="Arial">: usando esta 
+opción no aparece la grabadora en pantalla. La grabación comienza al pulsar el 
+botón de grabar (aparece entonces la palabra &quot;<b><i>Stop</i></b>&quot;) y termina cuando volvamos a 
+pulsarlo (vuelve a su apariencia original).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_grabacion03.gif" width="233" height="53" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Con el sistema operativo Windows, las grabaciones se 
+guardan dentro de <b><i>Documents and Settings/nombre_usuario/Malted_cache</i></b>. Estas grabaciones se guardan hasta que se produzca una nueva 
+grabación que las sustituya, o se borren manualmente.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">3. </font></b><font face="Arial">Si queremos reproducir 
+nuestra grabación en cualquier momento, necesitaremos un objeto con acción 
+&quot;<i><b>play</b></i>&quot; asociado a un evento y como valor el nombre del fichero que hayamos grabado:</font></p>
+<p align="justify" style="margin-left: 150; margin-right: 80">
+      <img border="0" src="../images/plant_grabacion04.gif" width="175" height="45" hspace="20" vspace="6" align="left"><font face="Arial">evento:<b> 
+Clic (onClick)</b></font><font face="Arial"><b><br>
+</b>acción: <b>play</b> </font><font face="Arial"><b><br>
+</b>
+valor:<b> audio/frase2.mp3</b></font></p>
+      <b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">4. </font></b><font face="Arial">
+Según el tipo de ejercicio que queramos hacer, tendremos que presentar al alumno 
+lo que queremos que grabe, que puede ser un objeto de texto (para que lo lea), un audio (para que repita), o 
+un objeto genérico con ambas cosas juntas.</font></p>
+<p style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<font face="Arial">
+<p style="margin-left: 80; margin-right: 80"><b>GRABACIÓN EN RAM</b></p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Otra posibilidad es realizar grabaciones que se almacenan 
+temporalmente en la memoria RAM, por lo que no se guardan de forma permanente. 
+Para ello, 
+simplemente tenemos que dejar vacío el campo valor de los objetos que lleven 
+asociada la acción &quot;<i><b>record</b></i>&quot; o &quot;<b><i>autoRecord</i></b>&quot;:</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">a) Si usamos la acción &quot;<i><b>record</b></i>&quot; la grabación solo está 
+disponible mientras la grabadora de Malted está abierta, y podemos escucharla 
+usando los botones de la propia grabadora. En cuanto se cierra la grabadora la 
+grabación se pierde (en este caso no tiene sentido crear un botón para 
+reproducir la grabación).</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">b) Si usamos un objeto con la acción &quot;<b><i>autoRecord</i></b>&quot; 
+debemos ponerle un nombre al objeto:</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; <b>
+nombre objeto:</b> <i><b>grabacion1</b></i></font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">Para reproducir la grabación necesitaremos un objeto 
+con acción &quot;<b><i>ramPlay</i></b>&quot; y como valor el nombre del objeto que hace la grabación:</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80">
+      <img border="0" src="../images/plant_grabacion05.gif" width="175" height="45" hspace="30" vspace="6" align="left"><font face="Arial">evento:<b> 
+Clic (onClick)<br>
+</b>acción: <b>ramPlay</b> <b><br>
+</b>
+valor:<b> grabacion1</b></font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">Esta grabación solo está disponible mientras esté activa 
+la escena.</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">NOTA: Todos los demás elementos que componen 
+la plantilla (los botones de ayuda e instrucciones, el icono de la mano para 
+pasar al siguiente ejercicio, etc.) no son necesarios, están ahí para servir de 
+ejemplo. Elimina los que no vayas a usar para tu ejercicio (como por ejemplo el 
+botón que abre la explicación de la plantilla).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 80; margin-right: 80">
+      <b><font face="Arial">PARÁMETROS CONFIGURABLES (</font><font face="Arial" color="#FFFFFF">Interacción </font>
+      <font face="Arial" color="#99CCFF">Null</font><font face="Arial" color="#FFFFFF">)</font></b></p>
+      <p style="margin-left: 80; margin-right: 80">
+      <font face="Arial" color="#FFFFFF">Esta interacción no tiene parámetros 
+      configurables.</font></p>
+      <p style="margin-left: 80; margin-right: 80">
+      &nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

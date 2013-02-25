@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Memory"
+ VERSION="1.2"
+ INTERACTION="Memory"
+ TITLE="Memory"
+ DESCRIPTION="Memory game: Matching pairs"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="backCardImage" VALUE="image/card_back.gif"/>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Memory" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_memory.gif" VALUE="projects/Malted_25/html/Plantilla_Memory.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Haz clic en los cuadros y busca las parejas." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="158" TOP="87" WIDTH="523" HEIGHT="433" RANDOM="false" DISPLAY="no">
+         <PANEL NAME="Main" BGCOLOR="-2f2f30">
+                  <CARD BGCOLOR="white">
+                  <BOUNDS NAME="Options" UNIFORM="true" LEFT="1" TOP="1" WIDTH="495" HEIGHT="408" width="112" height="92" RANDOM="true" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="26">
+                        <MEDIA IMAGE="image/t_avion.gif" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA IMAGE="image/t_barco.gif" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="cyan"/>
+                        <MEDIA IMAGE="image/t_bici.gif" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="pink"/>
+                        <MEDIA IMAGE="image/t_bus.gif" VALUE="4" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="yellow"/>
+                        <MEDIA IMAGE="image/t_caballo.gif" VALUE="5" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="green"/>
+                        <MEDIA IMAGE="image/t_coche.gif" VALUE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="red"/>
+                        <MEDIA IMAGE="image/t_moto.gif" VALUE="7" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="magenta"/>
+                        <MEDIA IMAGE="image/t_tren.gif" VALUE="8" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="gray"/>
+                        <MEDIA LABEL="avi&oacute;n" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="barco" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="cyan"/>
+                        <MEDIA LABEL="bici" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="pink"/>
+                        <MEDIA LABEL="autob&uacute;s" VALUE="4" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="yellow"/>
+                        <MEDIA LABEL="caballo" VALUE="5" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="green"/>
+                        <MEDIA LABEL="coche" VALUE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="red"/>
+                        <MEDIA LABEL="moto" VALUE="7" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="magenta"/>
+                        <MEDIA LABEL="tren" VALUE="8" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="gray"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="358" TOP="515" WIDTH="125" HEIGHT="60" width="120" height="50" RANDOM="false" BGIMAGE="" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA NAME="retry" IMAGE="image/boton_repetir0.gif" ROLLOVER_IMAGE="image/boton_repetir1.gif" VALUE="panel(Main)" ACTION="retry" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+</MALTED>

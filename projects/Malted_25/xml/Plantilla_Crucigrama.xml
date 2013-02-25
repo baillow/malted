@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Crucigrama_2"
+ VERSION="1.2"
+ INTERACTION="Crossword2"
+ TITLE="Crucigrama_2"
+ DESCRIPTION="Crucigrama_2: Rellenar el crucigrama escribiendo las letras. Definiciones con texto y graficos"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="verifyText" VALUE=""/>
+<PARAM NAME="caseSensitive" VALUE="no"/>
+<PARAM NAME="check" VALUE="anyTime"/>
+<PARAM NAME="ActiveBorderColor" VALUE="red"/>
+<PARAM NAME="WrongColor" VALUE="red"/>
+<PARAM NAME="CorrectColor" VALUE="blue"/>
+<PARAM NAME="verify" VALUE="anyTime"/>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Crucigrama" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_crucigrama.gif" VALUE="projects/Malted_25/html/Plantilla_Crucigrama.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Haz clic en una casilla en blanco y contesta el crucigrama." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="180" TOP="480" WIDTH="533" HEIGHT="60" width="120" height="50" RANDOM="false" BGIMAGE="" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/boton_corregir0.gif" ROLLOVER_IMAGE="image/boton_corregir1.gif" VALUE="panel(Main)" ACTION="check" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="clear" IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" VALUE="panel(Main)" ACTION="clear" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA IMAGE="image/boton_solucion0.gif" ROLLOVER_IMAGE="image/boton_solucion1.gif" VALUE="panel(Main)" ACTION="solve" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="163" TOP="91" WIDTH="617" HEIGHT="365" RANDOM="false" DISPLAY="center">
+         <PANEL NAME="Main" DISPLAY="no">
+                  <CARD>
+                  <BOUNDS NAME="Crossword" UNIFORM="true" LEFT="7" TOP="41" WIDTH="276" HEIGHT="279" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="20">
+                        <MEDIA NAME="Crossword" TEXT="text/transporte.txt" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="290" TOP="139" WIDTH="300" HEIGHT="201" RANDOM="false" FGCOLOR="-33ffcd" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+                        <MEDIA NAME="Definitions" TEXT="Horizontal|Vertical" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="290" TOP="33" WIDTH="300" HEIGHT="102" RANDOM="false">
+                        <MEDIA NAME="Across" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA NAME="Down" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="290" TOP="4" WIDTH="300" HEIGHT="30" RANDOM="false" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+                        <MEDIA LABEL="Horizontal" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="Vertical" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+</MALTED>

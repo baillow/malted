@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Blank"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Blank"
+ DESCRIPTION="Blank template: Can be used for any type of exercise"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+  FGCOLOR="black" BGCOLOR="-ffff9a" BGIMAGE="image/fondoindicegeneral.gif" DISPLAY="center" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+ onShow="play(audio/0.mp3)">
+   <BOUNDS UNIFORM="true" LEFT="749" TOP="483" WIDTH="51" HEIGHT="59" RANDOM="false">
+         <MEDIA VALUE="xml/blank.xml&#x22;800x531,,,That's English! - Equipo de Producci&oacute;n&#x22;" ACTION="popOutFrame" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="false" LEFT="36" TOP="116" WIDTH="569" HEIGHT="415" width="172" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="no" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="18">
+         <MEDIA VALUE="file:/[X]:/projects/M1/xml/indice.cxml&#x22;Insert the CD-ROM with label 1&#x22;" ACTION="goToCourse" LEFT="186" TOP="3" WIDTH="76" HEIGHT="72" VALUE_es="file:/[X]:/projects/M1/xml/indice.cxml&#x22;Inserta el CD-ROM 1&#x22;" VALUE_ca="file:/[X]:/projects/M1/xml/indice.cxml&#x22;Insereixa el CD-ROM 1&#x22;" VALUE_eu="file:/[X]:/projects/M1/xml/indice.cxml&#x22; M&oacute;dulo 1 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M1/xml/indice.cxml&#x22;Inserta o CD-ROM 1&#x22;" VALUE_val="file:/[X]:/projects/M1/xml/indice.cxml&#x22;Inserix el CD-ROM 1&#x22;" VALUE_bal="file:/[X]:/projects/M1/xml/indice.cxml&#x22;Insereix el CD-ROM 1&#x22;"/>
+         <MEDIA VALUE="file:/[X]:/projects/M4/xml/indice.cxml&#x22;Insert the CD-ROM with label 4&#x22;" ACTION="goToCourse" LEFT="132" TOP="83" WIDTH="81" HEIGHT="72" VALUE_es="file:/[X]:/projects/M4/xml/indice.cxml&#x22;Inserta el CD-ROM 4&#x22;" VALUE_ca="file:/[X]:/projects/M4/xml/indice.cxml&#x22;Insereixa el CD-ROM 4&#x22;" VALUE_eu="file:/[X]:/projects/M4/xml/indice.cxml&#x22; M&oacute;dulo 4 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M4/xml/indice.cxml&#x22;Inserta o CD-ROM 4&#x22;" VALUE_val="file:/[X]:/projects/M4/xml/indice.cxml&#x22;Inserix el CD-ROM 4&#x22;" VALUE_bal="file:/[X]:/projects/M4/xml/indice.cxml&#x22;Insereix el CD-ROM 4&#x22;"/>
+         <MEDIA VALUE="file:/[X]:/projects/M7/xml/indice.cxml&#x22;Insert the CD-ROM with label 7&#x22;" ACTION="goToCourse" LEFT="254" TOP="160" WIDTH="82" HEIGHT="75" VALUE_es="file:/[X]:/projects/M7/xml/indice.cxml&#x22;Inserta el CD-ROM 7&#x22;" VALUE_ca="file:/[X]:/projects/M7/xml/indice.cxml&#x22;Insereixa el CD-ROM 7&#x22;" VALUE_eu="file:/[X]:/projects/M7/xml/indice.cxml&#x22; M&oacute;dulo 7 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M7/xml/indice.cxml&#x22;Inserta o CD-ROM 7&#x22;" VALUE_val="file:/[X]:/projects/M7/xml/indice.cxml&#x22;Inserix el CD-ROM 7&#x22;" VALUE_bal="file:/[X]:/projects/M7/xml/indice.cxml&#x22;Insereix el CD-ROM 7&#x22;"/>
+         <MEDIA VALUE="file:/[X]:/projects/M2/xml/indice.cxml&#x22;Insert the CD-ROM with label 2&#x22;" ACTION="goToCourse" LEFT="268" TOP="6" WIDTH="76" HEIGHT="66" VALUE_es="file:/[X]:/projects/M2/xml/indice.cxml&#x22;Inserta el CD-ROM 4&#x22;" VALUE_ca="file:/[X]:/projects/M2/xml/indice.cxml&#x22;Insereixa el CD-ROM 2&#x22;" VALUE_eu="file:/[X]:/projects/M2/xml/indice.cxml&#x22; M&oacute;dulo 2 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M2/xml/indice.cxml&#x22;Inserta o CD-ROM 2&#x22;" VALUE_val="file:/[X]:/projects/M2/xml/indice.cxml&#x22;Inserix el CD-ROM 2&#x22;" VALUE_bal="file:/[X]:/projects/M2/xml/indice.cxml&#x22;Insereix el CD-ROM 2&#x22;"/>
+         <MEDIA VALUE="file:/[X]:/projects/M5/xml/indice.cxml&#x22;Insert the CD-ROM with label 5&#x22;" ACTION="goToCourse" LEFT="219" TOP="81" WIDTH="74" HEIGHT="75" VALUE_es="file:/[X]:/projects/M5/xml/indice.cxml&#x22;Inserta el CD-ROM 5&#x22;" VALUE_ca="file:/[X]:/projects/M5/xml/indice.cxml&#x22;Insereixa el CD-ROM 5&#x22;" VALUE_eu="file:/[X]:/projects/M5/xml/indice.cxml&#x22; M&oacute;dulo 5 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M5/xml/indice.cxml&#x22;Inserta o CD-ROM 5&#x22;" VALUE_val="file:/[X]:/projects/M5/xml/indice.cxml&#x22;Inserix el CD-ROM 5&#x22;" VALUE_bal="file:/[X]:/projects/M5/xml/indice.cxml&#x22;Insereix el CD-ROM 5&#x22;"/>
+         <MEDIA VALUE="file:/[X]:/projects/M8/xml/indice.cxml&#x22;Insert the CD-ROM with label 8&#x22;" ACTION="goToCourse" LEFT="340" TOP="166" WIDTH="78" HEIGHT="65" VALUE_es="file:/[X]:/projects/M8/xml/indice.cxml&#x22;Inserta el CD-ROM 8&#x22;" VALUE_ca="file:/[X]:/projects/M8/xml/indice.cxml&#x22;Insereixa el CD-ROM 8&#x22;" VALUE_eu="file:/[X]:/projects/M8/xml/indice.cxml&#x22; M&oacute;dulo 8 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M8/xml/indice.cxml&#x22;Inserta o CD-ROM 8&#x22;" VALUE_val="file:/[X]:/projects/M8/xml/indice.cxml&#x22;Inserix el CD-ROM 8&#x22;" VALUE_bal="file:/[X]:/projects/M8/xml/indice.cxml&#x22;Insereix el CD-ROM 8&#x22;"/>
+         <MEDIA VALUE="file:/[X]:/projects/M3/xml/indice.cxml&#x22;Insert the CD-ROM with label 3&#x22;" ACTION="goToCourse" LEFT="345" TOP="8" WIDTH="78" HEIGHT="67" VALUE_es="file:/[X]:/projects/M3/xml/indice.cxml&#x22;Inserta el CD-ROM 3&#x22;" VALUE_ca="file:/[X]:/projects/M3/xml/indice.cxml&#x22;Insereixa el CD-ROM 3&#x22;" VALUE_eu="file:/[X]:/projects/M3/xml/indice.cxml&#x22; M&oacute;dulo 3 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M3/xml/indice.cxml&#x22;Inserta o CD-ROM 3&#x22;" VALUE_val="file:/[X]:/projects/M3/xml/indice.cxml&#x22;Inserix el CD-ROM 3&#x22;" VALUE_bal="file:/[X]:/projects/M3/xml/indice.cxml&#x22;Insereix el CD-ROM 3&#x22;"/>
+         <MEDIA VALUE="file:/[X]:/projects/M6/xml/indice.cxml&#x22;Insert the CD-ROM with label 6&#x22;" ACTION="goToCourse" LEFT="298" TOP="82" WIDTH="82" HEIGHT="72" VALUE_es="file:/[X]:/projects/M6/xml/indice.cxml&#x22;Inserta el CD-ROM 6&#x22;" VALUE_ca="file:/[X]:/projects/M6/xml/indice.cxml&#x22;Insereixa el CD-ROM 6&#x22;" VALUE_eu="file:/[X]:/projects/M6/xml/indice.cxml&#x22; M&oacute;dulo 6 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M6/xml/indice.cxml&#x22;Inserta o CD-ROM 6&#x22;" VALUE_val="file:/[X]:/projects/M6/xml/indice.cxml&#x22;Inserix el CD-ROM 6&#x22;" VALUE_bal="file:/[X]:/projects/M6/xml/indice.cxml&#x22;Insereix el CD-ROM 6&#x22;"/>
+         <MEDIA VALUE="file:/[X]:/projects/M9/xml/indice.cxml&#x22;Insert the CD-ROM with label 9&#x22;" ACTION="goToCourse" LEFT="422" TOP="163" WIDTH="69" HEIGHT="75" VALUE_es="file:/[X]:/projects/M9/xml/indice.cxml&#x22;Inserta el CD-ROM 9&#x22;" VALUE_ca="file:/[X]:/projects/M9/xml/indice.cxml&#x22;Insereixa el CD-ROM 9&#x22;" VALUE_eu="file:/[X]:/projects/M9/xml/indice.cxml&#x22; M&oacute;dulo 9 Izenburua duen CDa sar ezazu&#x22;" VALUE_gl="file:/[X]:/projects/M9/xml/indice.cxml&#x22;Inserta o CD-ROM 9&#x22;" VALUE_val="file:/[X]:/projects/M9/xml/indice.cxml&#x22;Inserix el CD-ROM 9&#x22;" VALUE_bal="file:/[X]:/projects/M9/xml/indice.cxml&#x22;Insereix el CD-ROM 9&#x22;"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="624" TOP="1" WIDTH="176" HEIGHT="35" RANDOM="false">
+         <MEDIA VALUE="panel(idioma) card(2)" ACTION="show" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="561" TOP="14" WIDTH="239" HEIGHT="48" RANDOM="false" DISPLAY="no">
+         <PANEL NAME="idioma">
+                  <CARD NAME="1">
+                  <MEDIA LEFT="0" TOP="0" WIDTH="80" HEIGHT="30"/>
+                  </CARD>
+                  <CARD NAME="2">
+                  <BOUNDS UNIFORM="true" LEFT="53" TOP="3" WIDTH="170" HEIGHT="30" width="55" RANDOM="false">
+                        <MEDIA IMAGE="image/flaguk.gif" VALUE="panel(idioma) card(1)" ACTION="show" TOOLTIP="English" onClick="setLang(en)"/>
+                        <MEDIA IMAGE="image/flagsp.gif" VALUE="es" ACTION="setLang" TOOLTIP="Espa&ntilde;ol" onClick="show(panel(idioma) card(1))"/>
+						<MEDIA IMAGE="image/flagcat.gif" VALUE="ca" ACTION="setLang" TOOLTIP="Catal&aacute;" onClick="show(panel(idioma) card(1))"/>
+                        <MEDIA IMAGE="image/flaggl.gif" VALUE="gl" ACTION="setLang" TOOLTIP="Galego" onClick="show(panel(idioma) card(1))"/>						
+                        <MEDIA IMAGE="image/flagval.gif" VALUE="val" ACTION="setLang" TOOLTIP="Valenci&aacute;" onClick="show(panel(idioma) card(1))"/>
+                        <MEDIA IMAGE="image/flagbal.gif" VALUE="bal" ACTION="setLang" TOOLTIP="Catal&aacute;-Illes Balears" onClick="show(panel(idioma) card(1))"/>                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="744" TOP="564" WIDTH="55" HEIGHT="38" RANDOM="false">
+         <MEDIA VALUE="exit" ACTION="courseLink" DISPLAY="no" TOOLTIP_en="Exit" TOOLTIP_es="Salir" TOOLTIP_ca="Sortir" TOOLTIP_eu="Irteera" TOOLTIP_gl="Sa&iacute;r" TOOLTIP_val="Eixir" TOOLTIP_bal="Sortir"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="3" TOP="54" WIDTH="35" HEIGHT="25" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/bandera.gif"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="200" TOP="35" WIDTH="592" HEIGHT="112" RANDOM="false">
+         <MEDIA TEXT="text/taskindice.rtf" DISPLAY="no"/>
+   </BOUNDS>
+</MALTED>

@@ -1,0 +1,123 @@
+<MENUS>
+	<MENUBAR name="COURSE">
+		<MENU title="File">
+			<MENUITEM action="NewCourse" keystroke="VK_N,CTRL_MASK" icon=""/>
+			<MENUITEM action="OpenCourse" keystroke="VK_O,CTRL_MASK" icon=""/>
+			<MENUITEM action="CloseCourse" keystroke="VK_Q,CTRL_MASK" icon=""/> 
+			<MENUITEM action="SaveCourse" keystroke="VK_S,CTRL_MASK" icon=""/>  
+			<MENUITEM action="SaveAsCourse"/>  
+			<SEPARATOR/>
+			<MENUITEM action="ImportCourse" keystroke="VK_INSERT" icon=""/>
+			<SEPARATOR/>
+			<MENUITEM action="NewProject"/>
+			<MENUITEM action="OpenProject"/>
+			<MENUITEM action="CloseProject"/>
+			<MENUITEM action="RenameProject"/>  
+			<SEPARATOR/>
+			<MENUITEM action="Exit"/>
+		</MENU>
+		<MENU title="Edit">
+			<MENUITEM action="UndoCourse"/>
+			<SEPARATOR/>
+			<MENUITEM action="DeleteCourse"/>
+			<SEPARATOR/>
+			<MENUITEM action="EditScriptCourse" icon=""/> 
+			<MENUITEM action="ReloadScriptCourse"/>
+			<SEPARATOR/>
+			<MENUITEM action="Options" icon=""/> 
+		</MENU>
+		<MENU title="Courseware">
+			<MENUITEM action="PropertiesCourse" keystroke="VK_P,CTRL_MASK"/>
+			<MENUITEM action="AddFrame"/>
+			<MENUITEM action="RunCourse"/>
+			<SEPARATOR/>
+			<MENUITEM action="ExportCourse"/>
+		</MENU>
+		<MENU title="Frame">
+			<MENUITEM action="ImportFrame"/>
+			<MENUITEM action="CourseFrameProperties"/>
+			<MENUITEM action="CourseFrameEdit" keystroke="VK_E,CTRL_MASK" icon=""/> 
+			<MENUITEM action="CourseFrameEditLinks" keystroke="VK_L,CTRL_MASK" icon=""/> 
+			<MENUITEM action="CourseFrameRun" keystroke="VK_R,CTRL_MASK" icon=""/> 
+		</MENU>
+		<MENU title="Project">
+			<MENUITEM action="NewProject"/>
+			<MENUITEM action="OpenProject"/>
+			<MENUITEM action="CloseProject"/>
+			<MENUITEM action="RenameProject"/>  
+		</MENU>
+		<MENU title="Windows">
+			<MENUITEM action="WindowCourse" keystroke="VK_W,CTRL_MASK" icon=""/>
+			<MENUITEM action="WindowFrame" keystroke="VK_W,CTRL_MASK"/>
+		</MENU>
+		<SEPARATOR type="HorizontalGlue"/>
+		<MENU title="Help">
+			<MENUITEM action="HelpAbout"/>
+			<MENUITEM action="HelpTopic"/>
+		</MENU>
+	</MENUBAR>
+	<MENUBAR name="FRAME">
+		<MENU title="File">
+			<MENUITEM action="NewFrame" keystroke="VK_N,CTRL_MASK" icon=""/>
+			<MENUITEM action="OpenFrame" keystroke="VK_O,CTRL_MASK" icon=""/>
+			<MENUITEM action="CloseFrame" keystroke="VK_Q,CTRL_MASK" icon=""/> 
+			<MENUITEM action="SaveFrame" keystroke="VK_S,CTRL_MASK" icon=""/>  
+			<MENUITEM action="SaveAsFrame"/>  
+			<SEPARATOR/>
+			<MENUITEM action="ImportFrame" keystroke="VK_INSERT" icon=""/>
+			<SEPARATOR/>
+			<MENUITEM action="NewProject"/>
+			<MENUITEM action="OpenProject"/>
+			<MENUITEM action="CloseProject"/>
+			<MENUITEM action="RenameProject"/>  
+			<SEPARATOR/>
+			<MENUITEM action="Exit"/>
+		</MENU>
+		<MENU title="Edit">
+			<MENUITEM action="EditMObject" keystroke="VK_E,CTRL_MASK" icon=""/>
+			<SEPARATOR/>
+			<MENUITEM action="UndoMObject" keystroke="VK_Z,CTRL_MASK" icon=""/>
+			<SEPARATOR/>
+			<MENUITEM action="CutMObject" keystroke="VK_X,CTRL_MASK" icon=""/>
+			<MENUITEM action="CopyMObject" keystroke="VK_C,CTRL_MASK" icon=""/>
+			<MENUITEM action="PasteMObject" keystroke="VK_V,CTRL_MASK" icon=""/>
+			<MENUITEM action="DeleteMObject" keystroke="VK_DELETE" icon=""/>
+			<SEPARATOR/>
+			<MENUITEM action="EditScriptFrame" icon=""/> 
+			<MENUITEM action="ReloadScriptFrame"/>
+			<SEPARATOR/>
+			<MENUITEM action="Options" icon=""/> 
+		</MENU>
+		<MENU title="Frame">
+			<MENUITEM action="FrameBehaviour" keystroke="VK_B,CTRL_MASK" icon=""/> 
+			<MENUITEM action="FrameProperties" keystroke="VK_P,CTRL_MASK" icon=""/> 
+			<MENUITEM action="FrameRun" keystroke="VK_R,CTRL_MASK" icon=""/> 
+			<SEPARATOR/>
+			<MENUITEM action="FrameExport"/>
+		</MENU>
+		<MENU title="Media File">
+			<MENUITEM action="MediaInsert" keystroke="VK_INSERT" icon=""/>
+			<MENUITEM action="MediaEdit"/>
+			<MENUITEM action="MediaPreview"/>
+			<MENUITEM action="MediaRename"/>
+			<SEPARATOR/>
+			<MENUITEM action="MediaExport"/>
+		</MENU>
+		<MENU title="Editors"/>
+		<MENU title="Project">
+			<MENUITEM action="NewProject"/>
+			<MENUITEM action="OpenProject"/>
+			<MENUITEM action="CloseProject"/>
+			<MENUITEM action="RenameProject"/>  
+		</MENU>
+		<MENU title="Windows">
+			<MENUITEM action="WindowCourse" keystroke="VK_W,CTRL_MASK" icon=""/>
+			<MENUITEM action="WindowFrame" keystroke="VK_W,CTRL_MASK"/>
+		</MENU>
+		<SEPARATOR type="HorizontalGlue"/>
+		<MENU title="Help">
+			<MENUITEM action="HelpAbout"/>
+			<MENUITEM action="HelpTopic"/>
+		</MENU>
+	</MENUBAR>
+</MENUS>

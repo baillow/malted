@@ -1,0 +1,103 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Diálogo</title>
+</head>
+
+<body>
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">
+    <p align="center">
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+Diálogo</b></u></font></td>
+    <td width="34%">
+    <p align="right"><a href="#" onclick="javascript:window.print();">
+        <img border="0" src="print.gif" width="100" height="26"></a></td>
+  </tr>
+</table>
+</b></u></font>
+<p><font face="Arial">Esta plantilla simula un diálogo que se puede seguir 
+secuenciálmente mediante audio y texto. El diálogo puede ser entre dos 
+personajes de la unidad (en este caso pondremos las grabaciones de ambos 
+personajes) o entre el alumno y uno de los personajes (en este caso 
+habilitaremos un botón para que el alumno pueda grabar su parte del diálogo). En 
+esta plantilla se ofrece un ejemplo de este segundo caso. Al final, cuando el 
+alumno ha grabado todas sus intervenciones, puede pulsar el botón &quot;<i>Diálogo 
+completo</i>&quot; para escucharlo todo. También se puede usar esta plantilla para 
+hacer una presentación de varias tarjetas con imágenes y sonido.</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>ELEMENTOS NECESARIOS</p>
+</u></font>
+<p><font face="Arial">1. </font></b><font face="Arial">Panel con Nombre &quot;Main&quot; 
+que contenga tantas tarjetas como intervenciones de personajes en el diálogo.</font></p>
+<b>
+<p><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;Main&quot;, 
+cada personaje suele tener:</font></p>
+<p><font face="Arial">* <i>Media</i> con la imagen del personaje (aunque no es 
+obligatorio).</font></p>
+<p><font face="Arial">* <i>Media</i> con el texto que dice el personaje (tampoco 
+en obligatorio).</font></p>
+<p><font face="Arial">* <i>Media</i> asociado a un fichero de audio (<i>botón de 
+audio</i>) con la grabación de lo que dice el personaje.</font></p>
+<p><font face="Arial">Si vamos a incluir en el diálogo al alumno que tendrá que 
+grabar su parte, necesitaremos:</font></p>
+<p><font face="Arial">* <i>Media</i> con Acción &quot;record&quot; y Valor &quot;audio/(nombre_fichero).wav&quot; 
+(<i>botón de grabación</i>).</font></p>
+<p><font face="Arial">* <i>Media</i> con Acción &quot;play&quot; y Valor &quot;audio/(nombre_fichero).wav&quot; 
+(<i>botón de audio</i>). Este botón permite al alumno escuchar lo que ha grabado 
+en esa tarjeta siempre que quiera.</font></p>
+<b>
+<p><font face="Arial">3.</font></b><font face="Arial"> Un contenedor que 
+contendrá la barra de navegación por las tarjetas. Dentro de este contenedor 
+habrá tres <i>media</i>:</font></p>
+<p><font face="Arial">* <i>Media</i> asociado a una imagen de flecha hacia la 
+izquierda con Acción &quot;previous&quot; y Valor &quot;panel(Main)&quot;, que nos permitirá ir a la 
+tarjeta anterior.</font></p>
+<p><font face="Arial">* <i>Media</i> con Nombre &quot;Main.cardNumber&quot; que nos 
+indicará en que número de tarjeta estamos.</font></p>
+<p><font face="Arial">* <i>Media</i> asociado a una imagen de flecha hacia la 
+derecha con Acción &quot;next&quot; y Valor &quot;panel(Main)&quot;, que nos permitirá ir a la 
+tarjeta siguiente.</font></p>
+<b>
+<p><font face="Arial">4. </font></b><font face="Arial"><i>Media</i> con Acción &quot;RunAllDialog&quot; 
+(botón &quot;<i>Diálogo Completo</i>&quot;) que reproduce en orden todas las tarjetas del 
+Panel, creando así el efecto del diálogo.</font></p>
+<b>
+<p><font face="Arial">5.</font></b><font face="Arial"> A esta interacción 
+también se le puede añadir opcionalmente un <i>media</i> con Acción &quot;recap&quot; (que 
+reproduce desde la primera tarjeta del panel hasta la que nos encontremos), y un 
+media con Acción &quot;Continue&quot; (que reproduce desde la tarjeta en que nos 
+encontremos hasta la última del panel).</font></p>
+<p><font face="Arial">NOTA: Todos los demás elementos que componen esta 
+plantilla (los botones de ayuda e instrucciones, el icono de la mano para pasar 
+al siguiente ejercicio, etc.) no son necesarios, están ahí para servir de 
+ejemplo. Elimina los que no vayas a usar para tu ejercicio (como por ejemplo el 
+botón que abre esta explicación).</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>PARÁMETROS CONFIGURABLES</p>
+</b></u></font><b><font COLOR="#ff0000">
+<p><font face="Arial">Tamaño de pantalla</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">640x480 800x600 1024x768</font></p>
+</font><font COLOR="#ff0000">
+<p><font face="Arial">Pantalla completa</font></font><font face="Arial">
+<font COLOR="#008000">(marcado/desmarcado)</font></font></b><font face="Arial"> 
+Cuando está activado ajusta los elementos a la resolución de la pantalla. Si 
+está desactivado mantiene siempre la misma apariencia.</font></p>
+<b><font COLOR="#ff0000">
+<p><font face="Arial">Sonido de respuesta: Acierto / Error</font></font><font face="Arial">
+<font COLOR="#008000">(nombre del fichero)</font></font></b><font face="Arial"> 
+En esta plantilla este parámetro no tiene ninguna utilidad.</font></p>
+
+</body>
+
+</html>

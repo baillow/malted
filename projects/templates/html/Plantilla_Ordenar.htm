@@ -1,0 +1,88 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Ordenar</title>
+</head>
+
+<body>
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">
+    <p align="center">
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+Ordenar</b></u></font></td>
+    <td width="34%">
+    <p align="right"><a href="#" onclick="javascript:window.print();">
+        <img border="0" src="print.gif" width="100" height="26"></a></td>
+  </tr>
+</table>
+</b></u></font>
+<p align="justify"><font face="Arial">Esta plantilla permite ofrecer una oración fragmentada 
+para que el alumno coloque las partes en el orden correcto. Para ello debe 
+arrastrar el primer elemento a su posición. Es necesario empezar por el 
+primer elemento de la serie porque todos los  situados detrás del lugar al que se 
+arrastra se moverán un paso hacia atrás.</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>ELEMENTOS NECESARIOS</p>
+</u></font>
+<p align="justify"><font face="Arial">1. </font></b><font face="Arial">Panel con Nombre &quot;<i><b>Main</b></i>&quot;.</font></p>
+<b>
+<p align="justify"><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;<i><b>Main</b></i>&quot;, 
+un marco con nombre &quot;<b><i>Questions</i></b>&quot;. Dentro del marco tantos 
+textos en etiquetas como 
+trozos en los que queremos dividir la frase. Al crear el ejercicio debemos escribir las partes 
+en el orden correcto, ya que el programa se encargará automáticamente de 
+desordenarlas aleatoriamente al ejecutar el ejercicio. Si queremos incluir 
+varias frases en el ejercicio podemos incluir más marcos, y añadirle algo 
+al nombre &quot;Questions&quot; para facilitar su identificación (ejemplo: &quot;Questions_1&quot;, 
+&quot;Questions_2&quot;, &quot;Questions_3&quot;, etc.)</font></p>
+<b>
+<p align="justify"><font face="Arial">3. </font></b><font face="Arial">Objeto 
+genérico con acción &quot;<b><i>verify</i></b>&quot; 
+y valor &quot;<b><i>Panel(Main)</i></b>&quot; que comprueba el orden de la oración y muestra las partes 
+que están en su lugar correcto y las que no (botón <i>Comprobar</i>).</font></p>
+<b>
+<p align="justify"><font face="Arial">4. </font></b><font face="Arial">Objeto 
+genérico con acción &quot;<b><i>clear</i></b>&quot; 
+o &quot;<b><i>clearAll</i></b>&quot; y valor &quot;<b><i>Panel(Main)</i></b>&quot; que borra las marcas de corrección. La acción 
+&quot;<b><i>clear</i></b>&quot; (botón <i>Borrar</i>) solo se aplica a la tarjeta activa, mientras que &quot;<b><i>clearAll</i></b>&quot; 
+(botón <i>Borrar Todo</i>) se aplica a todas las tarjetas del panel. Lo más 
+habitual es usar sólo uno de los dos botones.</font></p>
+<p align="justify"><font face="Arial">NOTA: Todos los demás elementos que componen esta 
+plantilla (los botones de ayuda e instrucciones, el icono de la mano para pasar 
+al siguiente ejercicio, etc.) no son necesarios, están ahí para servir de 
+ejemplo. Elimina los que no vayas a usar para tu ejercicio (como por ejemplo el 
+botón que abre esta explicación).</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>PARÁMETROS CONFIGURABLES</p>
+</b></u></font><b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">verify</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">anyTime/atEnd</font></p>
+</font></b>
+<p align="justify"><font face="Arial"><b>a) anyTime:</b> corrige solo la tarjeta activa del panel.</font></p>
+<p align="justify"><font face="Arial"><b>b) atEnd:</b> corrige de una vez todas las tarjetas del panel Main.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">verifyText</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">(texto)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Permite personalizar el texto de la ventana que aparece al 
+corregir el ejercicio. Se pueden usar distintas variables. Por ejemplo, para 
+obtener un texto donde diga el número de aciertos, errores y puntuación (en 
+porcentaje) habría que escribir lo siguiente en la ventana valores:</font></p>
+<font SIZE="3" COLOR="#0000ff" face="Arial">
+<p align="justify"><i>&nbsp;&nbsp;&nbsp;&nbsp; Has conseguido <b>#correct </b>aciertos y <b>#wrong
+</b>errores. Puntuación: <b>#score </b>%</i></p>
+</font>
+
+</body>
+
+</html>

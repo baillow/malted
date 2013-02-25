@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE COURSE SYSTEM "../../templates/dtd/Course.dtd">
+<COURSE
+   NAME="Malted_25.cxml"
+   TITLE="Malted_25.cxml"
+   DESCRIPTION=""
+   STRUCTURE="linear"
+   VERSION="1.2"
+   START="0"
+   >
+   <FRAME NAME="0" SCRIPT="Inicio.xml" >
+      <LINK NAME="next" DESTINATION="System" />
+   </FRAME>
+</COURSE>

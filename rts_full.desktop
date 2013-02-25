@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Exec=/home/xchi/Malted/rts_full.sh
+Icon=/home/xchi/Malted/MaltedSmallImage.png
+Path=/home/xchi/Malted
+Name=Navegador Malted (FullScreen)
+Categories=X-Mandrakelinux-MoreApplications;Education

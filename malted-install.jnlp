@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<jnlp 
+	spec="1.0+" 
+	codebase="http://malted.cnice.mec.es/descargas/linux" 
+	href="malted-install.jnlp">
+  <information>
+    <title>Instalador de Malted</title>
+    <vendor>Centro Nacional de Información y Comunicación Educativa</vendor>
+    <homepage href="http://malted.cnice.mecd.es" />
+    <description>Instalador de Malted y de Unidades de Malted</description>
+    <description kind="short">Instalador de Malted y Unidades</description>
+    <description kind="tooltip">Instalador</description>
+    <icon href="MaltedSmallImage.png" width="55" height="55" />
+    <offline-allowed />
+  </information>
+  <resources>
+    <j2se version="1.4+"/>
+    <jar href="malted-install.jar"/>
+  </resources>
+  <security>
+    <all-permissions />
+  </security>
+  <application-desc main-class="com.izforge.izpack.installer.Installer" />
+</jnlp>

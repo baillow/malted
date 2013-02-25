@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Dialogo"
+ VERSION="1.2"
+ INTERACTION="Dialog"
+ TITLE="Dialog template"
+ DESCRIPTION="Dialogue Template: Listening to and reading dialogue in L1 and L2"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+   <BOUNDS UNIFORM="true" LEFT="371" TOP="533" WIDTH="135" HEIGHT="60" width="120" height="50" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_dialogo0.gif" ROLLOVER_IMAGE="image/boton_dialogo1.gif" ACTION="RunAllDialog" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar todo el di&aacute;logo."/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" TOOLTIP="Siguiente ejercicio"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Di&aacute;logo" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_dialogo.gif" VALUE="projects/Malted_25/html/Plantilla_Dialogo.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Graba tu parte del di&aacute;logo. Cuando termines, pulsa 'Di&aacute;logo completo' para escucharlo." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="346" TOP="485" WIDTH="188" HEIGHT="39" width="60" height="35" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" ALIGNMENT="right" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="14" TOOLTIP="Anterior"/>
+         <MEDIA NAME="Main.cardNumber" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+         <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" ALIGNMENT="left" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="14" TOOLTIP="Siguiente"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="144" TOP="70" WIDTH="620" HEIGHT="420" RANDOM="false" DISPLAY="no">
+         <PANEL NAME="Main">
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="345" TOP="1" WIDTH="194" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/mujer2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="213" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/alumno1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="340" WIDTH="230" HEIGHT="58" width="70" height="50" RANDOM="false">
+                        <MEDIA NAME="rec1" IMAGE="image/boton_rec1.gif" VALUE="audio/rec1.wav" ACTION="record" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Grabar"/>
+                        <MEDIA IMAGE="image/boton_audio1.gif" VALUE="audio/rec1.wav" ACTION="play" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar lo grabado"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="325" TOP="265" WIDTH="240" HEIGHT="90" RANDOM="false">
+                        <MEDIA BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="265" WIDTH="230" HEIGHT="90" RANDOM="false">
+                        <MEDIA TEXT="           &iexcl;Buenos d&iacute;as!&#x000a;   &iquest;C&oacute;mo se llama usted?" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="345" TOP="1" WIDTH="194" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/mujer1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="213" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/alumno2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="386" TOP="340" WIDTH="105" HEIGHT="58" width="70" height="50" RANDOM="false" FONTNAME="default" FONTSTYLE="PLAIN" FONTSIZE="14">
+                        <MEDIA IMAGE="image/boton_audio1.gif" AUDIO="audio/dialogo_c2.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14" TOOLTIP="Escuchar"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="325" TOP="265" WIDTH="240" HEIGHT="90" RANDOM="false">
+                        <MEDIA TEXT="      Hola. Me llamo Patricia." BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="265" WIDTH="230" HEIGHT="90" RANDOM="false">
+                        <MEDIA BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="340" WIDTH="230" HEIGHT="58" width="70" height="50" RANDOM="false">
+                        <MEDIA NAME="rec2" IMAGE="image/boton_rec1.gif" ACTION="record" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Grabar"/>
+                        <MEDIA IMAGE="image/boton_audio1.gif" VALUE="rec2" ACTION="play" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar lo grabado"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="345" TOP="1" WIDTH="194" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/mujer2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="213" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/alumno1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="325" TOP="265" WIDTH="240" HEIGHT="90" RANDOM="false">
+                        <MEDIA BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="265" WIDTH="230" HEIGHT="90" RANDOM="false">
+                        <MEDIA TEXT="     &iquest;Cu&aacute;ntos a&ntilde;os tiene?" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="386" TOP="340" WIDTH="105" HEIGHT="58" width="70" height="50" RANDOM="false" FONTNAME="default" FONTSTYLE="PLAIN" FONTSIZE="14">
+                        <MEDIA IMAGE="image/boton_audio1.gif" AUDIO="audio/dialogo_c4.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14" TOOLTIP="Escuchar"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="345" TOP="1" WIDTH="194" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/mujer1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="213" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/alumno2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="325" TOP="265" WIDTH="240" HEIGHT="90" RANDOM="false">
+                        <MEDIA TEXT="          Tengo 29 a&ntilde;os." BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="265" WIDTH="230" HEIGHT="90" RANDOM="false">
+                        <MEDIA BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="340" WIDTH="230" HEIGHT="58" width="70" height="50" RANDOM="false">
+                        <MEDIA NAME="rec3" IMAGE="image/boton_rec1.gif" ACTION="record" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Grabar"/>
+                        <MEDIA IMAGE="image/boton_audio1.gif" VALUE="rec3" ACTION="play" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar lo grabado"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="345" TOP="1" WIDTH="194" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/mujer2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="213" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/alumno1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="325" TOP="265" WIDTH="240" HEIGHT="90" RANDOM="false">
+                        <MEDIA BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="265" WIDTH="230" HEIGHT="90" RANDOM="false">
+                        <MEDIA TEXT="   &iquest;Cu&aacute;l es su profesi&oacute;n?" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="386" TOP="340" WIDTH="105" HEIGHT="58" width="70" height="50" RANDOM="false" FONTNAME="default" FONTSTYLE="PLAIN" FONTSIZE="14">
+                        <MEDIA IMAGE="image/boton_audio1.gif" AUDIO="audio/dialogo_c6.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14" TOOLTIP="Escuchar"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="345" TOP="1" WIDTH="194" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/mujer1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="213" HEIGHT="265" RANDOM="false">
+                        <MEDIA IMAGE="image/alumno2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="325" TOP="265" WIDTH="240" HEIGHT="90" RANDOM="false">
+                        <MEDIA TEXT="  Soy profesora de Ciencias." BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="265" WIDTH="230" HEIGHT="90" RANDOM="false">
+                        <MEDIA BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+</MALTED>

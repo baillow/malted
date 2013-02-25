@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Audio"
+ VERSION="1.3"
+ INTERACTION="Null"
+ TITLE="Malted"
+ DESCRIPTION="Plantilla basica"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS NAME=".container1" UNIFORM="true" APUNIFORM="false" LEFT="181" TOP="480" WIDTH="400" HEIGHT="46" width="130" height="40" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container1.media1" AUDIO="audio/sonido_mp3_3.mp3" DVETYPE="3" EMBEDDED="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA NAME=".container1.media3" AUDIO="audio/sonido_mp3_2.mp3" DVETYPE="3" EMBEDDED="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container3" UNIFORM="true" APUNIFORM="false" LEFT="20" TOP="445" WIDTH="763" HEIGHT="72" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container3.media1" DVETYPE="5" TEXT="Sea como sea el sonido siempre se puede marcar la opci&oacute;n &#x22;incrustar&#x22; con lo que la barra de control estar&aacute; siempre visible. " SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container5" UNIFORM="true" APUNIFORM="false" LEFT="181" TOP="401" WIDTH="400" HEIGHT="46" width="110" height="40" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container5.media1" LABEL="Sonido corto 3&#x22;" AUDIO="audio/sonido_mp3_3.mp3" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA NAME=".container5.media3" LABEL="Sonido largo 40&#x22;" AUDIO="audio/sonido_mp3_2.mp3" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container7" UNIFORM="true" APUNIFORM="false" LEFT="20" TOP="340" WIDTH="763" HEIGHT="72" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container7.media1" DVETYPE="5" TEXT="Si se trata de un sonido corto, este se reproduce al pulsar el bot&oacute;n al que est&aacute; asociado. Si es un sonido m&aacute;s largo (por encima de 7 segundos aproximadamente) autom&aacute;ticamente aparece una barra de control." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container9" UNIFORM="true" APUNIFORM="false" LEFT="420" TOP="270" WIDTH="220" HEIGHT="46" width="80" height="40" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container9.media1" LABEL="Sonido mov" AUDIO="audio/sonido_mov_1.mov" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA NAME=".container9.media3" LABEL="Sonido au" AUDIO="audio/sonido_au_1.au" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container11" UNIFORM="true" APUNIFORM="false" LEFT="120" TOP="270" WIDTH="328" HEIGHT="46" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container11.media1" LABEL="Otros formatos de audio soportados:" DVETYPE="6" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container13" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="125" WIDTH="799" HEIGHT="39" width="60" height="30" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container13.media1" LABEL="wav" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="18"/>
+         <MEDIA NAME=".container13.media3" LABEL="mp3" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container15" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="210" WIDTH="799" HEIGHT="50" width="80" height="40" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container15.media1" LABEL="Sonido wav" AUDIO="audio/sonido_wav_1.wav" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA NAME=".container15.media3" LABEL="Sonido mp3" AUDIO="audio/sonido_mp3_1.mp3" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container17" UNIFORM="false" APUNIFORM="false" LEFT="1" TOP="145" WIDTH="799" HEIGHT="84" width="180" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container17.media1" DVETYPE="5" TEXT="(ficheros de onda, suelen tener el inconveniente de ocupar mucho espacio)" LEFT="113" TOP="6" WIDTH="178" HEIGHT="72" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"/>
+         <MEDIA NAME=".container17.media3" DVETYPE="5" TEXT="(formato de audio comprimido con buena calidad. Es el m&aacute;s extendido)" LEFT="498" TOP="6" WIDTH="196" HEIGHT="72" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container19" UNIFORM="true" APUNIFORM="false" LEFT="19" TOP="60" WIDTH="761" HEIGHT="80" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container19.media1" DVETYPE="5" TEXT="El programa Malted permite utilizar distintos formatos de audio. Los m&aacute;s habituales son:" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container21" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="5" WIDTH="799" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container21.media1" LABEL="Audio" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS NAME=".container23" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="540" WIDTH="799" HEIGHT="43" width="120" height="30" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container23.media1" IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" DVETYPE="1" ACTION="return" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+</MALTED>

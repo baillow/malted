@@ -1,0 +1,5 @@
+#Server Host properties
+#Port Number
+com.malted.AB.net.serverPort=8084
+#Host IP
+com.malted.AB.net.serverHost=195.53.123.82

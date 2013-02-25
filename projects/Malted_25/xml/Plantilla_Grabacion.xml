@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Grabacion"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Grabacion"
+ DESCRIPTION="Grabacion: Leer, escuchar y grabar un texto o palabra"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+   <BOUNDS UNIFORM="true" LEFT="280" TOP="464" WIDTH="149" HEIGHT="62" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME="text3" LABEL="Grabar" IMAGE="image/boton_rec1.gif" ACTION="record" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="180" TOP="410" WIDTH="592" HEIGHT="55" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL=" 3. My tailor is rich and my mother is in the kitchen." IMAGE="image/boton_audio1.gif" AUDIO="audio/frase3.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="24"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="180" TOP="114" WIDTH="481" HEIGHT="55" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL=" 1. El perro de San Roque no tiene rabo." IMAGE="image/boton_audio1.gif" AUDIO="audio/frase1.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="24"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="280" TOP="168" WIDTH="287" HEIGHT="62" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME="frase1" LABEL="Grabar" IMAGE="image/boton_rec1.gif" VALUE="audio/frase1.wav" ACTION="record" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+         <MEDIA LABEL="Reproducir" IMAGE="image/boton_play1.gif" VALUE="audio/frase1.wav" ACTION="play" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="180" TOP="264" WIDTH="421" HEIGHT="55" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL=" 2. Tres tristes tigres com&iacute;an trigo." IMAGE="image/boton_audio1.gif" AUDIO="audio/frase2.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="24"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="280" TOP="318" WIDTH="287" HEIGHT="62" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME="frase2" LABEL="Grabar" IMAGE="image/boton_rec1.gif" VALUE="audio/frase2.wav" ACTION="autoRecord" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-190000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+         <MEDIA LABEL="Reproducir" IMAGE="image/boton_play1.gif" VALUE="audio/frase2.wav" ACTION="play" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Grabaci&oacute;n" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_grabacion.gif" VALUE="projects/Malted_25/html/Plantilla_Grabacion.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Pulsa sobre las frases, escucha y graba los textos. Despu&eacute;s escucha tus grabaci&oacute;nes y comp&aacute;ralas." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+</MALTED>

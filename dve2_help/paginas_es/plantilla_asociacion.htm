@@ -1,0 +1,233 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Malted - Plantilla Asociación</title>
+<style fprolloverstyle>A:hover {color: #66FFFF; font-weight: bold}
+</style>
+</head>
+
+<body bgcolor="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="800">
+    <tr>
+      <td>
+      <p align="center">
+      <img border="0" src="../images/titulo_asociacion.gif" width="246" height="35"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+Las plantillas Asociación permiten crear ejercicios de emparejar objetos y/o 
+palabras. El emparejado se hace arrastrando las soluciones a su lugar apropiado 
+(<i>Matching</i>). Visualmente puede presentar dos variantes:</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+<b>A)</b> el objeto arrastrado se copia en la caja de destino (plantilla <b>Asociacion_1</b>)</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_asociacion01.gif" width="387" height="276" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+<b>B)</b> los dos objetos a relacionar se unen mediante una flecha (plantilla <b>Asociacion_2</b>). Se muestra esta variante cuando el parámetro &quot;<b><i>verify</i></b>&quot; 
+tiene la opción &quot;<i><b>onAssociation</b></i>&quot;.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_asociacion02.gif" width="336" height="302" hspace="10"></p>
+<p style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">ELEMENTOS NECESARIOS</p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">1. </font> </b><font face="Arial">Panel con Nombre &quot;<i><b>Main</b></i>&quot;.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">2. </font> </b><font face="Arial">Dentro del Panel &quot;<i><b>Main</b></i>&quot;, un 
+Marco con nombre &quot;<b><i>Options</i></b>&quot;. Dentro de 
+él, uno o varios <b> <i>objetos genéricos</i></b> que incluirán el contenido que tendremos que 
+arrastrar. Este contenido puede ser un texto (en el campo &quot;<i><b>etiqueta</b></i>&quot;), una 
+imagen, un sonido, o varios combinados. En el campo &quot;<i><b>valor</b></i>&quot; debemos incluir un 
+identificador (preferiblemente un número, por ser más sencillo) que tendrá que 
+coincidir con el valor del <b> <i>objeto</i></b> de destino.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_asociacion03.gif" width="456" height="101" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">3. </font> </b><font face="Arial">Dentro del Panel &quot;<i><b>Main</b></i>&quot;, 
+un Marco con Nombre &quot;<b><i>Answers</i></b>&quot; que contendrá las cajas de destino 
+adonde se arrastrarán las opciones. Estas cajas receptoras son <b> <i>objetos 
+genéricos</i></b> que 
+deben tener el mismo valor que el correspondiente <b> <i>objeto</i></b> del contenedor 
+&quot;<i><b>Options</b></i>&quot;.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_asociacion04.gif" width="531" height="100" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">4. </font> </b><font face="Arial">Objeto con acción &quot;<i><b>verify</b></i>&quot; y 
+valor &quot;<i><b>Panel(Main)</b></i>&quot; asociado al evento <b>Acción</b> o
+<b>Clic</b> (botón <i>
+Comprobar</i>) que corrige si los emparejamientos son correctos (esto no es 
+necesario cuando la asociación se produce mediante flechas).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_comprobar.gif" width="336" height="74" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">5. </font> </b><font face="Arial">Objeto con acción &quot;<i><b>clear</b></i>&quot; o &quot;<i><b>clearAll</b></i>&quot; y 
+valor &quot;<i><b>Panel(Main)</b></i>&quot; asociado al evento <b>Acción</b> o
+<b>Clic </b>que 
+permite al alumno borrar las entradas. La acción &quot;<i><b>clear</b></i>&quot; (botón <i>Borrar</i>) 
+solo se aplica a la tarjeta activa, mientras que &quot;<b><i>clearAll</i></b>&quot; (botón <i>Borrar 
+Todo</i>) se aplica a todas las tarjetas del panel (lo más habitual es usar sólo 
+uno de los dos botones).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_borrar.gif" width="336" height="76" hspace="10"></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      &nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">NOTA: Todos los demás elementos que componen esta plantilla (los botones de 
+ayuda e instrucciones, el icono de la mano para pasar al siguiente ejercicio, 
+etc.) no son necesarios, están ahí para servir de ejemplo. Elimina los que no 
+vayas a usar para tu ejercicio (como por ejemplo el botón que abre la 
+explicación de la plantilla).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 80; margin-right: 80">
+      <b><font face="Arial">PARÁMETROS CONFIGURABLES (</font><font face="Arial" color="#FFFFFF">Interacción </font>
+      <font face="Arial" color="#99CCFF">Match2</font><font face="Arial" color="#FFFFFF">)</font></b></p>
+      <p style="margin-left: 80; margin-right: 10">
+      <img border="0" src="../images/parametros_match2.gif" width="330" height="373" align="left" hspace="10"></p>
+      <p style="margin-right: 80" align="justify"><b>
+      <font face="Arial" color="#99FFCC">verify</font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">(valores: </font><b>
+      <font face="Arial" color="#FFFFCC">anyTime</font></b><font face="Arial" color="#FFFFFF"> 
+      / </font><b><font face="Arial" color="#FFFFCC">atEnd</font></b><font face="Arial" color="#FFFFFF"> 
+      / </font><b><font face="Arial" color="#FFFFCC">onAssociation</font></b><font face="Arial" color="#FFFFFF">) 
+      Modo de corrección de las respuestas.</font><b><font face="Arial"><font color="#FFFFFF"><br>
+      </font><i><font color="#FFFFCC">anyTime:</font></i><font color="#FFFFFF">
+      </font></font></b><font color="#FFFFFF"><font face="Arial">el alumno puede 
+      corregir en cualquier momento</font><b><font face="Arial"><br>
+      </font></b></font><b><font color="#FFFFCC" face="Arial"><i>atEnd:</i></font><font face="Arial" color="#FFFFFF">
+      </font></b><font color="#FFFFFF"><font face="Arial">no puede corregir 
+      hasta que complete todo el ejercicio</font><b><font face="Arial"><br>
+      </font></b></font><b><font color="#FFFFCC" face="Arial"><i>onAssociation:</i></font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">al arrastrar el elemento de 
+      origen al de destino dibuja una flecha que solo permanecerá en pantalla si 
+      la asociación es correcta.</font></p>
+      <b>
+      <p style="margin-right: 80; margin-left:80" align="justify">
+      <font face="Arial" color="#99FFCC">arrowColor</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><b><font face="Arial" color="#FFFFCC">color</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Color de la flecha en la modalidad de corregir &quot;onAssociation&quot;.<br>
+      Los parámetros de color aceptan valores hexadecimales (ejemplo: FFA02D) y 
+      también de texto (&quot;<i>red</i>&quot;, &quot;<i>cyan</i>&quot;, &quot;<i>blue</i>&quot;, &quot;<i>black</i>&quot;, 
+      &quot;<i>yellow</i>&quot;, &quot;<i>green</i>&quot;, &quot;<i>gray</i>&quot;, &quot;<i>lightgray</i>&quot;, &quot;<i>white</i>&quot;, 
+      &quot;<i>magenta</i>&quot;, &quot;<i>orange</i>&quot;). Si no se introduce ningún valor adopta 
+      los valores del objeto en que se encuentra el hueco.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">arrowWidth</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><b><font face="Arial" color="#FFFFCC">numero</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Anchura de la flecha en la modalidad de corregir &quot;onAssociation&quot;.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">arrowNumber</font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">(valor: </font><b>
+      <font face="Arial" color="#FFFFCC">número</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Número máximo de flechas que pueden partir de la misma opción en la 
+      modalidad de corregir &quot;onAssociation&quot;.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">markUsed</font></b><font face="Arial" color="#FFFFFF"> 
+      (valores: </font><font face="Arial" color="#FFFFCC"><b>si</b> / <b>n</b></font><b><font face="Arial" color="#FFFFCC">o</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Define si el programa marca o no las opciones que ya se han usado.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">markedFGCOLOR</font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">(valor: </font>
+      <font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color del texto de las opciones usadas.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">markedBGCOLOR</font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">(valor: </font>
+      <font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color de fondo del objeto de las opciones que ya se han usado.</font></p>
+      <p style="margin-left: 80; margin-right: 80" align="justify"><b>
+      <font face="Arial" color="#99FFCC">bounce</font><font color="#FFFFFF" face="Arial">
+      </font></b><font color="#FFFFFF" face="Arial">(valores: </font>
+      <font face="Arial" color="#FFFFCC"><b>si</b> / <b>n</b></font><b><font face="Arial" color="#FFFFCC">o</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Hace que los objetos que se arrastran a una posición reboten gráficamente 
+      a su posición original si no se han colocado de forma correcta. Si se 
+      activa este parámetro no es necesario ningún botón que corrija el 
+      ejercicio, ya que esto se hace sobre la marcha.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">bounceSound</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>audio/nombre del 
+      fichero</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Define el sonido que se escuchará cuando rebote un elemento mal colocado.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">dragAppearance</font></b><font face="Arial" color="#FFFFFF"> 
+      (valores: </font><font face="Arial" color="#FFFFCC"><b>si</b> / <b>n</b></font><b><font face="Arial" color="#FFFFCC">o</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Permite arrastrar la apariencia de los objetos de texto que se arrastran 
+      (color de texto y fondo del objeto). Si no está activado, el texto tomará 
+      la apariencia del objeto de destino.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">verifyText</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>texto</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Permite personalizar el texto de la ventana que aparece al corregir el 
+      ejercicio.<br>
+      Se pueden usar distintas variables. Por ejemplo, para obtener un texto 
+      donde diga el número de aciertos, errores y puntuación (en porcentaje) 
+      habría que escribir lo siguiente en la ventana valores:</font></p>
+      <font color="#FFFFFF" face="Arial" size="3">
+      <p style="margin-left: 80; margin-right: 80" align="justify"><i>&nbsp;&nbsp;&nbsp;&nbsp; Has 
+      conseguido <b>#correct</b> aciertos y <b>#wrong</b> errores. Puntuación:
+      <b>#score</b> %</i></p>
+      </font><b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">correctFGCOLOR</font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">&nbsp;(valor: </font>
+      <font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color que toma el texto las respuestas correctas al corregir el ejercicio.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">correctBGCOLOR</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color en que se pone el fondo de las respuestas correctas.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">wrongFGCOLOR</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color que toma el texto las respuestas incorrectas al corregir el 
+      ejercicio.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">wrongBGCOLOR</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color en que se pone el fondo de las respuestas incorrectas.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">dragOnClick</font></b><font face="Arial" color="#FFFFFF"> 
+      (valores: </font><font face="Arial" color="#FFFFCC"><b>si</b> / <b>n</b></font><b><font face="Arial" color="#FFFFCC">o</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Cuando se activa este parámetro los objetos no pueden ser arrastrados, 
+      sino que se colocan en los marcos de destino haciendo clic en los 
+      elementos que queremos colocar. Con esta opción debemos pulsar en los 
+      elementos en el orden en el que aparecerán en los marcos de destino.</font></p>
+      <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Malted - Plantilla Test</title>
+<style fprolloverstyle>A:hover {color: #66FFFF; font-weight: bold}
+</style>
+</head>
+
+<body bgcolor="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="800">
+    <tr>
+      <td>
+      <p align="center">
+      <img border="0" src="../images/titulo_test.gif" width="62" height="27"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Esta plantilla permite crear un ejercicio de preguntas con 
+varias posibles respuestas entre las que el alumno debe elegir la correcta. La 
+plantilla se puede configurar para que el alumno solo pueda elegir una 
+respuesta, o para que pueda elegir varias como correctas (ver &quot;Parámetros 
+configurables&quot; más abajo).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_test01.gif" width="404" height="310" hspace="10"></p>
+<p style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">ELEMENTOS NECESARIOS</p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">1. </font> </b><font face="Arial">Panel con Nombre &quot;<i><b>Main</b></i>&quot;.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;<i><b>Main</b></i>&quot; 
+uno o varios objetos con la pregunta o el estímulo (imagen, sonido, etc.).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_test02.gif" width="506" height="64" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">3. </font></b><font face="Arial">Dentro del Panel &quot;<i><b>Main</b></i>&quot; 
+un marco con nombre &quot;<i><b>Answers</b></i>&quot; que contendrá tantos 
+objetos como posibles respuestas tenga la pregunta. Los objetos deben tener 
+activado el atributo &quot;<b><i>CheckBox</i></b>&quot; si queremos que aparezca al 
+lado de cada posible respuesta una casilla para poder marcarla. En el marco 
+podemos marcar la opción 
+&quot;<i>Aleatorio</i>&quot; si queremos que el programa desordene automáticamente las 
+respuestas. Si queremos incluir varias preguntas en el ejercicio podemos incluir 
+más marcos dentro del panel, y añadirle algo al nombre &quot;<b>Answers</b>&quot; para facilitar su identificación (ejemplo: &quot;Answers_1&quot;, 
+&quot;Answers_2&quot;, &quot;Answers_3&quot;, etc.)</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_test03.gif" width="507" height="114" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">4. </font></b><font face="Arial">Los 
+objetos genéricos 
+contenidos dentro del marco &quot;<i><b>Answers</b></i>&quot; deben tener las siguientes 
+atributos:</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_test04.gif" width="306" height="95" hspace="16" align="right" vspace="6"></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">a) En el campo etiqueta escribiremos el texto que servirá 
+como respuesta (también podemos usar una imagen  en lugar de texto).</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">b) En el campo valor escribiremos &quot;<b>true</b>&quot; si la 
+respuesta es correcta y &quot;<b>false</b>&quot; si la respuesta no es correcta.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">5. </font></b><font face="Arial">Si hemos optado por que 
+aparezcan casillas de marcado junto a las respuestas, necesitaremos un objeto 
+con acción &quot;<i><b>verify</b></i>&quot; o &quot;<b><i>check</i></b>&quot; y 
+valor &quot;<i><b>Panel(Main)</b></i>&quot; asociada al evento <b>Acción</b> o
+<b>Clic</b> que comprueba las respuestas 
+marcadas. La acción &quot;<i><b>verify</b></i>&quot; (botón <i>Comprobar</i>) indica las respuestas 
+correctas e incorrectas, mientras que la acción &quot;<b><i>check</i></b>&quot; (botón <i>Corregir</i>) 
+deja las respuestas correctas y borra las incorrectas para que el alumno 
+intente de nuevo.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_comprobar.gif" width="336" height="74" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Si por el contrario hemos decidido que no aparezcan las 
+casillas de marcado, la corrección es inmediata al pulsar una opción mediante 
+los sonidos de Acierto y Error (podemos configurarlos en las &quot;Propiedades de la 
+escena&quot;, en la pestaña &quot;General&quot;)</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">6. </font></b><font face="Arial">Si aparecen las casillas 
+de marcado podemos usar un objeto con acción &quot;<b><i>clear</i></b>&quot; o &quot;<b><i>clearAll</i></b>&quot; y 
+valor 
+&quot;<b><i>Panel(Main)</i></b>&quot; asociada al evento <b>Acción</b> o
+<b>Clic</b> que permite al alumno borrar las respuestas marcadas, o ya 
+corregidas. La acción &quot;<i><b>clear</b></i>&quot; (botón <i>Borrar</i>) solo se aplica a la tarjeta 
+activa, mientras que &quot;<i><b>clearAll</b></i>&quot; (botón <i>Borrar Todo</i>) se aplica a todas las 
+tarjetas del panel.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_borrar.gif" width="336" height="76" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<b>
+      </b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">NOTA: Todos los demás elementos que componen esta plantilla (los botones de 
+ayuda e instrucciones, el icono de la mano para pasar al siguiente ejercicio, 
+etc.) no son necesarios, están ahí para servir de ejemplo. Elimina los que no 
+vayas a usar para tu ejercicio (como por ejemplo el botón que abre la 
+explicación de la plantilla).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+      &nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 80; margin-right: 80">
+      </p>
+      <p style="margin-left: 80; margin-right: 80">
+      <b><font face="Arial">PARÁMETROS CONFIGURABLES (</font><font face="Arial" color="#FFFFFF">Interacción </font>
+      <font face="Arial" color="#99CCFF">Test</font><font face="Arial" color="#FFFFFF">)</font></b></p>
+      <p style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/parametros_multiplechoice.gif" width="330" height="163" align="left" hspace="10"></p>
+      <p style="margin-left: 80; margin-right: 80" align="justify"><b>
+      <font face="Arial" color="#99FFCC">verify</font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">(valores: </font><b>
+      <font face="Arial" color="#FFFFCC">anyTime</font></b><font face="Arial" color="#FFFFFF"> 
+      / </font><b><font face="Arial" color="#FFFFCC">atEnd</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Modo de corrección de las respuestas.</font><b><font face="Arial"><font color="#FFFFFF"><br>
+      </font><i><font color="#FFFFCC">anyTime:</font></i><font color="#FFFFFF">
+      </font></font></b><font face="Arial" color="#FFFFFF">el alumno puede 
+      corregir en cualquier momento.&nbsp; El programa corrige y da el 
+      porcentaje de aciertos y fallos sólo en la tarjeta activa.</font><font color="#FFFFFF"><b><font face="Arial"><br>
+      </font></b></font><b><font color="#FFFFCC" face="Arial"><i>atEnd:</i></font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">no puede corregir hasta que 
+      conteste a todas las preguntas de todas las tarjetas. El porcentaje de 
+      aciertos y fallos es el total de todas las tarjetas.<br>
+      Estas opciones solo funcionan si los objetos de respuesta tienen marcada 
+      la opción &quot;Casilla de verificación&quot;. Si no esta marcada, la verificación 
+      será inmediata en cuanto pulsemos una opción mediante el sonido de Acierto 
+      y Error que hayamos definido en las propiedades de la escena.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">checkOnlyOne</font></b><font face="Arial" color="#FFFFFF"> 
+      (valores: </font><font face="Arial" color="#FFFFCC"><b>si</b> / <b>n</b></font><b><font face="Arial" color="#FFFFCC">o</font></b><font face="Arial" color="#FFFFFF">)<br>
+      En caso afirmativo solo se podrá elegir una opción como correcta.<br>
+      En caso negativo permite marcar varias respuestas como correctas.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">verifyText</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>texto</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Permite personalizar el texto de la ventana que aparece al corregir el 
+      ejercicio.<br>
+      Se pueden usar distintas variables. Por ejemplo, para obtener un texto 
+      donde diga el número de aciertos, errores y puntuación (en porcentaje) 
+      habría que escribir lo siguiente:</font></p>
+      <font color="#FFFFFF" face="Arial" size="3">
+      <p style="margin-left: 80; margin-right: 80" align="justify"><i>&nbsp;&nbsp;&nbsp;&nbsp; Has 
+      conseguido <b>#correct</b> aciertos y <b>#wrong</b> errores. Puntuación:
+      <b>#score</b> %</i></p>
+      </font>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#FFFFFF"><br>
+      &nbsp;</font></p>
+      <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

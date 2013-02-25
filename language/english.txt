@@ -1,0 +1,422 @@
+<Malted Language>
+<instructions>
+WRITE ON THE RIGHT HAND SIDE OF THE = YOUR OWN VERSION
+OTHERWISE THE DEFAULT WRITTING ( LEFT HAND SIDE ) WILL BE CONSIDERED.
+<\instructions>
+<menuMgt>
+File = 
+Edit = 
+Import Media = 
+Preview = 
+Windows = 
+Help = 
+Open... =
+Close = 
+Save = 
+SaveAs... = 
+Exit = 
+Delete = 
+Options = 
+Properties = 
+Behaviour = 
+Courseware = Course
+Frame = 
+Run frame = 
+About... = 
+Help topic = 
+New Frame = 
+New Project = 
+Open Project = 
+Close Project = 
+Edit script = 
+Copy = 
+Run Courseware = Run Course
+Reload Script = 
+Cut = 
+Paste = 
+Undo = 
+Project = 
+Rename Project = 
+Create Course Html =
+<\menuMgt>
+<labelMgt>
+Go to the upper left corner = 
+Frames collection = 
+Do you really want to delete this file? = 
+Media collection = 
+COURSEWARE Management = COURSE Management
+FRAME Management = 
+Save:  = 
+ = 
+image = 
+audio = 
+video = 
+text = 
+Enter the new filename: = 
+New filename = 
+This file already exits. = 
+Please, save it before running = 
+No external application is defined for this extension = 
+Define one application using the 'Edit/Options' = 
+New  = 
+New file = 
+File:  = 
+This document is not saved.Save it to edit the script. = 
+Preview = 
+Bad characters! = 
+Rename = 
+New name = 
+The start frame is not defined. = 
+Select one in Courseware Properties. = Select one in Course Properties.
+Do you want to override it? = 
+Do you want to paste the card or the whole panel = 
+Do you want to delete the card or the whole panel = 
+There is only one card in this panel = 
+Delete the Panel? = 
+The following assets are missing:  = 
+<\labelMgt>
+<menuCourseware>
+Up = 
+Down = 
+Courseware = Course
+New Courseware = New Course
+is not found. = 
+ = 
+ = 
+This frame is edited. Close it in the frame management = 
+Add Frame = 
+Edit link = 
+Edit Frame = 
+This frame is new. Edit and save it before adding it in the courseware. = This frame is new. Edit and save it before adding it in the course.
+Import Course = 
+This frame is used in courseware opened. = This frame is used in an open course. 
+<\menuCourseware>
+<menuFrame>
+Media File = 
+Editors = 
+Export to the Asset Base = 
+(No editors defined) = 
+The path of this application is not correct. = 
+Do you really want to remove this element ? = 
+Delete the object = 
+This media is used in frame opened. = 
+<\menuFrame>
+<dialogOptions>
+text txt = 
+text rtf = 
+image gif = 
+image jpeg = 
+sound/video wave = 
+sound sun = 
+sound midi = 
+sound aiff = 
+sound rmf = 
+video avi = 
+video mpeg = 
+video/sound quicktime = 
+video gsm = 
+video mpeg2 = 
+video rtp = 
+Options = 
+Language = 
+Media Format = 
+extension = 
+application to use = 
+General = 
+Editors = 
+User profile = 
+Information = 
+Set Default = 
+Name = 
+Address = 
+Institution = 
+Asset Base = 
+IP address = 
+Login name = 
+select an application = 
+enter a name for the new AB = 
+This name is used. Please choose a different name. = 
+No space for a new AB = 
+Telephone = 
+Fax = 
+E-Mail = 
+Function = 
+Start with = 
+Look = 
+Courseware = Course
+Frame = 
+Account = 
+Start by opening the old project = 
+script = 
+text html = 
+Ask confirmation when delete = 
+Show text with icons in the menu bar = 
+<\dialogOptions>
+<buttons>
+OK = 
+Cancel = 
+Remove Media = 
+Add = 
+Yes = 
+No = 
+Edit Card = 
+Remove Card = 
+Insert Card = 
+Add Media = 
+Back = 
+Next = 
+Add Container = 
+Add Card = 
+Refresh = 
+Add Panel = 
+Remove Panel = 
+Remove Container = 
+Remove = 
+Insert = 
+The card = 
+The panel = 
+Insert media = 
+Insert Panel = 
+Close = 
+Crossword =
+toFront =
+toBack =
+<\buttons>
+<dialogInsertMedia>
+Image = 
+Info = 
+Text = 
+Audio = 
+Video = 
+Unknown = 
+Insert Media = 
+Search local disks = 
+Remove from list = 
+Remote Import = 
+Display = 
+Preview = 
+Following files have unknown media type : = 
+Remove them or update their media type with the combo box = 
+File names already in project media = 
+File names already in list of chosen files = 
+File extension unknown by Malted = 
+Close = 
+Query tool = 
+Query tool (media) = 
+Media is not an image. No preview = 
+Preview of  = 
+Bytes = 
+Remove all = 
+Add list to project = 
+Local Import = 
+Fill the required = 
+fields and click Export = 
+files = 
+Successfully published = 
+Error importing = 
+Select Remote or Local Import = 
+Import to the active project all the files that are on the list = 
+Cancel the importation = 
+Cancel the exportation = 
+Search on other projects = 
+Search on other projects or on your local disks = 
+Remove the selected files from the list = 
+Remove all the files from the list = 
+Click to preview the object = 
+Do you want to exit without adding the list to the project? = 
+Error publishing = 
+<\dialogInsertMedia>
+<dialogProperties>
+Frame properties = 
+Courseware properties = Course properties
+Filename = 
+Description = 
+Please complete all the fields. = 
+Name in course: = 
+Structure : = 
+ = 
+Linear = 
+Complex = 
+Start: = 
+No defined = 
+ = 
+Filename not changed: = 
+a file with the same name is currently edited = 
+This name already exists in the course = 
+set the structure as linear = 
+set the structure as complex = 
+set the frame from which the courseware starts = set the frame from which the course starts 
+a start frame must be selected = 
+<\dialogProperties>
+<dialogEdit1>
+Panel Name: = 
+Interaction: = 
+Screen size: = 
+Fit screen: = 
+The audio feedback: = 
+Correct: = 
+Wrong: = 
+Parameters: = 
+Values: = 
+Image file: = 
+Display type: = 
+No display = 
+Center = 
+Patch = 
+Stretch = 
+Label properties: = 
+Font: = 
+Style: = 
+Plain = 
+Bold = 
+Italic = 
+Bold+Italic = 
+Size: = 
+Colour: = 
+Background = 
+Foreground = 
+Aligment: = 
+Left = 
+Center = 
+Right = 
+Text: = 
+Image file: = 
+ROImage file: = 
+Text file: = 
+Audio file: = 
+Video file: = 
+Label: = 
+Transparent: = 
+CheckBox: = 
+Action: = 
+Value: = 
+Value list: = 
+Hypertext color: = 
+hypertext = 
+visited hypertext = 
+mother tongue: = 
+target language: = 
+editable text = 
+Other = Events
+Translation =
+AutoActions =
+embedded =
+scrollbar =
+hasBorder =
+borderWidth =
+borderColor =
+TOOLTIP =
+onClick =
+onRightClick =
+onMouseOver =
+onMouseOut =
+onMouseDown =
+onMouseUp =
+onCorrect =
+onWrong =
+onShow =
+onAllCorrect =
+onAllCorrectVerify =
+onError =
+onErrorVerify =
+onVerifyTimes0 =
+onVerify =
+onNoCardsLeft =
+LMS inform: =
+<\dialogEdit1>
+<dialogEdit2>
+Container bounds: = 
+Left: = 
+Top: = 
+Width: = 
+Height: = 
+Objects insides: = 
+Width: = 
+Height: = 
+Fit Container = 
+Transparent: = 
+Random display: = 
+Checkbox display: = 
+Description = 
+Parameters = 
+Background Image = 
+Properties = 
+Content = 
+Dimensions = 
+Object = 
+Remove Media = 
+Container = 
+Remove Container = 
+Card = 
+Remove Card = 
+Behaviour = 
+Are you sure to remove this element? = 
+Please, Enter an integer value. = 
+Your value is not in the bounds. = 
+Editing = 
+Add Panel = 
+<\dialogEdit2>
+<dialogNewFrame>
+New Frame = 
+Select a template = 
+Description = 
+Filename = 
+Please, complete all the fields = 
+List of Frames: = 
+<\dialogNewFrame>
+<dialogOpenFrame>
+Open Frame = 
+Select a frame = 
+Description = 
+Frame title:  = 
+<\dialogOpenFrame>
+<dialogAbout>
+About = 
+Malted Developer Tools = 
+v.1.4 December 2000 = 
+Supported by the EC Educational Multimedia Taskforce = 
+(DG XIII Telematics Applications Programme & DG XXII Socrates and Leonardo da Vinci Programmes) = 
+<\dialogAbout>
+<project>
+Enter the project name: = 
+Are you sure to erase the old project? = 
+Please, enter a project name. = 
+Select a project: = 
+<\project>
+<dialogOpenCourseware>
+Open Courseware = Open Course
+Select a courseware = Select a course
+Description = 
+New Courseware = New Course
+<\dialogOpenCourseware>
+<dialogLinks>
+Edit links = 
+Frame:  = 
+Exit system = 
+Link:  = 
+Destination = 
+Condition = 
+Value = 
+Click to see the list = 
+Press [enter] to validate the fields = 
+Order = 
+<\dialogLinks>
+<dialogImportCourse>
+Import Courseware = Import Course
+Local Disk... = 
+QueryTool = 
+<\dialogImportCourse>
+<dialogImportFrame>
+Import Frame = 
+List of frames: = 
+Local Frame... = 
+Remove = 
+QueryTool = 
+<\dialogImportFrame>
+<dialogExportMedia>
+Export to the Asset Base = 
+QueryTool = 
+Close = 
+To AssetBase = 
+<\dialogExportMedia>
+<\Malted Language>

@@ -1,0 +1,17 @@
+7x8
+[ 1]C[  ]*[  ]*[ 2]M[  ]*[  ]*[  ]*
+[ 3]A[  ]V[  ]I[  ]O[  ]N[  ]*[  ]*
+[  ]B[  ]*[  ]*[  ]T[  ]*[  ]*[  ]*
+[ 4]A[  ]U[  ]T[  ]O[ 5]B[  ]U[  ]S
+[  ]L[  ]*[  ]*[  ]*[  ]A[  ]*[  ]*
+[  ]L[  ]*[  ]*[  ]*[  ]R[  ]*[  ]*
+[  ]O[  ]*[ 6]C[  ]O[  ]C[  ]H[  ]E
+[  ]*[  ]*[  ]*[  ]*[  ]O[  ]*[  ]*
+Across
+3. Medio de transporte aéreo|image/t_avion.gif
+4. Transporte público por carretera|image/t_bus.gif
+6. A mi me gustaría tener uno deportivo amarillo|image/t_coche.gif
+Down
+1. Animal usado tradicionalmente para viajar|image/t_caballo.gif
+2. Vehículo a motor de dos ruedas|image/t_moto.gif
+5. Medio de transporte marítimo|image/t_barco.gif

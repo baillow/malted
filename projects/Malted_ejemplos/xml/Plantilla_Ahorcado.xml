@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Ahorcado"
+ VERSION="1.3"
+ INTERACTION="HangMan"
+ TITLE="HANGMAN"
+ DESCRIPTION="Juego del ahorcado: Adivinar palabras o frases a partir de definiciones o imagenes"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/error.wav"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+   <BOUNDS NAME="flechas" UNIFORM="true" APUNIFORM="false" LEFT="293" TOP="512" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA NAME="flecha_anterior" IMAGE="image/boton_anterior1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA NAME="flecha_siguiente" IMAGE="image/boton_siguiente1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <BOUNDS NAME="Letras" UNIFORM="true" APUNIFORM="false" LEFT="380" TOP="104" WIDTH="230" HEIGHT="201" RANDOM="false" BGCOLOR="-1862c3" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+         <MEDIA NAME="blanco" LABEL=" " DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="A" LABEL="A" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="B" LABEL="B" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="C" LABEL="C" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="D" LABEL="D" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="E" LABEL="E" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="F" LABEL="F" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="G" LABEL="G" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="H" LABEL="H" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="I" LABEL="I" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="J" LABEL="J" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="K" LABEL="K" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="L" LABEL="L" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="M" LABEL="M" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="N" LABEL="N" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="&Ntilde;" LABEL="&Ntilde;" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="O" LABEL="O" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="P" LABEL="P" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="Q" LABEL="Q" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="R" LABEL="R" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="S" LABEL="S" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="T" LABEL="T" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="U" LABEL="U" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="V" LABEL="V" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="W" LABEL="W" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="X" LABEL="X" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="Y" LABEL="Y" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="Z" LABEL="Z" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="&Ccedil;" LABEL="&Ccedil;" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="guion" LABEL="-" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <MEDIA NAME="instrucciones" LABEL="Instrucciones" DVETYPE="0" VALUE="Adivina la palabra oculta. Puedes cometer un m&aacute;ximo de 6 errores." ACTION="popOutText" LEFT="10" TOP="10" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="titulo" LABEL="Ahorcado" DVETYPE="0" LEFT="175" TOP="5" WIDTH="520" HEIGHT="55" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   <MEDIA NAME="ayuda1" LABEL="Ayuda 1" DVETYPE="0" VALUE="xml/ayuda.xml" ACTION="popOutFrame" LEFT="10" TOP="60" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda2" LABEL="Ayuda 2" DVETYPE="0" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" LEFT="10" TOP="110" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="vinculo_next" IMAGE="image/boton_siguiente2.gif" DVETYPE="0" VALUE="next" ACTION="courseLink" LEFT="710" TOP="545" WIDTH="70" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <MEDIA NAME="notas_plantilla" IMAGE="image/bot_ahorcado.gif" DVETYPE="0" VALUE="projects/Malted_ejemplos/html/Plantilla_Ahorcado.htm" ACTION="openURL" LEFT="25" TOP="485" WIDTH="109" HEIGHT="96" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_borrar" IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" DVETYPE="0" ACTION="clear" LEFT="618" TOP="362" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_solucionar" IMAGE="image/boton_solucion0.gif" ROLLOVER_IMAGE="image/boton_solucion1.gif" DVETYPE="0" ACTION="solve" LEFT="618" TOP="409" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <PANEL NAME="Main" DISPLAY="no" LEFT="178" TOP="330" WIDTH="420" HEIGHT="189">
+      <CARD NAME="card_1">
+      <BOUNDS NAME="hiddenWord" UNIFORM="true" APUNIFORM="false" LEFT="40" TOP="103" WIDTH="331" HEIGHT="66" RANDOM="false" DISPLAY="center" FONTNAME="Courier" FONTSTYLE="PLAIN" FONTSIZE="20">
+            <MEDIA NAME="palabra_1" DVETYPE="0" VALUE="BICICLETA" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="24"/>
+      </BOUNDS>
+      <MEDIA NAME="definicion_1" DVETYPE="5" TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;}\f1\fs32\b Medio de locomoci\u243 n con tracci\u243 n humana.\fs24\b0\par}" LEFT="44" TOP="14" WIDTH="193" HEIGHT="81" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+      <MEDIA NAME="imagen_1" IMAGE="image/t_bici.gif" DVETYPE="1" LEFT="252" TOP="12" WIDTH="116" HEIGHT="91" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </CARD>
+      <CARD NAME="card_2">
+      <BOUNDS NAME="hiddenWord" UNIFORM="true" APUNIFORM="false" LEFT="40" TOP="103" WIDTH="331" HEIGHT="66" RANDOM="false" DISPLAY="center" FONTNAME="Courier" FONTSTYLE="PLAIN" FONTSIZE="20">
+            <MEDIA NAME="palabra_2" DVETYPE="0" VALUE="AVION" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="24"/>
+      </BOUNDS>
+      <MEDIA NAME="imagen_2" IMAGE="image/t_avion.gif" DVETYPE="1" LEFT="291" TOP="12" WIDTH="116" HEIGHT="91" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="definicion_2" DVETYPE="5" TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;}\f1\fs32\b\u191 Es un p\u225 jaro? \u191 Es un _ _ _ _ _?\par   No, es Superm\u225 n.\fs24\b0\par}" LEFT="7" TOP="14" WIDTH="273" HEIGHT="81" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+      </CARD>
+      <CARD NAME="card_3">
+      <BOUNDS NAME="hiddenWord" UNIFORM="true" APUNIFORM="false" LEFT="40" TOP="103" WIDTH="331" HEIGHT="66" RANDOM="false" DISPLAY="center" FONTNAME="Courier" FONTSTYLE="PLAIN" FONTSIZE="20">
+            <MEDIA NAME="palabra_3" DVETYPE="0" VALUE="AUTOBUS" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="24"/>
+      </BOUNDS>
+      <MEDIA NAME="imagen_3" IMAGE="image/t_bus.gif" DVETYPE="1" LEFT="252" TOP="12" WIDTH="116" HEIGHT="91" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="definicion_3" DVETYPE="5" TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;}\f1\fs32\b En \u233 l voy de excursi\u243 n con mis amigos.\fs24\b0\par}" LEFT="39" TOP="14" WIDTH="198" HEIGHT="81" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+      </CARD>
+   </PANEL>
+   <PANEL NAME="Pictures" DISPLAY="center" LEFT="181" TOP="65" WIDTH="168" HEIGHT="262">
+      <CARD NAME="Pictures.card0" DISPLAY="no">
+      <MEDIA NAME="imagen0" IMAGE="image/hm01.gif" DVETYPE="1" LEFT="10" TOP="10" WIDTH="149" HEIGHT="244" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </CARD>
+      <CARD NAME="Pictures.card1" DISPLAY="no">
+      <MEDIA NAME="imagen1" IMAGE="image/hm02.gif" DVETYPE="1" LEFT="10" TOP="10" WIDTH="149" HEIGHT="244" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </CARD>
+      <CARD NAME="Pictures.card2" DISPLAY="no">
+      <MEDIA NAME="imagen2" IMAGE="image/hm03.gif" DVETYPE="1" LEFT="10" TOP="10" WIDTH="149" HEIGHT="244" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </CARD>
+      <CARD NAME="Pictures.card3" DISPLAY="no">
+      <MEDIA NAME="imagen3" IMAGE="image/hm04.gif" DVETYPE="1" LEFT="10" TOP="10" WIDTH="149" HEIGHT="244" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </CARD>
+      <CARD NAME="Pictures.card4" DISPLAY="no">
+      <MEDIA NAME="imagen4" IMAGE="image/hm05.gif" DVETYPE="1" LEFT="10" TOP="10" WIDTH="149" HEIGHT="244" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </CARD>
+      <CARD NAME="Pictures.card5" DISPLAY="no">
+      <MEDIA NAME="imagen5" IMAGE="image/hm06.gif" DVETYPE="1" LEFT="10" TOP="10" WIDTH="149" HEIGHT="244" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </CARD>
+      <CARD NAME="Pictures.card6" DISPLAY="no">
+      <MEDIA NAME="imagen6" IMAGE="image/hm07.gif" DVETYPE="1" LEFT="10" TOP="10" WIDTH="149" HEIGHT="244" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </CARD>
+   </PANEL>
+</MALTED>

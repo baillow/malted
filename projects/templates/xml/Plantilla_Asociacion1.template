@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Asociacion"
+ VERSION="1.3"
+ INTERACTION="Match2"
+ TITLE="Ejercicio de asociacion"
+ DESCRIPTION="Asociacion: Asociar texto con texto, imagen o sonido"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="markUsed" VALUE="yes"/>
+<PARAM NAME="dragOnClick" VALUE="no"/>
+<PARAM NAME="arrowWidth" VALUE="3"/>
+<PARAM NAME="correctBGCOLOR" VALUE="white"/>
+<PARAM NAME="arrowColor" VALUE="black"/>
+<PARAM NAME="markedBGCOLOR" VALUE="white"/>
+<PARAM NAME="markedFGCOLOR" VALUE="lightGray"/>
+<PARAM NAME="wrongBGCOLOR" VALUE="white"/>
+<PARAM NAME="verify" VALUE="anyTime"/>
+<PARAM NAME="arrowNumber" VALUE="1"/>
+<PARAM NAME="correctFGCOLOR" VALUE="blue"/>
+<PARAM NAME="wrongFGCOLOR" VALUE="red"/>
+<PARAM NAME="dragAppearance" VALUE="no"/>
+<PARAM NAME="bounce" VALUE="no"/>
+   <BOUNDS NAME="flechas" UNIFORM="true" LEFT="349" TOP="420" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA NAME="flecha_anterior" IMAGE="image/boton_anterior1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA NAME="flecha_siguiente" IMAGE="image/boton_siguiente1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <MEDIA NAME="titulo" LABEL="Asociaci&oacute;n 1" DVETYPE="0" LEFT="175" TOP="5" WIDTH="520" HEIGHT="55" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   <MEDIA NAME="instrucciones" LABEL="Instrucciones" DVETYPE="0" VALUE="Arrastra las opciones hasta su lugar correspondiente (pulsa las flechas para cambiar de ejemplo)" ACTION="popOutText" LEFT="10" TOP="10" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda1" LABEL="Ayuda 1" DVETYPE="0" VALUE="xml/ayuda.xml" ACTION="popOutFrame" LEFT="10" TOP="60" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda2" LABEL="Ayuda 2" DVETYPE="0" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" LEFT="10" TOP="110" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="vinculo_next" IMAGE="image/boton_siguiente2.gif" DVETYPE="0" VALUE="next" ACTION="courseLink" LEFT="710" TOP="545" WIDTH="70" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <MEDIA NAME="notas_plantilla" IMAGE="image/bot_asociacion.gif" DVETYPE="0" VALUE="projects/templates/html/Plantilla_Asociacion.htm" ACTION="openURL" LEFT="25" TOP="485" WIDTH="109" HEIGHT="96" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_comprobar" IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="verify" LEFT="260" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_borrar" IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="clear" LEFT="395" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_borrartodo" IMAGE="image/boton_borrartodo0.gif" ROLLOVER_IMAGE="image/boton_borrartodo1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="clearAll" LEFT="530" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <PANEL NAME="Main" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16" LEFT="152" TOP="65" WIDTH="632" HEIGHT="371">
+      <CARD NAME="1">
+      <BOUNDS NAME="Questions" UNIFORM="true" LEFT="49" TOP="20" WIDTH="271" HEIGHT="260" width="250" height="40" RANDOM="false" DISPLAY="center">
+            <MEDIA NAME="Questions1" DVETYPE="0" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="red"/>
+            <MEDIA NAME="Questions2" DVETYPE="0" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="green"/>
+            <MEDIA NAME="Questions3" DVETYPE="0" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="blue"/>
+            <MEDIA NAME="Questions4" DVETYPE="0" VALUE="4" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="yellow"/>
+            <MEDIA NAME="Questions5" DVETYPE="0" VALUE="5" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-990001"/>
+      </BOUNDS>
+      <BOUNDS NAME="Answers" UNIFORM="true" LEFT="323" TOP="20" WIDTH="138" HEIGHT="260" width="120" height="40" RANDOM="false" BGCOLOR="-333334" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="ITALIC" FONTSIZE="22">
+            <MEDIA NAME="Answers1" LABEL="?" DVETYPE="0" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Answers2" LABEL="?" DVETYPE="0" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Answers3" LABEL="?" DVETYPE="0" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Answers4" LABEL="?" DVETYPE="0" VALUE="4" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Answers5" LABEL="?" DVETYPE="0" VALUE="5" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Options" UNIFORM="true" LEFT="10" TOP="285" WIDTH="560" HEIGHT="60" width="100" height="40" RANDOM="true" BGCOLOR="-333334" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="ITALIC" FONTSIZE="20">
+            <MEDIA NAME="Options1" LABEL="rojo" DVETYPE="0" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Options2" LABEL="verde" DVETYPE="0" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Options3" LABEL="azul" DVETYPE="0" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Options4" LABEL="amarillo" DVETYPE="0" VALUE="4" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Options5" LABEL="cian" DVETYPE="0" VALUE="5" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      </CARD>
+      <CARD NAME="2">
+      <BOUNDS NAME="Answers" UNIFORM="true" LEFT="4" TOP="29" WIDTH="605" HEIGHT="101" width="140" height="90" RANDOM="false" BGCOLOR="-222223">
+            <MEDIA NAME="Answers1" LABEL="?" DVETYPE="0" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1034" FONTNAME="TimesRoman" FONTSTYLE="BOLD" FONTSIZE="26"/>
+            <MEDIA NAME="Answers2" LABEL="?" DVETYPE="0" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1034" FONTNAME="TimesRoman" FONTSTYLE="BOLD" FONTSIZE="26"/>
+            <MEDIA NAME="Answers3" LABEL="?" DVETYPE="0" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1034" FONTNAME="TimesRoman" FONTSTYLE="BOLD" FONTSIZE="26"/>
+      </BOUNDS>
+      <BOUNDS NAME="Questions" UNIFORM="true" LEFT="4" TOP="133" WIDTH="605" HEIGHT="55" width="165" height="40" RANDOM="false" BGCOLOR="-1134" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18">
+            <MEDIA NAME="Questions1" LABEL="Transporte mar&iacute;timo" DVETYPE="0" VALUE="1" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2" LABEL="Transporte terrestre." DVETYPE="0" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions3" LABEL="Transporte a&eacute;reo." DVETYPE="0" VALUE="3" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Options" UNIFORM="true" LEFT="106" TOP="231" WIDTH="396" HEIGHT="100" width="110" height="90" RANDOM="true" BGCOLOR="-222223" DISPLAY="center">
+            <MEDIA NAME="Options1" IMAGE="image/t_barco.gif" DVETYPE="0" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+            <MEDIA NAME="Options2" IMAGE="image/t_bus.gif" DVETYPE="0" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+            <MEDIA NAME="Options3" IMAGE="image/t_avion.gif" DVETYPE="0" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+      </BOUNDS>
+      </CARD>
+   </PANEL>
+</MALTED>

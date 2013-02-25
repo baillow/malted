@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Dictado</title>
+</head>
+
+<body>
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">
+    <p align="center">
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+Dictado</b></u></font></td>
+    <td width="34%">
+    <p align="right"><a href="#" onclick="javascript:window.print();">
+        <img border="0" src="print.gif" width="100" height="26"></a></td>
+  </tr>
+</table>
+</b></u></font>
+<p align="justify"><font face="Arial">Esta plantilla verifica un texto escrito. Compara lo que 
+el alumno ha escrito con el texto original, y si hay diferencias indica dónde 
+están los errores.</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>ELEMENTOS NECESARIOS</p>
+</u></font>
+<p align="justify"><font face="Arial">1. </font></b><font face="Arial">Panel con Nombre &quot;<i><b>Main</b></i>&quot;.</font></p>
+<b>
+<p align="justify"><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;<b><i>Main</i></b>&quot;, 
+un marco con nombre &quot;<i>Text</i>&quot;. Dentro de él un objeto genérico con la casilla &quot;zona editable&quot; 
+marcada (para así poder escribir en él), y 
+que en el campo valor incluya la ruta del texto correcto que debe transcribir el 
+alumno:</font></p>
+<font COLOR="#ff0000">
+<p align="justify"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo: </font></font>
+<font face="Arial"><b>Valor: </b><font COLOR="#0000ff">text/dictado.txt </font>
+(el texto original debe estar obligatoriamente en formato txt).</font></p>
+<p align="justify"><font face="Arial">Este objeto se puede presentar vacío o podemos 
+incluir las primeras palabras del texto que hay que transcribir como ayuda.</font></p>
+<b>
+<p align="justify"><font face="Arial">3. </font></b><font face="Arial">Objeto asociado a 
+un fichero de audio que es el que debe transcribir el alumno (aunque también 
+podría ser un texto con una pregunta que el alumno debe contestar de una manera 
+exacta).</font></p>
+<b>
+<p align="justify"><font face="Arial">4. </font></b><font face="Arial">Objeto con acción &quot;<b><i>verify</i></b>&quot; 
+y valor &quot;<b><i>Panel(Main)</i></b>&quot; que comprueba si lo escrito coincide con el original 
+(botón <i>Corregir</i>).</font></p>
+<b>
+<p align="justify"><font face="Arial">5. </font></b><font face="Arial">Objeto con acción &quot;<i><b>clear</b></i>&quot; 
+y valor &quot;<b><i>Panel(Main)</i></b>&quot; que permite al alumno borrar lo que ha escrito (botón <i>
+Borrar</i>).</font></p>
+<p align="justify"><font face="Arial">NOTA: Todos los demás elementos que componen esta 
+plantilla (los botones de ayuda e instrucciones, el icono de la mano para pasar 
+al siguiente ejercicio, etc.) no son necesarios, están ahí para servir de 
+ejemplo. Elimina los que no vayas a usar para tu ejercicio (como por ejemplo el 
+botón que abre esta explicación).</font></p>
+<p align="justify"><font face="Arial">En esta plantilla se ha optado por incluir un botón <i>
+Solución</i> que muestra el texto que el alumno debe transcribir, pero se puede 
+eliminar si se decide no usar esta posibilidad.</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>DETECCIÓN DE ERRORES</p>
+</b></u></font>
+<p align="justify"><font face="Arial">Cuando el programa detecta diferencias entre el texto 
+original y el escrito por el alumno, puede presentar distintos mensajes según el 
+tipo de error:</font></p>
+<font COLOR="#ff0000"><b>
+<p align="justify"><font face="Arial">&lt;ERROR!-&gt;</font></b></font><font face="Arial"> Aparece 
+delante de la primera palabra en la que detecta un error de escritura, o junto a 
+la que debe ir un paréntesis o corchete que no se ha escrito.</font></p>
+<font COLOR="#ff0000"><b>
+<p align="justify"><font face="Arial">&lt;CASE ERROR!-&gt;</font></b></font><font face="Arial"> 
+Detecta error en el uso de mayúsculas y minúsculas si está habilitada esta 
+opción (ver parámetros configurables).</font></p>
+<font COLOR="#ff0000"><b>
+<p align="justify"><font face="Arial">&lt;-TEXT MISSING!&gt;</font></b></font><font face="Arial"> Aún 
+falta texto por escribir.</font></p>
+<font COLOR="#ff0000"><b>
+<p align="justify"><font face="Arial">&lt;-PUNCTUATION ERROR!-&gt;</font></b></font><font face="Arial"> 
+Indica un error de puntuación (comas, puntos, signo de interrogación, etc.). Los 
+errores de puntuación no aparecen hasta que el resto del texto está bien escrito 
+(excepto cuando un error de puntuación provoca un error de mayúscula/minúscula).</font></p>
+<p align="justify"><font face="Arial">Dejar dos espacios en blanco en lugar de uno no se 
+considera error. Tampoco si se escribe punto y seguido en lugar de punto y 
+aparte y viceversa.</font></p>
+<p align="justify"><font face="Arial">Es importante recordar al alumno que debe borrar los 
+mensajes que indican error cuando ha corregido para poder continuar. </font></p>
+<p align="justify"><font face="Arial">Cuando el texto se ha escrito correctamente, el tipo de 
+letra pasa a color azul.</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>PARÁMETROS CONFIGURABLES</p>
+</b></u></font><b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">ignoreCase</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Si se define como <i>yes</i> el programa no hará 
+distinción entre mayúsculas y minúsculas. En el caso contrario sí las 
+distinguirá.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">verifyText</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">(texto)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Permite personalizar el texto de la ventana que aparece al 
+detectar un error en el ejercicio. En el caso de esta plantilla se ha incluido 
+el siguiente texto:</font></p>
+<font SIZE="3" COLOR="#0000ff" face="Arial">
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp; <i>Debes corregir el error antes de continuar.</i></p>
+</font>
+
+</body>
+
+</html>

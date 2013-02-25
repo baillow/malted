@@ -1,0 +1,390 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>8. Interacciones y Plantillas</title>
+</head>
+<body bgcolor="#FFFFFF" background="imagenes/logo1.gif">
+<table width="600" border="0" align="center" cellpadding="3" cellspacing="0">
+  <tr> 
+    <td width="588"> <div align="center"> 
+        <p><strong><u><font size="3" face="Arial, Helvetica, sans-serif"><font color="#003366"><font color="#000066">8. 
+          Interactions et Mod&egrave;les</font></font></font></u></strong></p>
+      </div></td>
+  </tr>
+  <tr> 
+    <td> <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Les 
+        <strong>Interactions</strong> sont des propri&eacute;t&eacute;s que l&#8217;on 
+        peut assigner &agrave; un Frame de Malted qui ont besoin d&#8217;une s&eacute;rie 
+        d&#8217;Objets M&eacute;dia, Panneaux et Conteneurs pour marcher correctement.<br>
+        Elles permettent de cr&eacute;er des exercices de caract&eacute;ristiques 
+        diverses, et elles sont capables de v&eacute;rifier et de corriger (sauf 
+        l&#8217;int&eacute;raction Null). <br>
+        L&#8217;int&eacute;raction &agrave; appliquer se s&eacute;lectionne dans 
+        le menu <font color="#CC0000">Frame &gt; Propri&eacute;t&eacute;s</font>, 
+        onglet <font color="#CC0000">Description</font>. Chaque Int&eacute;raction 
+        est associ&eacute;e &agrave; une s&eacute;rie de <strong>Param&egrave;tres</strong> 
+        modifiables qui peuvent &ecirc;tre chang&eacute;s dans la fen&ecirc;tre 
+        Param&egrave;tres. En plus, la liste des Actions disponibles lorsqu&#8217;on 
+        &eacute;dite les Objets M&eacute;dia change en fonction de l&#8217;Interaction 
+        choisie. <br>
+        <br>
+        Les <strong>Mod&egrave;les</strong> de Malted sont bas&eacute;s dans ces 
+        Interactions et incluent tous les &eacute;l&eacute;ments n&eacute;cessaires 
+        pour que chacune d&#8217;elle fonctionne, de fa&ccedil;on &agrave; ce 
+        qu&#8217;il ne reste plus qu&#8217;&agrave; introduire les textes et les 
+        fichiers m&eacute;dia (images, audio, etc..) pour cr&eacute;er un exercice 
+        compl&egrave;tement fonctionnel.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Par 
+        ordre alphab&eacute;tique les interactions possibles sont les suivantes:<font color="#CC0000"><u><br>
+        <br>
+        Interaction Crossword:<br>
+        </u></font><strong>Mod&egrave;les:</strong> Crossword_000.template Mod&egrave;les<br>
+        <br>
+        Cette interaction est un mot-crois&eacute; : l&#8217;user doit tirer des 
+        lettres vers les cases pour remplir les trous en fonction des d&eacute;finitions 
+        fournies. L&#8217;interaction a besoin des composantes suivantes:<br>
+        <br>
+        1. Panneau de nom &quot;Main&quot;<br>
+        2. &Agrave; l&#8217;int&eacute;rieur du panneau &quot;Main&quot;, un Panneau 
+        de Nom &quot;Crossword&quot;<br>
+        3. Les cases sont &agrave; l&#8217;int&eacute;rieur du Conteneur &quot;Crossword&quot;. 
+        Chacune d&#8217;elle est un M&eacute;dia:<br>
+        </font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">-	
+        Caise avec num&eacute;ro : M&eacute;dia avec Etiquette &quot;le num&eacute;ro&quot;, 
+        Valeur &quot;nogap&quot;<br>
+        - Caise de lettre : M&eacute;dia avec Valeur &quot;la lettre en question&quot;<br>
+        - Caise transparente : M&eacute;dia avec Valeur &quot;nogap&quot;et transparente.<br>
+        - Caise noir : M&eacute;dia avec Valeur &quot;nogap&quot; et fond noir.<br>
+        <br>
+        4. &Agrave; l&#8217;int&eacute;rieur du panneau &quot;Main&quot;, un Conteneur 
+        de Nom &quot;Letters&quot;<br>
+        5.&Agrave; l&#8217;int&eacute;rieur du Conteneur &quot;Letters&quot;, 
+        les lettres dont on peut tirer.<br>
+        - Chaque lettre va &agrave; l&#8217;int&eacute;rieur d&#8217;un M&eacute;dia 
+        avec l&#8217;Etiquette &quot;la lettre en question&quot;<br>
+        6. M&eacute;dia associ&eacute; &agrave; un fichier de texte qui contient 
+        les pistes ou d&eacute;finitions.<br>
+        7. M&eacute;dia avec Action &quot;verify&quot; ou &quot;check &quot;qui 
+        v&eacute;rifie les entr&eacute;es<br>
+        8. M&eacute;dia avec Actions &quot;clear&quot; ou &quot;clearAll&quot; 
+        qui efface les entr&eacute;es.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        </font><font color="#CC0000" size="2" face="Arial, Helvetica, sans-serif">Crossword2</font><font color="#CC0000">:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les:</strong> 
+        Crossword2_000.template<br>
+        <br>
+        Cette interaction est un mot-crois&eacute; : l&#8217;utilisateur doit 
+        ECRIRE les lettres dans les cases pour remplir tous les vides se basant 
+        sur les d&eacute;finitions fournies.<br>
+        Les interactions ont besoin des composantes suivantes:<br>
+        <br>
+        1. Panneau de nom &quot;Main&quot;<br>
+        2. &Agrave; l&#8217;int&eacute;rieur du panneau &quot;Main&quot;, un Panneau 
+        de Nom &quot;Crossword&quot;<br>
+        3. &Agrave; l&#8217;int&eacute;rieur du Conteneur &quot;Crossword&quot;, 
+        un Media de Nom &quot;Crossword&quot; li&eacute; &agrave; un fichier de 
+        texte avec un format particulier (voir Aide &gt; Interaction &gt; Crossword2)<br>
+        4. &Agrave; l&#8217;int&eacute;rieur du Panneau &quot;Main&quot; un M&eacute;dia 
+        de Nom &quot;Accross&quot;<br>
+        5. &Agrave; l&#8217;int&eacute;rieur du Panneau &quot;Main&quot; un M&eacute;dia 
+        de Nom &quot;Down&quot;<br>
+        6. &Agrave; l&#8217;int&eacute;rieur du Panneau &quot;Main&quot; un M&eacute;dia 
+        de Nom &quot;Definitions&quot;<br>
+        7. M&eacute;dia avec Action &quot;verify&quot; ou &quot;check&quot; et 
+        Valeur &quot;Panel(Main)&quot; qui v&eacute;rifie les entr&eacute;es<br>
+        8. M&eacute;dia avec Action &quot;clear&quot; ou &quot;clearAll&quot; 
+        qui efface les entr&eacute;es </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        Dialog:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les 
+        :</strong> Dialog_000.template<br>
+        <br>
+        Cette interaction sert &agrave; simuler un dialogue que l&#8217;&eacute;l&egrave;ve 
+        peut suivre &agrave; travers un audio ou un texte.<br>
+        Le dialogue peut &ecirc;tre entre deux personnages de l&#8217;unit&eacute; 
+        ou entre un ordinateur et l&#8217;&eacute;l&egrave;ve si on ajoute les 
+        options d&#8217;enregistrement.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">La 
+        modalit&eacute; de dialogue <strong>ORDINATEUR-ORDINATEUR</strong> a besoin 
+        des composantes suivantes:<br>
+        <br>
+        1. Panneau de Nom &quot;Main&quot; avec autant de cartes que de parties 
+        dans lesquelles on divise le dialogue.<br>
+        <br>
+        2. &Agrave; l&#8217;int&eacute;rieur du Panneau &quot;Main&quot;, chaque 
+        personnage peut avoir ::<br>
+        - 1 M&eacute;dia avec l&#8217;image d&#8217;un personnage<br>
+        - 1 M&eacute;dia avec le texte &eacute;crit d&#8217;un personnage<br>
+        - 1 M&eacute;dia associ&eacute; &agrave; un FichierAudio et en m&ecirc;me 
+        temps Fichier Image (ic&ocirc;ne Play).<br>
+        Lorsqu&#8217;on appuie sur ce m&eacute;dia , l&#8217;audio de la carte 
+        dans laquelle on se trouve se reproduit.<br>
+        <br>
+        3. &Agrave; l&#8217;int&eacute;rieur du Panneau &quot;Main&quot;, un Conteneur 
+        de barre de Navigation de cartes qui contient :<br>
+        - Indicateur du num&eacute;ro de carte : 1 m&eacute;dia de Nom &quot;Main.cardNumber&quot;<br>
+        - Fl&egrave;che Reculer : 1 M&eacute;dia avec Action&quot;previous&quot;et Valeur&quot;panneau(Main) associ&eacute; &agrave; une image 
+        de fl&egrave;che.<br>
+        - Fl&egrave;che Suivante : 1 M&eacute;dia avec Action &quot;next&quot; 
+        et Valeur &quot;panel(Main)&quot; associ&eacute; &agrave; une image de 
+        fl&egrave;che.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">La 
+        modalit&eacute; de dialogue <strong>ORDINATEUR-&Eacute;L&Egrave;VE</strong>, 
+        se construit pareil que la pr&eacute;c&eacute;dente , mais elle a la diff&eacute;rence 
+        suivante:<br>
+        <br>
+        Le personnage qui interpr&eacute;te l&#8217;&eacute;l&egrave;ve doit avoir:<br>
+        - 1 M&eacute;dia avec Action &quot;record&quot; et Valeur&quot;audio/(nomdufichier).mp3&quot;<br>
+        - 1 M&eacute;dia avec Action &quot;paly&quot; et Valeur&quot;audio/(nomdufichier).mp3&quot;</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">On 
+        peut assigner d&#8217;autres actions aux M&eacute;dia dasn l&#8217;Interaction 
+        Dialog:<br>
+        -&quot;RunAllDialog&quot; reproduit toutes les cartes du panneau avec 
+        tous ces audios de fa&ccedil;on s&eacute;quentielle.<br>
+        -&quot;Recap&quot; reproduit de la premi&egrave;re carte jusqu&#8217;&agrave; 
+        celle dans laquelle on se trouve.<br>
+        -&quot;Continue&quot; reproduit de la carte dans laquelle on se trouve 
+        jusqu&#8217;&agrave; la derni&egrave;re carte.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        GapFilling:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les 
+        :</strong> Spelling.template, TextGapas.template, TextGapsWithContractions.template, 
+        Transcription.template, TranslateWords.template, WordGaps.template.<br>
+        <br>
+        Cette interaction permet de cr&eacute;er des exercices de texte contenant 
+        des vides que l&#8217;&eacute;l&egrave;ve peut remplir. Utilis&eacute;e 
+        en m&ecirc;me temps que l&#8217;audio, elle peut &ecirc;tre utile pour 
+        r&eacute;diger des exercices d&#8217;orthographie ou de traduction.<br>
+        <br>
+        &Eacute;l&eacute;ments n&eacute;cessaires:<br>
+        1. Panneau de Nom &quot;Main&quot;<br>
+        2. &Agrave; l&#8217;int&eacute;rieur du Panneau &quot;Main&quot;, un Conteneur 
+        de Nom &quot;Phrases&quot;<br>
+        3. &Agrave; l&#8217;int&eacute;rieur du Conteneur &quot;Phrases&quot;, 
+        un M&eacute;dia avec le texte de l&#8217;exercice:<br>
+        Il existe deux fa&ccedil;ons d&#8217;introduire le texte: <br>
+        a) En liant le M&eacute;dia &agrave; un fichier de texte du dossier text/ 
+        <br>
+        Le fichier contient le texte complet avec les mots que l&#8217;on veut 
+        omettre entre corchets<br>
+        Ex : [Where] do they live ? Do [the live in] England ?<br>
+        b) En introduisant le texte avec les mots entre crochets dans le barre 
+        &quot;Texte&quot; du M&eacute;dia.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> S&#8217;il 
+        y a plusieurs solutions possibles pour un trou, nous pouvons les mettre 
+        en oeuvre en les s&eacute;parant par des barres verticales (Alt Gr + 1).<br>
+        Ex : [we&#8217;ll go&frac12;we will go&frac12;we&#8217;re going&frac12;we 
+        are going] tomorrow to the movies.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">4.	
+        M&eacute;dia avec Action &quot;verify&quot; ou &quot;check&quot; et Valeur 
+        &quot;Panel(Main)&quot; qui v&eacute;rifie ce que l&#8217;&eacute;l&egrave;ve 
+        a &eacute;crit.<br>
+        5. M&eacute;dia avec Action &quot;clear&quot; ou &quot;clearAll&quot; 
+        et Valeur &quot;Panel(Main)&quot; qui permet &agrave; l&#8217;&eacute;l&egrave;ve 
+        d&#8217;effacer ses entr&eacute;es.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        HangMan:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les 
+        :</strong> HangMan_000.template, HangMan_001.template<br>
+        <br>
+        Cette interaction permet de cr&eacute;er un exercice bas&eacute; dans 
+        le jeux du pendu.<br>
+        <br>
+        El&eacute;ments n&eacute;cessaires: <br>
+        1. Panneau de Nom &quot;Pictures&quot; qui contient dans des cartes les 
+        diff&eacute;rentes stades du jeu du pendu.<br>
+        2. Panneau de nom &quot;Main&quot; &agrave; l&#8217;int&eacute;rieur duquel 
+        il y a :<br>
+        3. Conteneur de Nom &quot;hiddenWord&quot;, dans lequel il y a un M&eacute;dia 
+        de Valeur &quot;lemotcherch&eacute;&quot;<br>
+        4. Conteneur avec 30 M&eacute;dias, chacune avec une lettre dans le champ 
+        Etiquette<br>
+        5. Conteneur avec un M&eacute;dia qui sert de piste (texte, image, audio 
+        ou vid&eacute;o)<br>
+        6. M&eacute;dia avec Action &quot;clear&quot;<br>
+        7. M&eacute;dia avec Action &quot;solve&quot;</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        Match2:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les 
+        :</strong> Association.template, Match_000.template, orderParagraphs.template, 
+        orderSentences.template, oderText.template, OrderWords.template, <br>
+        <br>
+        Ce mod&egrave;le permet de cr&eacute;er des exercices, de coupler des 
+        objets/mots.<br>
+        Mod&egrave;les : Association, Match, OrderWords, OrderSentences</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">El&eacute;ments 
+        n&eacute;cessaires:<br>
+        1. Panneau de Nom &quot;Main&quot; &agrave; l&#8217;int&eacute;rieur duquel 
+        il doit y avoir<br>
+        2. Conteneur de nom &quot;Options&quot; qui contient les solutions que 
+        l&#8217;on devra tirer :<br>
+        - Chaque solution est un M&eacute;dia dont l&#8217;Etiquette est &quot;lasolution&quot; 
+        et la Valeur est un num&eacute;ro qui va coincider avec la Valeur du M&eacute;dia 
+        vers lequel on le tire. <br>
+        3. Conteneur de nom &quot;Answers&quot; o&ugrave; se triuvent les bo&icirc;tes 
+        vers lesquelles on tire les premieres M&eacute;dia.<br>
+        - Les bo&icirc;tes r&eacute;ceptrices sont des M&eacute;dia avec Etiquette 
+        vide ou non, et avec Valeur un num&eacute;ro qui coincide avec la Valeur 
+        du M&eacute;dia solution qui est &agrave; l&#8217;int&eacute;rieur du 
+        Conteneur Options.<br>
+        4. On a l&#8217;option d&#8217;inclure aussi un Conteneur de nom &quot;Questions&quot; 
+        qui contient des M&eacute;dias avec des questions qui vont deux par deux 
+        avec les bo&icirc;tes r&eacute;ceptrices vides, leur donnant la m&ecirc;me 
+        Valeur. (voir mod&egrave;le Match_000 par exemple).<br>
+        5. M&eacute;dia avec Action &quot;verify&quot; ou &quot;check&quot; et 
+        Valeur &quot;Panel(Main)&quot; qui v&eacute;rifie les entr&eacute;es.<br>
+        6. M&eacute;dia avec Action &quot;clear&quot; ou &quot;clearAll&quot; 
+        et Valeur &quot;Panel(Main)&quot; qui efface les entr&eacute;es.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">On 
+        met deux par deux en tirant les solutions vers la place qui lui correspond. 
+        <br>
+        Dans les Param&egrave;tres de l&#8217;Interaction on peut choisir quand 
+        est-ce qu&#8217;on permet de v&eacute;rifier :<br>
+        a) anyTime : &agrave; n&#8217;importe quel moemnt<br>
+        b) atEnd : seulement apr&egrave;s avoir finit l&#8217;exercice<br>
+        c) onAssociation : v&eacute;rifie de fa&ccedil;on automatique lorsqu&#8217;il 
+        associe une carte.<br>
+        Lorsqu&#8217;il tire la solution vers sa place, une fl&egrave;che se dessine 
+        apr&egrave;s avoir finit l&#8217;exercice (atEnd), &agrave; n&#8217;importe 
+        quel moment (anyTime), ou de fa&ccedil;on automatique en associant deux 
+        objets (onAssociation).<br>
+        <br>
+        </font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        Match DND:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><br>
+        Va disparaitre. Ses fonctions sont inclues en Match2.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        Memory:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les:</strong> 
+        </font><br>
+        <font color="#CC0000"><br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> 
+        Cet exercice permet de cr&eacute;er un exercice consistant &agrave; mettre 
+        deux par deux int&eacute;gr&eacute; dans le jeu classique de m&eacute;moire 
+        :<br>
+        Les &quot;cartes&quot; sont tourn&eacute;es et on peut les voir seulement 
+        deux par deux. Il faut trouver les couples jusqu&#8217;&agrave; les d&eacute;voiler 
+        tous.<br>
+        <br>
+        El&eacute;ments n&eacute;cesssaires :<br>
+        1. Panneau de Nom &quot;Main&quot;<br>
+        2. &Agrave; l&#8217;int&eacute;rieur du Panneau&quot;Main&quot;, un Conteneur 
+        de Nom &quot;Options&quot;<br>
+        3. &Agrave; l&#8217;int&eacute;rieur du Conteneur&quot;Options&quot;les M&eacute;dias qui seront les cartes de l&#8217;exercice :<br>
+        - peuvent &ecirc;tre les images ou avoir du texte dans l&#8217;Etiquette<br>
+        - chaque couple de M&eacute;dias doit avoir dans le m&ecirc;me champ Valeur 
+        le m&ecirc;me num&eacute;ro assign&eacute;.<br>
+        4. M&eacute;dia avec Action &quot;retry&quot; et Valeur&quot;Panel(Main) 
+        qui retourne les cartes &agrave; son stade initial.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        MultipleChoice:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les:</strong> 
+        MCh_1Q_anyTime.template, MCh_1Q_atEnd.template, MCh_1Q_onClick.template, 
+        MCh_MQ_anyTime.template, MCh_MQ_atEnd.template, MCh_MQ_onClick.template, 
+        TrueFalse_anyTime.template, TrueFalse_atEnd.template, TrueFalse_onClick.template, 
+        WordGaps.template <br>
+        <br>
+        Cette interaction permet la cr&eacute;ation d&#8217;exercices de choix 
+        multiples et de vrai/faux.<br>
+        <br>
+        El&eacute;ments n&eacute;cessaires:<br>
+        1. Panneau de Nom &#8220;Main&#8221;<br>
+        2. &Agrave; l&#8217;int&eacute;rireur du Panneau &#8220;Main&#8221;, un 
+        M&eacute;dia avec le stimulus/question (Texte, image, etc..)<br>
+        3. &Agrave; l&#8217;int&eacute;rieur du Panneau &#8220;Main&#8221;, un 
+        Conteneurde Nom &#8220;Answers&#8221; avec l&#8217;option &#8220;D&eacute;ployerCheckBox&#8221; 
+        activ&eacute;e ou non, en fonction se si l&#8217;on veut permettre des 
+        marques de r&eacute;ponse<br>
+        4. &Agrave; l&#8217;int&eacute;rieur du Conteneur &#8220;Answers&#8221; 
+        les M&eacute;dias qui seront les diff&eacute;rentes r&eacute;ponses possibles.<br>
+        5. Chaque M&eacute;dia aura:<br>
+        - Etiquette : le texte r&eacute;ponse<br>
+        - Valeur :&quot;true&quot; ou &quot;false&quot; en fonction que la r&eacute;ponse 
+        soit vraie ou fausse.<br>
+        - Caise de v&eacute;rification :<br>
+        - Activ&eacute;e : permet de s&eacute;lectionner plusieurs r&eacute;ponses 
+        &agrave; la fois, en les marquant. C&#8217;est n&eacute;cessaire un bouton 
+        de v&eacute;rification appart.<br>
+        - Sans activer : en appuyant sur la r&eacute;ponse, la v&eacute;rification 
+        est automatique par un son d&#8217;&eacute;chec ou de succ&egrave;s.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Si on a les cases de v&eacute;rification 
+        activ&eacute;es :<br>
+        6. M&eacute;dia avec Action &quot;verify&quot; qui v&eacute;rifie les 
+        r&eacute;ponses et montre les correctes/incorrectes ou M&eacute;dia Action 
+        &quot;check&quot; qui montre seulement les succ&egrave;s qu&#8217;a eu 
+        l&#8217;usager.<br>
+        7. M&eacute;dia avec Action &quot;clear&quot; qui efface les r&eacute;ponses 
+        marqu&eacute;es. Dans les Param&eacute;tres de l&#8217;interaction MultipleChoice, 
+        on a l&#8217;option &quot;checkOnlyOne&quot; qui permet &agrave; l&#8217;&eacute;l&egrave;ve 
+        de marquer plusieurs r&eacute;ponses ou une seule.</font><br>
+      </p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        Null:</font><br>
+        </u><strong>Mod&egrave;les:</strong> _Blank.template, acknowledgements.template, 
+        freeWriting.template, Functions.template, Menu_001.template, onePanel.template, 
+        plantilla_portada.template, plantilla_templates.template<br>
+        <u><br>
+        </u>C&#8217;est l&#8217;absence d&#8217;interaction. Elle s&#8217;emploie 
+        dans les exercices qui n&#8217;ont besoin d&#8217;aucune autre interaction, 
+        soit parcequ&#8217;il s&#8217;agit d&#8217;&eacute;crans pour &ecirc;tre 
+        vus tout simplement, soit parcequ&#8217;il suffit avec les Interactions 
+        et les M&eacute;dias pour cr&eacute;er une interaction avec l&#8217;usager 
+        (exercice d&#8217;&eacute;criture, exercice d&#8217;&eacute;coute, vid&eacute;os, 
+        et <strong>en g&eacute;n&eacute;ral n&#8217;importe quel exercice qui 
+        n&#8217;exige pas un bouton de v&eacute;rification</strong>). </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        Order:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les:</strong> 
+        Order_000.template<br>
+        <br>
+        Mod&egrave;le qui pr&eacute;sente une s&eacute;rie de mots &agrave; l&#8217;usager 
+        pour qu&#8217;il les ordonne et il construise une phrase.<br>
+        <br>
+        El&eacute;ments n&eacute;cessaires :<br>
+        1. Panneau de Nom &quot;Main&quot;<br>
+        2. &Agrave; l&#8217;int&eacute;rieur du Panneau &quot;Main&quot;, un Conteneur 
+        de Nom &quot;Questions&quot;<br>
+        3. &Agrave; l&#8217;int&eacute;rieur du Conteneur &quot;Questions&quot; 
+        autant de M&eacute;dias comme de parties dans lesquelles on a divis&eacute; 
+        la phrase.<br>
+        - Chaque M&eacute;dia a pour Etiquette le morceau de la phrase, et la 
+        phrase est &eacute;crite de fa&ccedil;on d&eacute;sordon&eacute;e (l&#8217;interaction 
+        Order, d&eacute;sordonne d&#8217;une fa&ccedil;on automatique les morceaux 
+        lorsque le frame s&#8217;ex&eacute;cute).<br>
+        4. Pour introduire plusieurs phrases, il faut cr&eacute;er plus de Conteneurs 
+        avec les noms &quot;Questions1&quot;, &quot;Questions2&quot;, &quot;Questions3&quot;, 
+        etc...<br>
+        5. M&eacute;dia avec Action &quot;verify&quot; qui v&eacute;rifie les 
+        r&eacute;ponses et montre celles qui sont correctes/incorrectes.<br>
+        6. M&eacute;dia avec Action &quot;clear&quot; qui efface les r&eacute;sultats 
+        pour pouvoir r&eacute;p&eacute;ter l&#8217;exercice.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interaction 
+        Transcription:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Mod&egrave;les:</strong> 
+        <br>
+        <br>
+        Cette interaction v&eacute;rifie un texte &eacute;crit. Elle compare le 
+        texte qu&#8217;introduit l&#8217;usager avec l&#8217;original et si elle 
+        trouve des diff&eacute;rences elle envoie une erreur.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">El&eacute;ments n&eacute;cessaires :<br>
+        1. Panneau de Nom &quot;Main&quot;<br>
+        2. &Agrave; l&#8217;int&eacute;rieur du Panneau &quot;Main&quot;, un Conteneur 
+        de Nom &quot;Text&quot;<br>
+        3. &Agrave; l&#8217;int&eacute;rieur du Conteneur &quot;Text&quot;, un 
+        M&eacute;dia ave la case &quot;Zone Editable&quot; marqu&eacute;e et avec 
+        la route du texte original comme Valeur.<br>
+        Ex : Valeur : text/Transcrition.txt<br>
+        4. M&eacute;dia avec le stimulus (audio au cas o&ugrave; il s&#8217;agit 
+        d&#8217;une dict&eacute;e, ou texte au cas o&ugrave; il s&#8217;agit d&#8217;une 
+        question, etc...)<br>
+        5. M&eacute;dia avec Action &quot;verify&quot; ou &quot;check&quot; qui 
+        v&eacute;rifie les entr&eacute;es.</font><br>
+      </p></td>
+  </tr>
+  <tr> 
+    <td><div align="right"><font size="2" face="Arial, Helvetica, sans-serif"><a href="Acciones.htm"><br>
+        &gt;&gt; Actions des Objets M&eacute;dia</a></font></div></td>
+  </tr>
+</table>
+</body>
+</html>

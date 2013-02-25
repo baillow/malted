@@ -1,0 +1,107 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Ordenar</title>
+</head>
+
+<body>
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">
+    <p align="center">
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+Ordenar</b></u></font></td>
+    <td width="34%">
+    <p align="right"><a href="#" onclick="javascript:window.print();">
+        <img border="0" src="print.gif" width="100" height="26"></a></td>
+  </tr>
+</table>
+</b></u></font>
+<p><font face="Arial">Esta plantilla permite ofrecer una oración fragmentada 
+para que el alumno coloque las partes en el orden correcto. Para ello debe 
+arrastrar el primer elemento a su posición. Es importante empezar por el 
+principio porque todos los elementos situados detrás del lugar al que se 
+arrastra se moverán un paso hacia atrás.</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>ELEMENTOS NECESARIOS</p>
+</u></font>
+<p><font face="Arial">1. </font></b><font face="Arial">Panel con Nombre &quot;Main&quot;.</font></p>
+<b>
+<p><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;Main&quot;, 
+un Contenedor con Nombre &quot;Questions&quot;. Dentro de él tantos <i>media</i> como 
+trozos en los que queremos dividir la frase, que contendrán cada uno su parte de 
+la frase en el campo Etiqueta. Al crear el ejercicio debemos escribir las partes 
+en el orden correcto, ya que el programa se encargará automáticamente de 
+desordenarlas aleatoriamente al ejecutar el ejercicio. Si queremos incluir 
+varias frases en el ejercicio podemos incluir más contenedores, y añadirle algo 
+al nombre &quot;Questions&quot; para facilitar su identificación (ejemplo: &quot;Questions_1&quot;, 
+&quot;Questions_2&quot;, &quot;Questions_3&quot;, etc.)</font></p>
+<b>
+<p><font face="Arial">3. </font></b><font face="Arial"><i>Media</i> asociado a 
+un fichero de audio que es el que debe transcribir el alumno (aunque también 
+podría ser un texto con una pregunta que el alumno debe contestar de una manera 
+exacta).</font></p>
+<b>
+<p><font face="Arial">4. </font></b><font face="Arial"><i>Media</i> con Acción &quot;verify&quot; 
+y Valor &quot;Panel(Main)&quot; que comprueba el orden de la oración y muestra las partes 
+que están en su lugar correcto y las que no (botón <i>Comprobar</i>).</font></p>
+<b>
+<p><font face="Arial">5. </font></b><font face="Arial"><i>Media</i> con Acción &quot;clear&quot; 
+o &quot;clearAll&quot; y Valor &quot;Panel(Main)&quot; que borra las marcas de corrección. La acción 
+&quot;clear&quot; (botón <i>Borrar</i>) solo se aplica a la tarjeta activa, mientras que &quot;clearAll&quot; 
+(botón <i>Borrar Todo</i>) se aplica a todas las tarjetas del panel. Lo más 
+habitual es usar sólo uno de los dos botones.</font></p>
+<p><font face="Arial">NOTA: Todos los demás elementos que componen esta 
+plantilla (los botones de ayuda e instrucciones, el icono de la mano para pasar 
+al siguiente ejercicio, etc.) no son necesarios, están ahí para servir de 
+ejemplo. Elimina los que no vayas a usar para tu ejercicio (como por ejemplo el 
+botón que abre esta explicación).</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>PARÁMETROS CONFIGURABLES</p>
+</b></u></font><b><font COLOR="#ff0000">
+<p><font face="Arial">Tamaño de pantalla</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">640x480 800x600 1024x768</font></p>
+</font><font COLOR="#ff0000">
+<p><font face="Arial">Pantalla completa</font></font><font face="Arial">
+<font COLOR="#008000">(marcado/desmarcado)</font></font></b><font face="Arial"> 
+Cuando está activado ajusta los elementos a la resolución de la pantalla. Si 
+está desactivado mantiene siempre la misma apariencia.</font></p>
+<b><font COLOR="#ff0000">
+<p><font face="Arial">Sonido de respuesta: Acierto / Error</font></font><font face="Arial">
+<font COLOR="#008000">(nombre del fichero)</font></font></b><font face="Arial"> 
+Se puede definir un fichero de sonido (se elige desde la lista desplegable) que 
+sonará al corregir el ejercicio dependiendo si todas las respuestas son 
+correctas o no.</font></p>
+<i><b>
+<p><font COLOR="#0000ff" face="Arial">Otros parámetros:</p>
+</font></b></i><b><font COLOR="#ff0000">
+<p><font face="Arial">verify</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">anyTime/atEnd</font></p>
+</font></b>
+<p><font face="Arial">a) corrige solo la tarjeta activa del panel.</font></p>
+<p><font face="Arial">b) corrige de una vez todas las tarjetas del panel Main.</font></p>
+<b><font COLOR="#ff0000">
+<p><font face="Arial">verifyText</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">(texto)</font></p>
+</font></b>
+<p><font face="Arial">Permite personalizar el texto de la ventana que aparece al 
+corregir el ejercicio. Se pueden usar distintas variables. Por ejemplo, para 
+obtener un texto donde diga el número de aciertos, errores y puntuación (en 
+porcentaje) habría que escribir lo siguiente en la ventana valores:</font></p>
+<font SIZE="3" COLOR="#0000ff" face="Arial">
+<p><i>&nbsp;&nbsp;&nbsp;&nbsp; Has conseguido <b>#correct </b>aciertos y <b>#wrong
+</b>errores. Puntuación: <b>#score </b>%</i></p>
+</font>
+
+</body>
+
+</html>

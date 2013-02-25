@@ -1,0 +1,4 @@
+Abrir unidades en Red Local *
+Selecciona  ( file:/M: ) de la ventana emergente, espera unos segundos y deberán aparecer todas las unidades disponibles en tu Red Local en la ventana inferior. Selecciona la unidad deseada y presiona ok.
+     * Previamente habrá que copiar el directorio ( projects ) de Malted al equipo servidor y compartir la carpeta. Desde los equipos remotos localizar esta carpeta compartida y conectarla a la unida de red M.
+

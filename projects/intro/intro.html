@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<title>intro (intro)</title>
+</head>
+
+<body BGCOLOR="#FFFFFF">
+
+<p align="center">
+<strong>Malted Applet</strong>. <br>
+
+<APPLET WIDTH="804" HEIGHT="625"
+	CODE="com.malted.applet.MaltedApplet"
+	CODEBASE="../../"
+	ARCHIVE="classes/MaltedApplet.jar,classes/parser.jar,classes/jaxp.jar"
+	 ALT="If your web browser understood the applet tag, you would see here a Malted Applet."
+>
+	<PARAM NAME = "project" VALUE ="intro">
+	<PARAM NAME = "course" VALUE ="intro.cxml">
+<br>
+<br>
+<form>
+<textarea COLS="60" ROWS="12">
+The Malted Applet requires the J2RE version 1.5. 
+
+Click the button below to install the J2RE. 
+You will be asked if you want to save the file 
+or to open it. Choose to open it.
+
+The download and installation will take a few minutes.
+
+When the installation is done, refresh this page.
+</textarea>
+<br>
+<input type="button" value="jre-1_5_0_09-windows-i586-p.exe" 
+onClick="window.open('http://sauce.pntic.mec.es/~cprc0001/applet/install/jre-1_5_0_09-windows-i586-p.exe','_self')">
+</form>
+</APPLET>
+</p>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Inicio"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="ayuda"
+ DESCRIPTION="Pantalla de ayuda"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_malted.gif" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS UNIFORM="true" LEFT="695" TOP="531" WIDTH="100" HEIGHT="67" RANDOM="false">
+         <MEDIA IMAGE="image/inicio_cerrar_a.gif" ROLLOVER_IMAGE="image/inicio_cerrar_b.gif" ACTION="RTS_exit" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" onMouseOver="play(audio/btn_snd.wav)"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="5" TOP="121" WIDTH="139" HEIGHT="452" width="120" height="32" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/inicio_bot01a.gif" ROLLOVER_IMAGE="image/inicio_bot01b.gif" VALUE="panel(Main) card(1)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot02a.gif" ROLLOVER_IMAGE="image/inicio_bot02b.gif" VALUE="panel(Main) card(2)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot03a.gif" ROLLOVER_IMAGE="image/inicio_bot03b.gif" VALUE="panel(Main) card(3)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot04a.gif" ROLLOVER_IMAGE="image/inicio_bot04b.gif" VALUE="panel(Main) card(4)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot05a.gif" ROLLOVER_IMAGE="image/inicio_bot05b.gif" VALUE="panel(Main) card(5)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot06a.gif" ROLLOVER_IMAGE="image/inicio_bot06b.gif" VALUE="panel(Main) card(6)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot07a.gif" ROLLOVER_IMAGE="image/inicio_bot07b.gif" VALUE="panel(Main) card(7)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot08a.gif" ROLLOVER_IMAGE="image/inicio_bot08b.gif" VALUE="panel(Main) card(8)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot09a.gif" ROLLOVER_IMAGE="image/inicio_bot09b.gif" VALUE="panel(Main) card(9)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot10a.gif" ROLLOVER_IMAGE="image/inicio_bot10b.gif" VALUE="panel(Main) card(10)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot11a.gif" ROLLOVER_IMAGE="image/inicio_bot11b.gif" VALUE="panel(Main) card(11)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot12a.gif" ROLLOVER_IMAGE="image/inicio_bot12b.gif" VALUE="panel(Main) card(12)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot13a.gif" ROLLOVER_IMAGE="image/inicio_bot13b.gif" VALUE="panel(Main) card(13)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="3" TOP="88" WIDTH="146" HEIGHT="40" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="PLANTILLAS" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="20"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="661" TOP="121" WIDTH="139" HEIGHT="208" width="120" height="32" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/inicio_bot14a.gif" ROLLOVER_IMAGE="image/inicio_bot14b.gif" VALUE="panel(Main) card(14)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot15a.gif" ROLLOVER_IMAGE="image/inicio_bot15b.gif" VALUE="panel(Main) card(15)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot16a.gif" ROLLOVER_IMAGE="image/inicio_bot16b.gif" VALUE="panel(Main) card(16)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot17a.gif" ROLLOVER_IMAGE="image/inicio_bot17b.gif" VALUE="panel(Main) card(17)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot18a.gif" ROLLOVER_IMAGE="image/inicio_bot18b.gif" VALUE="panel(Main) card(18)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+         <MEDIA IMAGE="image/inicio_bot19a.gif" ROLLOVER_IMAGE="image/inicio_bot19b.gif" VALUE="panel(Main) card(19)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16" onMouseOver="play(audio/btn_snd.wav)"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="569" WIDTH="799" HEIGHT="29" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/inicio_cnice.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="657" TOP="88" WIDTH="142" HEIGHT="40" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="FUNCIONES" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="20"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="660" TOP="1" WIDTH="132" HEIGHT="76" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/logo2.gif" VALUE="http://malted.cnice.mec.es" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="MALTED"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="174" HEIGHT="76" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/logo1.gif" VALUE="http://www.cnice.mec.es" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Web C.N.I.C.E."/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="190" TOP="6" WIDTH="428" HEIGHT="111" height="50" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="MALTED 2.5" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-508bf9" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="46"/>
+         <MEDIA LABEL="Plantillas y funciones" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-508bf9" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="36"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="140" TOP="111" WIDTH="524" HEIGHT="474" RANDOM="false" DISPLAY="no">
+         <PANEL NAME="Main">
+                  <CARD NAME="0">
+                  <BOUNDS UNIFORM="true" LEFT="121" TOP="136" WIDTH="270" HEIGHT="63" RANDOM="false">
+                        <MEDIA TEXT="Pulsa alguno de los botones" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="1">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Esta plantilla no usa ninguna de las interacciones de Malted. Se puede emplear para presentar elementos multimedia (textos, audios, im&aacute;genes, videos) o para crear un men&uacute; de los ejercicios de una unidad.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img01.jpg" VALUE="xml/Plantilla_Basica.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="2">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Ejercicio basado en el cl&aacute;sico juego del &#x22;ahorcado&#x22;. El alumno debe adivinar la palabra pulsando sobre las letras. La pista puede ser una definici&oacute;n, una imagen, un acertijo, etc.&#x000a;Haz clic en la imagen para abrir el modelo.&#x000a;" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img02.jpg" VALUE="xml/Plantilla_Ahorcado.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="3">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Ejercicio de emparejar objetos/palabras. En esta variante el objeto se arrastra y se copia en la caja de destino.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img03.jpg" VALUE="xml/Plantilla_Asociacion1.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="4">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Ejercicios de emparejar objetos/palabras. En esta segunda variante los objetos que hay que relacionar se unen mediante una flecha.&#x000a;Haz clic en la imagen para abrir el modelo.&#x000a;" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img04.jpg" VALUE="xml/Plantilla_Asociacion2.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="5">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Esta plantilla permite crear ejercicios con huecos de texto que hay que rellenar (escribiendo la soluci&oacute;n en el hueco o arrastrando la opci&oacute;n correcta).&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img05.jpg" VALUE="xml/Plantilla_Completar.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="6">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Ejercicio de crucigrama. La definici&oacute;n o definiciones correspondientes al hueco activo aparecer&aacute;n en un cuadro, y opcionalmente podemos hacer que tambi&eacute;n aparezca una imagen.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img06.jpg" VALUE="xml/Plantilla_Crucigrama.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="7">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Esta plantilla simula un di&aacute;logo que se puede seguir secuencialmente mediante audio y texto.&#x000a;El di&aacute;logo puede estar previamente grabado, o se puede habilitar un bot&oacute;n para que el alumno pueda grabar una parte del di&aacute;logo.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img07.jpg" VALUE="xml/Plantilla_Dialogo.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="8">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Esta interacci&oacute;n verifica un texto escrito comparando lo que el alumno ha escrito con el texto original, y si no coinciden indica d&oacute;nde est&aacute; el error.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img08.jpg" VALUE="xml/Plantilla_Dictado.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="9">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Esta plantilla usa las posibilidades del programa de editar un cuadro de texto para crear un ejercicio de escritura libre. Este texto se puede enviar por correo electr&oacute;nico o enviarlo a la impresora.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img09.jpg" VALUE="xml/Plantilla_Escribir.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="10">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="En esta plantilla se usan las posibilidades de grabaci&oacute;n y reproducci&oacute;n de sonidos que ofrece Malted.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img10.jpg" VALUE="xml/Plantilla_Grabacion.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="11">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Es el cl&aacute;sico juego de buscar parejas. Solo podemos levantar dos cartas a la vez, intentando recordar su situaci&oacute;n. Cuando levantamos dos cartas emparejadas, desaparecen de la pantalla.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img11.jpg" VALUE="xml/Plantilla_Memory.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="12">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Esta plantilla permite ofrecer una oraci&oacute;n fragmentada para que el alumno coloque las partes en el orden correcto. Cuando se arrastra un elemento a una posici&oacute;n, todos los que le siguen se mueven hacia atr&aacute;s.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img12.jpg" VALUE="xml/Plantilla_Ordenar.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="13">
+                  <BOUNDS UNIFORM="true" LEFT="15" TOP="343" WIDTH="479" HEIGHT="111" RANDOM="false">
+                        <MEDIA TEXT="Esta plantilla permite crear ejercicios de respuestas m&uacute;ltiples. La plantilla se puede configurar para que el alumno solo pueda elegir una respuesta, o para que pueda elegir varias como correctas.&#x000a;Haz clic en la imagen para abrir el modelo." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="21" TOP="9" WIDTH="460" HEIGHT="347" RANDOM="false">
+                        <MEDIA IMAGE="image/inicio_img13.jpg" VALUE="xml/Plantilla_Test.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="14">
+                  <BOUNDS UNIFORM="true" LEFT="165" TOP="310" WIDTH="174" HEIGHT="65" RANDOM="false">
+                        <MEDIA IMAGE="image/bot_ejemplos.gif" VALUE="xml/Paneles.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1438" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="27" TOP="5" WIDTH="455" HEIGHT="313" RANDOM="false">
+                        <MEDIA TEXT="text/Paneles.rtf" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="15">
+                  <BOUNDS UNIFORM="true" LEFT="165" TOP="355" WIDTH="174" HEIGHT="65" RANDOM="false">
+                        <MEDIA IMAGE="image/bot_ejemplos.gif" VALUE="xml/Audio.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1438" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="27" TOP="5" WIDTH="455" HEIGHT="376" RANDOM="false">
+                        <MEDIA TEXT="text/Audio.rtf" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="16">
+                  <BOUNDS UNIFORM="true" LEFT="165" TOP="270" WIDTH="174" HEIGHT="65" RANDOM="false">
+                        <MEDIA IMAGE="image/bot_ejemplos.gif" VALUE="xml/Video.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1438" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="27" TOP="5" WIDTH="455" HEIGHT="282" RANDOM="false">
+                        <MEDIA TEXT="text/Video.rtf" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="40"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="17">
+                  <BOUNDS UNIFORM="true" LEFT="165" TOP="335" WIDTH="174" HEIGHT="65" RANDOM="false">
+                        <MEDIA IMAGE="image/bot_ejemplos.gif" VALUE="xml/Vinculos.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1438" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="27" TOP="5" WIDTH="455" HEIGHT="351" RANDOM="false">
+                        <MEDIA TEXT="text/Vinculos.rtf" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="18">
+                  <BOUNDS UNIFORM="true" LEFT="165" TOP="365" WIDTH="174" HEIGHT="65" RANDOM="false">
+                        <MEDIA IMAGE="image/bot_ejemplos.gif" VALUE="xml/Texto.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1438" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="27" TOP="5" WIDTH="455" HEIGHT="362" RANDOM="false">
+                        <MEDIA TEXT="text/Texto.rtf" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="19">
+                  <BOUNDS UNIFORM="true" LEFT="165" TOP="300" WIDTH="174" HEIGHT="65" RANDOM="false" BGIMAGE="">
+                        <MEDIA IMAGE="image/bot_ejemplos.gif" VALUE="xml/Autoactions.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-1438" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="27" TOP="5" WIDTH="455" HEIGHT="311" RANDOM="false">
+                        <MEDIA TEXT="text/Autoactions.rtf" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="144" TOP="114" WIDTH="516" HEIGHT="461" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/marco_index.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+</MALTED>

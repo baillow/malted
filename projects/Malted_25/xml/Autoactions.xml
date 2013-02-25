@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Auto actions"
+ VERSION="1.2"
+ INTERACTION="GapFilling"
+ TITLE="Malted"
+ DESCRIPTION="Plantilla basica"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+ onShow="popOutText(EN ESTE EJEMPLO VEREMOS COMO PODEMOS USAR ACCIONES AUTOM&Aacute;TICAS PARA PODER ENRIQUECER LA INTERACCI&Oacute;N DE NUESTRAS ACTIVIDADES.)">
+<PARAM NAME="verify" VALUE="anyTime"/>
+<PARAM NAME="gapWRONG" VALUE="red"/>
+<PARAM NAME="autoJump" VALUE="no"/>
+<PARAM NAME="gapSize" VALUE="9"/>
+<PARAM NAME="ignoreCase" VALUE="yes"/>
+<PARAM NAME="gapFONT" VALUE="TimesRoman"/>
+<PARAM NAME="bounce" VALUE="no"/>
+<PARAM NAME="gapBGCOLOR" VALUE="white"/>
+<PARAM NAME="gapPad" VALUE="1"/>
+<PARAM NAME="bounceSound" VALUE=""/>
+<PARAM NAME="dragAppearance" VALUE="no"/>
+<PARAM NAME="gapSeparation" VALUE="1"/>
+<PARAM NAME="dragOnClick" VALUE="no"/>
+<PARAM NAME="verifyText" VALUE=""/>
+<PARAM NAME="gapSolutionWRONG" VALUE="red"/>
+<PARAM NAME="gapSolutionCORRECT" VALUE="blue"/>
+<PARAM NAME="mode" VALUE="fields"/>
+<PARAM NAME="gapFGCOLOR" VALUE=""/>
+<PARAM NAME="verifyTimes" VALUE="0"/>
+<PARAM NAME="equivStrings" VALUE=""/>
+<PARAM NAME="adjustByLength" VALUE="yes"/>
+<PARAM NAME="gapType" VALUE="textField"/>
+<PARAM NAME="gapsEditable" VALUE="yes"/>
+<PARAM NAME="gapALIGNMENT" VALUE="center"/>
+<PARAM NAME="gapCORRECT" VALUE="blue"/>
+<PARAM NAME="gapBORDER" VALUE="yes"/>
+<PARAM NAME="gapPopOutFrame" VALUE=""/>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="357" WIDTH="440" HEIGHT="161" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/autoactions2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="440" TOP="316" WIDTH="354" HEIGHT="220" RANDOM="false">
+         <PANEL NAME="Main">
+                  <CARD NAME="1" onAllCorrectVerify="next(panel(Main))" onErrorVerify="popOutFrame(xml/auto_help1.xml &#x22;340x200,M50,M50,AYUDA&#x22;)">
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="3" TOP="26" WIDTH="331" HEIGHT="84" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA TEXT="1. &iquest;De qu&eacute; pa&iacute;s sudamericano era&#x000a;  originario Ernesto &#x22;Che&#x22; Guevara?" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="105" TOP="156" WIDTH="127" HEIGHT="42" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="1" TOP="104" WIDTH="333" HEIGHT="47" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA LABEL="[ARGENTINA]" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="111" TOP="1" WIDTH="100" HEIGHT="35" RANDOM="false">
+                        <MEDIA LABEL="Pregunta 1" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="2" onAllCorrectVerify="next(panel(Main))" onErrorVerify="popOutFrame(xml/auto_help2.xml &#x22;340x200,M50,M50,AYUDA&#x22;)">
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="3" TOP="26" WIDTH="331" HEIGHT="84" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA TEXT="2. &iquest;En qu&eacute; pa&iacute;s el guaran&iacute; es lengua&#x000a;   oficial?" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="105" TOP="156" WIDTH="127" HEIGHT="42" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="1" TOP="104" WIDTH="333" HEIGHT="47" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA LABEL="[PARAGUAY]" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="111" TOP="1" WIDTH="100" HEIGHT="35" RANDOM="false">
+                        <MEDIA LABEL="Pregunta 2" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="3" onAllCorrectVerify="next(panel(Main))" onErrorVerify="popOutFrame(xml/auto_help3.xml &#x22;340x200,M50,M50,AYUDA&#x22;)">
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="3" TOP="26" WIDTH="331" HEIGHT="84" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA TEXT="3. San Jos&eacute; es la capital de la rep&uacute;blica de ..." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="105" TOP="156" WIDTH="127" HEIGHT="42" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="1" TOP="104" WIDTH="333" HEIGHT="47" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA LABEL="[COSTA RICA]" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="111" TOP="1" WIDTH="100" HEIGHT="35" RANDOM="false">
+                        <MEDIA LABEL="Pregunta 3" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="4" onAllCorrectVerify="next(panel(Main))" onErrorVerify="popOutFrame(xml/auto_help4.xml &#x22;340x200,M50,M50,AYUDA&#x22;)">
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="3" TOP="26" WIDTH="331" HEIGHT="84" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA TEXT="4. &iquest;D&oacute;nde est&aacute; el Salto del &Aacute;ngel, la catarata m&aacute;s alta del mundo?" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="105" TOP="156" WIDTH="127" HEIGHT="42" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="1" TOP="104" WIDTH="333" HEIGHT="47" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA LABEL="[VENEZUELA]" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="111" TOP="1" WIDTH="100" HEIGHT="35" RANDOM="false">
+                        <MEDIA LABEL="Pregunta 4" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="5" BGIMAGE="" onAllCorrectVerify="popOutText(&iexcl;MUY BIEN!    HAS ACERTADO TODAS LAS PREGUNTAS.)" onErrorVerify="popOutFrame(xml/auto_help5.xml &#x22;340x200,M50,M50,AYUDA&#x22;)">
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="3" TOP="26" WIDTH="331" HEIGHT="84" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA TEXT="5. Si est&aacute;s en el estado de Chiapas, en qu&eacute; pa&iacute;s te encuentras?" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="105" TOP="156" WIDTH="127" HEIGHT="42" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="1" TOP="104" WIDTH="333" HEIGHT="47" RANDOM="false" BGCOLOR="-1145" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA LABEL="[MEJICO|MEXICO|M&Eacute;JICO|M&Eacute;XICO]" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="111" TOP="1" WIDTH="100" HEIGHT="35" RANDOM="false">
+                        <MEDIA LABEL="Pregunta 5" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="358" TOP="131" WIDTH="426" HEIGHT="46" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/autoactions1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="13" TOP="74" WIDTH="777" HEIGHT="305" RANDOM="false" DISPLAY="no">
+         <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green0\blue209;\red0\green0\blue0;}\f1\fs32\b Dentro de las propiedades de la actividad o de las tarjetas de un panel podemos acciones que se ejecutar\u225 n autom\u225 ticamente cuando se de una circunstancia concreta.\par Un ejemplo de esto es el texto inicial que\par aparece cuando se muestra esta actividad.\par \par Hay distintos tipos de situaciones a las que podemos asociar una acci\u243 n: \i\cf0 Al mostrar\cf1\i0 , \i\cf0 Al comprobar todo correcto\cf1\i0 , \i\cf0 Al comprobar errores\cf1\i0 , \i\cf0 Intentos 0\i0\cf1 , etc.\par \par En el siguiente ejemplo hay un panel con varias preguntas; si aciertas, autom\u225 ticamente pasar\u225 s a la siguiente, si fallas aparecer\u225  una pantalla de ayuda. Cuando hayas contestado todas las preguntas correctamente, un texto te felicitar\u225  por haberlo hecho tan bien.\par \par Esta es la configuraci\u243 n de la primera tarjeta:\fs24\b0\par}" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="540" WIDTH="799" HEIGHT="43" width="120" height="30" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" ACTION="return" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="5" WIDTH="799" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Auto actions" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+</MALTED>

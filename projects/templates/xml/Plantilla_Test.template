@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Test"
+ VERSION="1.3"
+ INTERACTION="MultipleChoice"
+ TITLE="MultipleChoice_000"
+ DESCRIPTION="Multiple Choice: Question-Answer, verification at any time"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="checkOnlyOne" VALUE="yes"/>
+<PARAM NAME="verify" VALUE="anyTime"/>
+   <BOUNDS NAME="flechas" UNIFORM="true" APUNIFORM="false" LEFT="351" TOP="425" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA NAME="flecha_anterior" IMAGE="image/boton_anterior1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA NAME="flecha_siguiente" IMAGE="image/boton_siguiente1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <MEDIA NAME="notas_plantilla" IMAGE="image/bot_test.gif" DVETYPE="0" VALUE="projects/templates/html/Plantilla_Test.htm" ACTION="openURL" LEFT="25" TOP="485" WIDTH="109" HEIGHT="96" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="titulo" LABEL="Test" DVETYPE="0" LEFT="175" TOP="5" WIDTH="520" HEIGHT="55" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   <MEDIA NAME="instrucciones" LABEL="Instrucciones" DVETYPE="0" VALUE="Elige la respuesta correcta." ACTION="popOutText" LEFT="10" TOP="10" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda1" LABEL="Ayuda 1" DVETYPE="0" VALUE="xml/ayuda.xml" ACTION="popOutFrame" LEFT="10" TOP="60" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda2" LABEL="Ayuda 2" DVETYPE="0" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" LEFT="10" TOP="110" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="vinculo_next" IMAGE="image/boton_siguiente2.gif" DVETYPE="0" VALUE="next" ACTION="courseLink" LEFT="710" TOP="545" WIDTH="70" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <MEDIA NAME="boton_comprobar" IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="verify" LEFT="195" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" BGCOLOR="-a851a5" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_corregir" IMAGE="image/boton_corregir0.gif" ROLLOVER_IMAGE="image/boton_corregir1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="check" LEFT="325" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" BGCOLOR="-a851a5" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_borrar" IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" DVETYPE="0" ACTION="clear" LEFT="455" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" BGCOLOR="-9a6601" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_borrartodo" IMAGE="image/boton_borrartodo0.gif" ROLLOVER_IMAGE="image/boton_borrartodo1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="clearAll" LEFT="585" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" BGCOLOR="-a851a5" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <PANEL NAME="Main" DISPLAY="no" LEFT="170" TOP="100" WIDTH="580" HEIGHT="319">
+      <CARD NAME="1" BGCOLOR="-1145">
+      <BOUNDS NAME="Answers_1" UNIFORM="true" APUNIFORM="false" LEFT="56" TOP="46" WIDTH="480" HEIGHT="40" width="100" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+            <MEDIA NAME="respuesta_1" LABEL="1600" DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="respuesta_2" LABEL="1605" DVETYPE="0" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="respuesta_3" LABEL="1615" DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Answers_2" UNIFORM="true" APUNIFORM="false" LEFT="59" TOP="156" WIDTH="480" HEIGHT="40" width="100" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+            <MEDIA NAME="respuesta_1" LABEL="0,8 cm." DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="respuesta_2" LABEL="1,2 cm." DVETYPE="0" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="respuesta_3" LABEL="2,1 cm." DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="respuesta_4" LABEL="3,5 cm." DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Answers_3" UNIFORM="true" APUNIFORM="false" LEFT="58" TOP="266" WIDTH="480" HEIGHT="40" width="100" height="30" RANDOM="true" CHECKBOX="true" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+            <MEDIA NAME="respuesta_1" LABEL="on" DVETYPE="0" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="respuesta_2" LABEL="in" DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="respuesta_3" LABEL="at" DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <MEDIA NAME="Pregunta_1" LABEL=" 1. &iquest;En qu&eacute; a&ntilde;o se public&oacute; la primera parte del &#x22;Quijote&#x22;?" DVETYPE="6" LEFT="6" TOP="10" WIDTH="470" HEIGHT="30" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="Pregunta_2" LABEL=" 2. &iquest;Cu&aacute;nto crece el pelo en un mes aproximadamente?" DVETYPE="6" LEFT="6" TOP="120" WIDTH="470" HEIGHT="30" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="Pregunta_3" LABEL=" 3. My birthday is ___ September the 20th." DVETYPE="6" LEFT="6" TOP="230" WIDTH="470" HEIGHT="30" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      </CARD>
+      <CARD NAME="2" BGCOLOR="-1145">
+      <BOUNDS NAME="Answers_4" UNIFORM="true" APUNIFORM="false" LEFT="50" TOP="46" WIDTH="350" HEIGHT="40" width="115" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+            <MEDIA NAME="respuesta_1" LABEL="Verdadero" DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="respuesta_2" LABEL="Falso" DVETYPE="0" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Answers_5" UNIFORM="true" APUNIFORM="false" LEFT="50" TOP="156" WIDTH="350" HEIGHT="40" width="115" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center">
+            <MEDIA NAME="respuesta_1" LABEL="Verdadero" DVETYPE="0" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+            <MEDIA NAME="respuesta_2" LABEL="Falso" DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      </BOUNDS>
+      <BOUNDS NAME="Answers_6" UNIFORM="true" APUNIFORM="false" LEFT="50" TOP="266" WIDTH="350" HEIGHT="40" width="115" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center">
+            <MEDIA NAME="respuesta_1" LABEL="Verdadero" DVETYPE="0" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+            <MEDIA NAME="respuesta_2" LABEL="Falso" DVETYPE="0" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      </BOUNDS>
+      <MEDIA NAME="Pregunta_4" LABEL=" 4. El elefante africano es el animal m&aacute;s grande del mundo." DVETYPE="6" LEFT="6" TOP="10" WIDTH="465" HEIGHT="30" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="Pregunta_5" LABEL=" 5. Un soneto son 14 versos endecas&iacute;labos con rima consonante." DVETYPE="6" LEFT="6" TOP="120" WIDTH="465" HEIGHT="30" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="Pregunta_6" LABEL=" 6. La Segunda Guerra Mundial comenz&oacute; en 1936." DVETYPE="6" LEFT="6" TOP="230" WIDTH="465" HEIGHT="30" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      </CARD>
+   </PANEL>
+</MALTED>

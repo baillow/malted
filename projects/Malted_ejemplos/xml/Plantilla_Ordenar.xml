@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Ordenar"
+ VERSION="1.3"
+ INTERACTION="Order"
+ TITLE="Ejercicio de Ordenacion"
+ DESCRIPTION="Ordenar palabras en una oracion, o partes de un dibujo"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+<PARAM NAME="verify" VALUE="anyTime"/>
+   <BOUNDS NAME="flechas" UNIFORM="true" APUNIFORM="false" LEFT="339" TOP="424" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12">
+         <MEDIA NAME="flecha_anterior" IMAGE="image/boton_anterior1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" BGCOLOR="white" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA NAME="flecha_siguiente" IMAGE="image/boton_siguiente1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <MEDIA NAME="notas_plantilla" IMAGE="image/bot_ordenar.gif" DVETYPE="0" VALUE="projects/Malted_ejemplos/html/Plantilla_Ordenar.htm" ACTION="openURL" LEFT="25" TOP="485" WIDTH="109" HEIGHT="96" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="titulo" LABEL="Ordenar" DVETYPE="0" LEFT="175" TOP="5" WIDTH="520" HEIGHT="55" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   <MEDIA NAME="instrucciones" LABEL="Instrucciones" DVETYPE="0" VALUE="Coloca las partes en el orden correcto. Empieza arrastrando la primera palabra a su lugar." ACTION="popOutText" LEFT="10" TOP="10" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda1" LABEL="Ayuda 1" DVETYPE="0" VALUE="xml/ayuda.xml" ACTION="popOutFrame" LEFT="10" TOP="60" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda2" LABEL="Ayuda 2" DVETYPE="0" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" LEFT="10" TOP="110" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="vinculo_next" IMAGE="image/boton_siguiente2.gif" DVETYPE="0" VALUE="next" ACTION="courseLink" LEFT="710" TOP="545" WIDTH="70" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <MEDIA NAME="boton_comprobar" IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="verify" LEFT="265" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   <MEDIA NAME="boton_borrar" IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="clear" LEFT="395" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   <MEDIA NAME="boton_borrartodo" IMAGE="image/boton_borrartodo0.gif" ROLLOVER_IMAGE="image/boton_borrartodo1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="clearAll" LEFT="525" TOP="495" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   <PANEL NAME="Main" BGCOLOR="white" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16" LEFT="100" TOP="147" WIDTH="689" HEIGHT="277">
+      <CARD NAME="1" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+      <BOUNDS NAME="Questions_1a" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="14" WIDTH="678" HEIGHT="40" width="110" height="30" RANDOM="false" BGCOLOR="-185ba5" DISPLAY="center">
+            <MEDIA NAME="Questions1a.media1.copia" LABEL="Ordena" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1a.media3.copia" LABEL="las" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1a.media5.copia" LABEL="palabras" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1a.media7.copia" LABEL="de" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1a.media9.copia" LABEL="esta" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1a.media11.copia" LABEL="oraci&oacute;n." DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Questions_1b" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="95" WIDTH="568" HEIGHT="40" width="110" height="30" RANDOM="false" BGCOLOR="-666601" DISPLAY="center">
+            <MEDIA NAME="Questions1b.media1.copia" LABEL="&iquest; Qu&eacute;" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1b.media3.copia" LABEL="quer&iacute;a" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1b.media5.copia" LABEL="tu" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1b.media7.copia" LABEL="t&iacute;o" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1b.media9.copia" LABEL="Juan ?" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Questions_1c" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="171" WIDTH="680" HEIGHT="85" RANDOM="false" BGCOLOR="-330067" DISPLAY="center">
+            <MEDIA NAME="Questions1c.media1.copia" LABEL="Mis" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media3.copia" LABEL="amigos" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media5.copia" LABEL="del" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media7.copia" LABEL="pueblo" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media9.copia" LABEL="no" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media11.copia" LABEL="han" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media13.copia" LABEL="ido" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media15.copia" LABEL="a" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media17.copia" LABEL="la" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media19.copia" LABEL="playa" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media21.copia" LABEL="en" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions1c.media23.copia" LABEL="Agosto." DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      </CARD>
+      <CARD NAME="2">
+      <BOUNDS NAME="Questions_2a" UNIFORM="true" APUNIFORM="false" LEFT="51" TOP="1" WIDTH="130" HEIGHT="259" width="110" height="30" RANDOM="false" BGCOLOR="-185ba5" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+            <MEDIA NAME="Questions2a.media1.copia" LABEL="Ordena" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2a.media3.copia" LABEL="las" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2a.media5.copia" LABEL="palabras" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2a.media7.copia" LABEL="de" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2a.media9.copia" LABEL="esta" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2a.media11.copia" LABEL="oraci&oacute;n." DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Questions_2b" UNIFORM="true" APUNIFORM="false" LEFT="205" TOP="1" WIDTH="130" HEIGHT="219" width="110" height="30" RANDOM="false" BGCOLOR="-666601" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+            <MEDIA NAME="Questions2b.media1.copia" LABEL="&iquest; Qu&eacute;" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2b.media3.copia" LABEL="quer&iacute;a" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2b.media5.copia" LABEL="tu" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2b.media7.copia" LABEL="t&iacute;o" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2b.media9.copia" LABEL="Juan ?" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      <BOUNDS NAME="Questions_2c" UNIFORM="true" APUNIFORM="false" LEFT="357" TOP="1" WIDTH="324" HEIGHT="196" width="100" height="40" RANDOM="false" BGCOLOR="-330067" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+            <MEDIA NAME="Questions2c.media1.copia" LABEL="Mis" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media3.copia" LABEL="amigos" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media5.copia" LABEL="del" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media7.copia" LABEL="pueblo" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media9.copia" LABEL="no" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media11.copia" LABEL="han" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media13.copia" LABEL="ido" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media15.copia" LABEL="a" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media17.copia" LABEL="la" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media19.copia" LABEL="playa" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media21.copia" LABEL="en" DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Questions2c.media23.copia" LABEL="Agosto." DVETYPE="6" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      </CARD>
+   </PANEL>
+</MALTED>

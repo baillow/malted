@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Escribir"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="E-mail"
+ DESCRIPTION="Writing Template: Free writing, verification by e-mail to tutor"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Escribir" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_escribir.gif" VALUE="projects/Malted_25/html/Plantilla_Escribir.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Escribe tu redacci&oacute;n. Puedes enviarla a tu tutor, o imprimirla (haz clic sobre ella con el bot&oacute;n derecho del rat&oacute;n)." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="155" TOP="96" WIDTH="562" HEIGHT="384" RANDOM="false" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18">
+         <MEDIA NAME="message" TEXT="text/texto_escribir.txt" EDITABLE="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="376" TOP="480" WIDTH="140" HEIGHT="60" width="120" height="50" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_enviar0.gif" ROLLOVER_IMAGE="image/boton_enviar1.gif" VALUE="mailto:profesor@servidor.com?subject=Cuento?body=MEDIA.message.TEXT." ACTION="winEMail" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   </BOUNDS>
+</MALTED>

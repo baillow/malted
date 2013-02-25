@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Vinculos"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Malted"
+ DESCRIPTION="Plantilla basica"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="5" WIDTH="799" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="V&iacute;nculos" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="44" TOP="69" WIDTH="713" HEIGHT="49" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="A. Enlaces a p&aacute;ginas y recursos en Internet usando el navegador web." BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="100" TOP="105" WIDTH="153" HEIGHT="40" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Mediante texto:" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="500" TOP="105" WIDTH="181" HEIGHT="40" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Mediante botones:" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="67" TOP="142" WIDTH="374" HEIGHT="160" RANDOM="false" DISPLAY="center">
+         <MEDIA NAME="hypertext" TEXT="Podemos incluir hiperv&iacute;nculos en un texto contenido dentro de un media con nombre &#x22;hypertext&#x22; como este.&#x000a;Este ser&iacute;a un enlace a la p&aacute;gina web del [CNICE|href=http://www.cnice.mec.es/] y este a la p&aacute;gina de [Malted|href=http://malted.cnice.mec.es/]. Tambi&eacute;n podemos abrir una unidad Malted a trav&eacute;s de la red como [GWINETH|href=http://malted.cnice.mec.es/ingles/projects/Gwineth_And_The_Wizard/gwineth.html] o cualquier fichero html local como este [License.html|href=License.html]." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="468" TOP="142" WIDTH="275" HEIGHT="160" width="250" height="30" RANDOM="false" BGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16">
+         <MEDIA LABEL="CNICE" VALUE="http://www.cnice.mec.es/" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+         <MEDIA LABEL="Malted" VALUE="http://malted.cnice.mec.es/" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+         <MEDIA LABEL="Gwineth and the wizard" VALUE="http://malted.cnice.mec.es/ingles/projects/Gwineth_And_The_Wizard/gwineth.html" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+         <MEDIA LABEL="License.html" VALUE="License.html" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="44" TOP="304" WIDTH="713" HEIGHT="49" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="B. Enlaces a otras unidades y ejercicios usando el navegador Malted." BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="100" TOP="340" WIDTH="153" HEIGHT="40" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Mediante texto:" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="500" TOP="340" WIDTH="181" HEIGHT="40" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Mediante botones:" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="67" TOP="377" WIDTH="374" HEIGHT="160" RANDOM="false" DISPLAY="center">
+         <MEDIA NAME="hypertext" TEXT="Tambi&eacute;n podemos abrir un frame de actividades de Malted incluido en el mismo proyecto, como este [Memory|href=xml/Plantilla_Memory.xml], en otro proyecto distinto, como este [Frame|href=introII/xml/introII.xml].&#x000a;Otra posibilidad es usar un enlace para abrir un nuevo curso: [Abrir nueva unidad|href=index/index.cxml]." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="468" TOP="377" WIDTH="275" HEIGHT="160" width="250" height="30" RANDOM="false" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16">
+         <MEDIA LABEL="Memory" VALUE="xml/Plantilla_Memory.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center"/>
+         <MEDIA LABEL="Frame en otro curso" VALUE="introII/xml/introII.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center"/>
+         <MEDIA LABEL="Abrir nuevo curso" VALUE="index/index.cxml" ACTION="popOutCourse" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="540" WIDTH="799" HEIGHT="43" width="120" height="30" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" ACTION="return" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+</MALTED>

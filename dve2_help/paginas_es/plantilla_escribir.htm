@@ -1,0 +1,136 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Malted - Plantilla Escribir</title>
+<style fprolloverstyle>A:hover {color: #66FFFF; font-weight: bold}
+</style>
+</head>
+
+<body bgcolor="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="800">
+    <tr>
+      <td>
+      <p align="center">
+      <img border="0" src="../images/titulo_escribir.gif" width="111" height="27"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Esta plantilla no está basada en ninguna interacción 
+especial del programa, sino que usa las posibilidades del programa de editar un 
+cuadro de texto que puede enviarse por correo electrónico o imprimirse. Se 
+pueden diseñar con esta plantilla ejercicios libres de redacción que el 
+ordenador no puede comprobar, sino que necesitan supervisión individualizada por 
+parte del profesor.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_escribir01.gif" width="390" height="301" hspace="10"></p>
+<p style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">ELEMENTOS NECESARIOS</p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">4. </font> </b><font face="Arial">Objeto con acción &quot;<i><b>verify</b></i>&quot;&nbsp; y 
+valor &quot;<i><b>Panel(Main)</b></i>&quot; asociada al evento <b>Acción</b> o
+<b>Clic</b> que comprueba si lo escrito coincide con el original 
+(botón <i>Comprobar</i>).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_comprobar.gif" width="336" height="74" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">5. </font></b><font face="Arial">Objeto con acción &quot;<i><b>clear</b></i>&quot; 
+y valor &quot;<b><i>Panel(Main)</i></b>&quot; asociada al evento <b>Acción</b> o
+<b>Clic</b> que permite al alumno borrar lo que ha escrito (botón <i>
+Borrar</i>).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+<b><font face="Arial">1. </font></b><font face="Arial">En esta plantilla no es 
+necesario un panel con Nombre &quot;<i><b>Main</b></i>&quot;, ya que no está basada 
+en ninguna interacción del programa.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+2. </font>
+      </b>
+<font face="Arial">Objeto con nombre &quot;<i><b>message</b></i>&quot; 
+que lleve asociado el fichero de texto que queremos que el alumno modifique (o 
+que proporcione el inicio de su tarea). Es muy importante que la casilla &quot;<i>Zona 
+editable</i>&quot; del objeto aparezca marcada, ya que de lo contrario no podríamos 
+modificar su contenido en pantalla. También suele ser conveniente marcar la 
+casilla &quot;<i>Barra de desplazamiento</i>&quot; para no limitar el espacio en el que 
+puede escribir el alumno.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_escribir02.gif" width="578" height="155" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+3. </font></b><font face="Arial">Objeto con acción &quot;<i><b>winEMail</b></i>&quot; 
+(botón <i>Enviar</i>) asociada al evento <b>Acción</b> o
+<b>Clic</b> y en el campo Valor incluiremos la dirección de correo electrónico 
+del destinatario (el profesor) y el contenido que hay que enviar.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_escribir03.gif" width="389" height="70" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+El texto que hay que incluir en el campo Valor sigue este 
+formato (fíjate que el signo de interrogación sirve de separador entre las tres 
+partes):</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">&nbsp;&nbsp;&nbsp; <b>mailto:profesor@servidor.com<font color="#00FFFF">?</font>subject=Redaccion<font color="#00FFFF">?</font>body=MEDIA.message.TEXT.</b></font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80">
+<font face="Arial">A. <b>mailto:profesor@servidor.com</b> indica que se enviará 
+un correo a la dirección de correo que pongamos (sustituyendo profesor@servidor.com). 
+También podemos dejarlo como está e indicar a los alumnos que introduzcan la dirección de correo del 
+profesor manualmente cuando realicen el ejercicio.</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">
+B. <b>subject=Redaccion</b>&nbsp; indica lo que aparecerá en el correo como <i>
+Asunto</i>.</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">
+C. <b>body=MEDIA.message.TEXT.</b>&nbsp; 
+define cual será el cuerpo del mensaje (esta parte no hay que modificarla porque 
+indica que se trata del texto incluido en el 
+objeto llamado &quot;<b><i>message</i></b>&quot;).</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+4. </font></b><font face="Arial">Otra alternativa a enviar 
+el texto por correo electrónico es imprimirlo. Para ello simplemente hay que 
+situar el ratón sobre el texto y pulsar con el botón derecho. Al aparecer el 
+texto &quot;Imprimir&quot; pulsamos sobre él y ya está.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_escribir04.gif" width="342" height="155" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">NOTA: Todos los demás elementos que componen esta plantilla (los botones de 
+ayuda e instrucciones, el icono de la mano para pasar al siguiente ejercicio, 
+etc.) no son necesarios, están ahí para servir de ejemplo. Elimina los que no 
+vayas a usar para tu ejercicio (como por ejemplo el botón que abre la 
+explicación de la plantilla).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+      &nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 80; margin-right: 80">
+      </p>
+      <p style="margin-left: 80; margin-right: 80">
+      <b><font face="Arial">PARÁMETROS CONFIGURABLES (</font><font face="Arial" color="#FFFFFF">Interacción </font>
+      <font face="Arial" color="#99CCFF">Null</font><font face="Arial" color="#FFFFFF">)</font></b></p>
+      <p style="margin-left: 80; margin-right: 80">
+      <font face="Arial" color="#FFFFFF">Esta interacción no tiene parámetros 
+      configurables.<br>
+      &nbsp;</font></p>
+      <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

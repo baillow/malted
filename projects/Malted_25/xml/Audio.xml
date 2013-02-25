@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Audio"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Malted"
+ DESCRIPTION="Plantilla basica"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS UNIFORM="true" LEFT="181" TOP="480" WIDTH="400" HEIGHT="46" width="130" height="40" RANDOM="false" DISPLAY="no">
+         <MEDIA AUDIO="audio/sonido_mp3_3.mp3" EMBEDDED="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA AUDIO="audio/sonido_mp3_2.mp3" EMBEDDED="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="445" WIDTH="763" HEIGHT="72" RANDOM="false" DISPLAY="no">
+         <MEDIA TEXT="Sea como sea el sonido siempre se puede marcar la opci&oacute;n &#x22;incrustar&#x22; con lo que la barra de control estar&aacute; siempre visible. " SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="181" TOP="401" WIDTH="400" HEIGHT="46" width="110" height="40" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Sonido corto 3&#x22;" AUDIO="audio/sonido_mp3_3.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA LABEL="Sonido largo 40&#x22;" AUDIO="audio/sonido_mp3_2.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="340" WIDTH="763" HEIGHT="72" RANDOM="false" DISPLAY="no">
+         <MEDIA TEXT="Si se trata de un sonido corto, este se reproduce al pulsar el bot&oacute;n al que est&aacute; asociado. Si es un sonido m&aacute;s largo (por encima de 7 segundos aproximadamente) autom&aacute;ticamente aparece una barra de control." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="420" TOP="270" WIDTH="220" HEIGHT="46" width="80" height="40" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA LABEL="Sonido mov" AUDIO="audio/sonido_mov_1.mov" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA LABEL="Sonido au" AUDIO="audio/sonido_au_1.au" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="120" TOP="270" WIDTH="328" HEIGHT="46" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA LABEL="Otros formatos de audio soportados:" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="125" WIDTH="799" HEIGHT="39" width="60" height="30" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA LABEL="wav" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="18"/>
+         <MEDIA LABEL="mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="210" WIDTH="799" HEIGHT="50" width="80" height="40" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA LABEL="Sonido wav" AUDIO="audio/sonido_wav_1.wav" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA LABEL="Sonido mp3" AUDIO="audio/sonido_mp3_1.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="false" LEFT="1" TOP="145" WIDTH="799" HEIGHT="84" width="180" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA TEXT="(ficheros de onda, suelen tener el inconveniente de ocupar mucho espacio)" LEFT="113" TOP="6" WIDTH="178" HEIGHT="72" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"/>
+         <MEDIA TEXT="(formato de audio comprimido con buena calidad. Es el m&aacute;s extendido)" LEFT="498" TOP="6" WIDTH="196" HEIGHT="72" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="19" TOP="60" WIDTH="761" HEIGHT="80" RANDOM="false" DISPLAY="no">
+         <MEDIA TEXT="El programa Malted permite utilizar distintos formatos de audio. Los m&aacute;s habituales son:" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="5" WIDTH="799" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Audio" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="540" WIDTH="799" HEIGHT="43" width="120" height="30" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" ACTION="return" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+</MALTED>

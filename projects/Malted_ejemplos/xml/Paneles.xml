@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Paneles"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Malted"
+ DESCRIPTION="Plantilla basica"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS UNIFORM="true" LEFT="613" TOP="392" WIDTH="179" HEIGHT="122" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA TEXT="El comentario para cada respuesta est&aacute; en un panel transparente (oculto) y al pulsar una de las opciones se muestra una tarjeta especial para ella." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="70" TOP="428" WIDTH="292" HEIGHT="83" width="120" height="25" RANDOM="false" BGIMAGE="" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="a) Blue Moon" VALUE="panel(respuesta) card(1)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left"/>
+         <MEDIA LABEL="b) Ticket to ride" VALUE="panel(respuesta) card(2)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left"/>
+         <MEDIA LABEL="c) Hurricane" VALUE="panel(respuesta) card(3)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left"/>
+         <MEDIA LABEL="d) Mona Lisa" VALUE="panel(respuesta) card(4)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="45" TOP="393" WIDTH="403" HEIGHT="51" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA TEXT="&iquest;Cu&aacute;les de estas canciones era de Elvis Presley?" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="417" TOP="394" WIDTH="200" HEIGHT="126" RANDOM="false" BGCOLOR="white" BGIMAGE="" DISPLAY="no">
+         <PANEL NAME="respuesta">
+                  <CARD NAME="0">
+                  </CARD>
+                  <CARD NAME="1" onShow="play(audio/correct2.mp3)">
+                  <BOUNDS UNIFORM="true" LEFT="62" TOP="2" WIDTH="58" HEIGHT="51" RANDOM="false">
+                        <MEDIA IMAGE="image/smilley1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <MEDIA TEXT="  &iexcl;Muy bien! La&#x000a;public&oacute; en 1956." LEFT="26" TOP="48" WIDTH="142" HEIGHT="58" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </CARD>
+                  <CARD NAME="2" onShow="play(audio/wrong2.mp3)">
+                  <BOUNDS UNIFORM="true" LEFT="62" TOP="2" WIDTH="58" HEIGHT="51" RANDOM="false">
+                        <MEDIA IMAGE="image/smilley2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <MEDIA TEXT="   &iexcl;No! Se trata de un&#x000a;cl&aacute;sico de los Beatles." LEFT="1" TOP="51" WIDTH="177" HEIGHT="54" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </CARD>
+                  <CARD NAME="3" onShow="play(audio/wrong2.mp3)">
+                  <BOUNDS UNIFORM="true" LEFT="62" TOP="2" WIDTH="58" HEIGHT="51" RANDOM="false">
+                        <MEDIA IMAGE="image/smilley2.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <MEDIA TEXT="&iexcl;Lo siento! Esta es&#x000a;    de Bob Dylan" LEFT="22" TOP="49" WIDTH="145" HEIGHT="57" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </CARD>
+                  <CARD NAME="4" onShow="play(audio/correct2.mp3)">
+                  <BOUNDS UNIFORM="true" LEFT="62" TOP="2" WIDTH="58" HEIGHT="51" RANDOM="false">
+                        <MEDIA IMAGE="image/smilley1.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <MEDIA TEXT="S&iacute;, esta tambi&eacute;n&#x000a;    es de Elvis.&#x000a;" LEFT="30" TOP="50" WIDTH="133" HEIGHT="56" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="57" WIDTH="761" HEIGHT="84" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA TEXT="Los paneles, adem&aacute;s de ser necesarios para que funcione la interacci&oacute;n, pueden presentar un texto o ejercicio en varias p&aacute;ginas:" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="67" TOP="127" WIDTH="318" HEIGHT="202" RANDOM="false" BGCOLOR="-1f0d1a" BGIMAGE="" DISPLAY="center">
+         <PANEL NAME="panel_1">
+                  <CARD NAME="1">
+                  <BOUNDS UNIFORM="true" LEFT="55" TOP="145" WIDTH="192" HEIGHT="36" width="60" height="30" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(panel_1)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="P&aacute;gina 1" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+                        <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(panel_1)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <MEDIA TEXT="Los paneles permiten presentar en varias p&aacute;ginas ejercicios, textos, im&aacute;genes, etc" LEFT="30" TOP="36" WIDTH="249" HEIGHT="86" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </CARD>
+                  <CARD NAME="2">
+                  <BOUNDS UNIFORM="true" LEFT="55" TOP="145" WIDTH="192" HEIGHT="36" width="60" height="30" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(panel_1)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="P&aacute;gina 2" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+                        <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(panel_1)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <MEDIA TEXT="De esta manera podemos plantear ejercicios largos dentro de un solo frame." LEFT="46" TOP="35" WIDTH="225" HEIGHT="92" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </CARD>
+                  <CARD NAME="3">
+                  <BOUNDS UNIFORM="true" LEFT="55" TOP="145" WIDTH="192" HEIGHT="36" width="60" height="30" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(panel_1)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="P&aacute;gina 3" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+                        <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(panel_1)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <MEDIA TEXT="Pero los paneles tienen muchas m&aacute;s posibilidades al poder hacer que aparezca la tarjeta que queramos al pulsar un bot&oacute;n." LEFT="27" TOP="38" WIDTH="255" HEIGHT="101" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </CARD>
+                  <CARD NAME="4">
+                  <BOUNDS UNIFORM="true" LEFT="55" TOP="145" WIDTH="192" HEIGHT="36" width="60" height="30" RANDOM="false" DISPLAY="no">
+                        <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(panel_1)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="P&aacute;gina 4" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+                        <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(panel_1)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <MEDIA TEXT="Mira el ejemplo de abajo para ver sus posibilidades." LEFT="46" TOP="35" WIDTH="225" HEIGHT="92" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="418" TOP="123" WIDTH="344" HEIGHT="233" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA IMAGE="image/paneles.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="19" TOP="346" WIDTH="764" HEIGHT="60" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA TEXT="Los paneles permiten personalizar la respuesta ante las acciones del usuario." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="540" WIDTH="799" HEIGHT="43" width="120" height="30" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" ACTION="return" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="5" WIDTH="799" HEIGHT="65" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA LABEL="Paneles" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+</MALTED>

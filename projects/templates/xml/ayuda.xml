@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="ayuda"
+ VERSION="1.3"
+ INTERACTION="Null"
+ TITLE="ayuda"
+ DESCRIPTION="Pantalla de ayuda"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="-1134" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <MEDIA NAME=".container1.media1.copia" DVETYPE="4" TEXT="text/texto_ayuda1.rtf" LEFT="188" TOP="86" WIDTH="421" HEIGHT="343" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   <MEDIA NAME=".container3.media1.copia" IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" DVETYPE="1" ACTION="return" LEFT="339" TOP="513" WIDTH="110" HEIGHT="31" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-996601" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+</MALTED>

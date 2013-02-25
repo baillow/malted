@@ -1,0 +1,147 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Malted - Plantilla Diálogo</title>
+<style fprolloverstyle>A:hover {color: #66FFFF; font-weight: bold}
+</style>
+</head>
+
+<body bgcolor="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="800">
+    <tr>
+      <td>
+      <p align="center">
+      <img border="0" src="../images/titulo_dialogo.gif" width="113" height="35"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+      Esta plantilla simula un diálogo que se puede seguir secuenciálmente 
+      mediante audio y texto:</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_dialogo01.gif" width="330" height="291" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+Con esta interacción podemos hacer distintas actividades:</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+A) Presentación de un diálogo entre personajes de la unidad, en cuyo caso 
+presentaremos las grabaciones de estos personajes de manera secuencial. También se puede usar  para 
+hacer una presentación automática de varias tarjetas con imágenes y sonido.</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+B) Modalidad <i>Roleplay</i> en la que el alumno deberá completar el diálogo con 
+uno de los personajes. En este caso 
+habilitaremos un botón para que el alumno pueda grabar (y escuchar) su parte del diálogo.</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">En 
+esta plantilla se ofrece un ejemplo de este segundo caso. Al final, cuando el 
+alumno ha grabado todas sus intervenciones, puede pulsar el botón &quot;<i>Diálogo 
+completo</i>&quot; para escuchar todo el diálogo desde el principio.</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<p style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">ELEMENTOS NECESARIOS</p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">1. </font> </b><font face="Arial">Panel con Nombre &quot;<b><i>Main</i></b>&quot; 
+que contenga tantas tarjetas como intervenciones de personajes en el diálogo.</font><img border="0" src="../images/plant_dialogo02.jpg" width="132" height="201" hspace="10" align="right" vspace="2"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;<b><i>Main</i></b>&quot;, 
+cada personaje suele tener:</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">* Objeto con la imagen del personaje (aunque no es 
+obligatorio).</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">* Objeto con el texto que dice el personaje (tampoco 
+es obligatorio).</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">* Objeto asociado a un fichero de audio (<i>botón de 
+audio</i>) con la grabación de lo que dice el personaje.</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Si vamos a incluir en el diálogo al alumno que tendrá que 
+grabar su parte, necesitaremos:</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">* Objeto con acción &quot;<i><b>record</b></i>&quot; y valor &quot;<b><i>audio/nombre_fichero</i></b>&quot;&nbsp; 
+asociado al evento <b>Acción</b> o
+<b>Clic</b> (botón<i> </i>de grabación). 
+Al grabar se creará un fichero con el nombre que hayamos escrito en el campo valor.</font></p>
+<p align="center" style="margin-left: 120; margin-right: 80">
+      <img border="0" src="../images/plant_dialogo03.gif" width="301" height="71" hspace="10"></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">* Objeto con acción &quot;<i><b>play</b></i>&quot; y valor &quot;<i><b>audio/nombre_fichero</b></i>&quot; 
+asociado al evento <b>Acción</b> o
+<b>Clic</b> (botón de audio). Este botón permite al alumno escuchar lo que ha grabado 
+en esa tarjeta siempre que quiera.</font></p>
+<p align="center" style="margin-left: 120; margin-right: 80">
+      <img border="0" src="../images/plant_dialogo04.gif" width="301" height="71" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">3.</font></b><font face="Arial"> Un marco que 
+contendrá la barra de navegación por las tarjetas. Dentro de este marco 
+habrá tres objetos:</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">
+<b>A.</b> Objeto imagen de flecha hacia la 
+izquierda con acción &quot;<i><b>previous</b></i>&quot; y valor &quot;<b><i>panel(Main)</i></b>&quot; 
+asociado al evento <b>Acción</b> o
+<b>Clic</b>, que nos permitirá ir a la tarjeta anterior.</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">
+<b>B.</b> Objeto con nombre &quot;<b>Main.cardNumber</b>&quot; que nos 
+indicará en qué número de tarjeta estamos.</font></p>
+<p align="justify" style="margin-left: 120; margin-right: 80"><font face="Arial">
+<b>C.</b> Objeto  imagen de flecha hacia la 
+derecha con Acción &quot;<b><i>next</i></b>&quot; y Valor &quot;<b><i>panel(Main)</i></b>&quot; 
+asociado al evento <b>Acción</b> o
+<b>Clic</b>, que nos permitirá ir a la 
+tarjeta siguiente.</font></p>
+<p align="center" style="margin-left: 120; margin-right: 80">
+      <img border="0" src="../images/plant_dialogo05.gif" width="217" height="102" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">4. </font></b><font face="Arial">Objeto con acción &quot;<b><i>RunAllDialog</i></b>&quot; 
+asociado al evento <b>Acción</b> o
+<b>Clic</b> (botón &quot;<i>Diálogo Completo</i>&quot;) que reproduce en orden todas las tarjetas del 
+Panel, creando así el efecto del diálogo.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_dialogo06.gif" width="331" height="64" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">5.</font></b><font face="Arial"> A esta interacción 
+también se le puede añadir opcionalmente un objeto con acción &quot;<i><b>recap</b></i>&quot;  
+asociado al evento <b>Acción</b> o
+<b>Clic</b> que 
+reproduce desde la primera tarjeta del panel hasta la que nos encontramos, y un 
+objeto con acción &quot;<b><i>Continue</i></b>&quot; asociado al evento <b>Acción</b> o
+<b>Clic</b> que reproduce desde la tarjeta en que nos encontremos hasta la 
+última del panel.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      &nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">NOTA: Todos los demás elementos que componen esta plantilla (los botones de 
+ayuda e instrucciones, el icono de la mano para pasar al siguiente ejercicio, 
+etc.) no son necesarios, están ahí para servir de ejemplo. Elimina los que no 
+vayas a usar para tu ejercicio (como por ejemplo el botón que abre la 
+explicación de la plantilla).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <font color="#FFFFFF" face="Arial" size="3">
+      <p style="margin-left: 80; margin-right: 80">
+      <b><font face="Arial">PARÁMETROS CONFIGURABLES (</font><font face="Arial" color="#FFFFFF">Interacción </font>
+      <font face="Arial" color="#99CCFF">Dialog</font><font face="Arial" color="#FFFFFF">)</font></b></p>
+      <p style="margin-left: 80; margin-right: 80">
+      <font face="Arial" color="#FFFFFF">Esta interacción no tiene parámetros 
+      configurables.</font></p>
+      </font>
+      <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+MALTED NO FUNCIONA SI CONVIVEN 2 VERSIONES DISTINTAS DE J2RE EN EL EQUIPO:
+
+Para el correcto funcionamiento de MALTED es necesario comprobar que no existe 
+una instalación previa de J2RE (Java 2 Runtime Environment) en el equipo. 
+Para esto, en MS Windows es necesario acceder a:
+
+ Inicio > Panel de Control
+
+y aquí comprobar que no existe un icono "Java Plug-in".
+
+1) Si en el Panel de Control existe "Java Plug-in 1.3.1_02" o superior, el 
+instalador detectará que dispone de una versión de Java2(TM) Runtime Enironment 
+válida y no pedirá la instalación de una nueva.
+
+2) Si existe una versión anterior del Java Plug-in, la instalación indica 
+los pasos a seguir para desisnstalar dicha versión antes de proceder con 
+la instalación del Pack Malted:
+
+    ¡ATENCIÓN: Se ha detectado una version antigua de Java 2 Runtime Environment!
+    Por favor sigue los siguientes pasos:
+                         
+    1. Cancela el proceso de instalación
+    2. Desinstala Java 2 Runtime Environment
+    3. Reinicia el equipo
+    4. Ejecuta de nuevo el Pack de Instalación de Malted.
+        
+
+
+ De no realizar esta acción Malted no se ejecutará correctamente. Además tras 
+finalizar la instalación del J2RE se deberá proceder SIEMPRE a instalar el JMF 
+(aunque ya exista una version instalada de JMF). El instalador de JMF detectará 
+automáticamente si existe una instalación previa de ser así y la desinstalará 
+para luego volver a instalarla de nuevo.

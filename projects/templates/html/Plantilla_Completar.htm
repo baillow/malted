@@ -1,0 +1,310 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Completar</title>
+</head>
+
+<body>
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">
+    <p align="center">
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+Completar</b></u></font></td>
+    <td width="34%">
+    <p align="right"><a href="#" onclick="javascript:window.print();">
+        <img border="0" src="print.gif" width="100" height="26"></a></td>
+  </tr>
+</table>
+</b></u></font>
+<p align="justify"><font face="Arial">Esta interacción permite crear ejercicios con huecos de texto para ser rellenados 
+por el alumno.</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>ELEMENTOS NECESARIOS</p>
+</b></u></font><b>
+<p align="justify"><font face="Arial">1. </font> </b><font face="Arial">Panel con Nombre &quot;<b><i>Main</i></b>&quot;.</font></p>
+<b>
+<p align="justify"><font face="Arial">2. </font> </b><font face="Arial">Dentro del Panel &quot;<b><i>Main</i></b>&quot;, un 
+Marco con nombre &quot;<b><i>Phrases</i></b>&quot;.</font></p>
+<b>
+<p align="justify"><font face="Arial">3. </font> </b><font face="Arial">Dentro del Marco &quot;<i><b>Phrases</b></i>&quot; uno o varios 
+objetos con el texto 
+(o los textos) del ejercicio con los huecos.</font></p>
+<b>
+<p align="justify"><font face="Arial">4. </font> </b><font face="Arial">Objeto con acción &quot;<i><b>verify</b></i>&quot; o &quot;<i><b>check</b></i>&quot; y 
+valor &quot;<i><b>Panel(Main)</b></i>&quot; que 
+corrige lo que ha escrito el alumno. La acción &quot;<b><i>verify</i></b>&quot; (botón <i>Comprobar</i>) 
+indica las respuestas correctas e incorrectas mediante distintos colores (son 
+parámetros configurables), mientras que la acción &quot;<i><b>check</b></i>&quot; (botón <i>Corregir</i>) 
+deja las respuestas correctas y borra las incorrectas.</font></p>
+<b>
+<p align="justify"><font face="Arial">5. </font> </b><font face="Arial">Objeto con acción &quot;<b><i>clear</i></b>&quot; o &quot;<b><i>clearAll</i></b>&quot; y 
+valor &quot;<b><i>Panel(Main)</i></b>&quot; que 
+permite al alumno borrar lo escrito en los huecos. La acción &quot;<b><i>clear</i></b>&quot; (botón <i>
+Borrar</i>) solo se aplica a la tarjeta activa, mientras que &quot;<b><i>clearAll</i></b>&quot; (botón
+<i>Borrar Todo</i>) se aplica a todas las tarjetas del panel (lo más habitual es 
+usar sólo uno de los dos botones).</font></p>
+<b>
+<p align="justify"><font face="Arial">6. </font> </b><font face="Arial">Se puede incluir un 
+objeto con acción &quot;<i><b>solve</b></i>&quot; (botón <i>
+Solucionar</i>) que mostrará las respuestas correctas, pero aparecerán en el 
+color de las respuestas erróneas (por defecto, rojo).</font></p>
+<p align="justify"><font face="Arial">NOTA: Todos los demás elementos que componen esta plantilla (los botones de 
+ayuda e instrucciones, el icono de la mano para pasar al siguiente ejercicio, 
+etc.) no son necesarios, están ahí para servir de ejemplo. Elimina los que no 
+vayas a usar para tu ejercicio (como por ejemplo el botón que abre esta 
+explicación).</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>MODOS DE GENERAR HUECOS</p>
+</b></u></font>
+<p align="justify"><font face="Arial">Existen varias formas de generar los huecos en el texto:</font></p>
+<b>
+<p align="justify"><font face="Arial">a) </font> </b><font face="Arial">El texto puede ser un fichero externo en formato 
+<b>txt</b> en el que se 
+incluyen entre corchetes las palabras que luego aparecerán como huecos para 
+rellenar:</font></p>
+<font COLOR="#ff0000" face="Arial">
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo: [Where] do your parents live? [Do they live] in England?</p>
+</font><b>
+<p align="justify"><font face="Arial">b) </font> </b><font face="Arial">Este mismo texto con partes entre corchetes se puede escribir 
+internamente en el campo &quot;texto&quot; del objeto, o en el campo &quot;etiqueta&quot; si 
+se trata de una sola línea. No es recomendable crear el texto con huecos en 
+textos internos con estilo, ya que la apariencia puede ser extraña.</font></p>
+<p align="justify"><font face="Arial">Otra opción de generar los huecos en el campo &quot;texto&quot; o &quot;etiqueta&quot; del 
+objeto genérico es escribir una barra baja en lugar de la palabra que queremos que 
+complete el alumno:</font></p>
+<font COLOR="#ff0000" face="Arial">
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo:: My parents _ watching television.</p>
+</font>
+<p align="justify"><font face="Arial">La solución al hueco (en este ejemplo &quot;<i>are</i>&quot;) se escribirá en el campo 
+&quot;<i><b>valor</b></i>&quot; del objeto. Si hay varios huecos, sus distintas soluciones se 
+separan con comas.</font></p>
+<p align="justify"><font face="Arial">En todos los casos podemos hacer que el programa acepte varias soluciones 
+posibles para un mismo hueco separándolas por medio de la barra vertical <b>|</b> (<i>Alt 
+Gr +1</i>).</font></p>
+<font COLOR="#ff0000" face="Arial">
+<p align="justify">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo: He [lives|is living] in a flat with her girlfriend.</p>
+</font>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>MODOS DE RELLENAR HUECOS</p>
+</b></u></font>
+<p align="justify"><font face="Arial">Hay dos maneras de introducir el texto en los huecos:</font></p>
+<b>
+<p align="justify"><font face="Arial">a) </font> </b><font face="Arial">colocando el cursor sobre el hueco y tecleando la respuesta correcta.</font></p>
+<b>
+<p align="justify"><font face="Arial">b) </font> </b><font face="Arial">Arrastrando hasta el hueco una 
+etiqueta u objeto genérico que contenga la respuesta. Para que esto funcione los 
+objetos con las 
+respuestas deben estar dentro de un marco con el nombre &quot;<i><b>Options</b></i>&quot;.</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>PARÁMETROS CONFIGURABLES</p>
+</u></font></b>
+<i><b>
+</b></i><b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">mode</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">fields/free</font></p>
+</font></b>
+<p align="justify"><font face="Arial"><b>a) fields:</b> crea huecos visibles y 
+solo es posible escribir en ellos</font></p>
+<p align="justify"><font face="Arial"><b>b) free:</b> se puede escribir en 
+cualquier parte, no hay huecos. Esta modalidad es muy arriesgada ya que el 
+alumno puede borrar la frase dada y a veces no queda demasiado claro donde tiene 
+que escribir.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">verify</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">anyTime/atEnd</font></p>
+</font></b>
+<p align="justify"><font face="Arial"><b>a) anyTime:</b> el alumno puede corregir en cualquier momento</font></p>
+<p align="justify"><font face="Arial"><b>b) atEnd:</b> no puede corregir hasta que complete todos los huecos del ejercicio</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapsEditable</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial"><b>a) yes:</b> el alumno puede escribir en el hueco</font></p>
+<p align="justify"><font face="Arial"><b>b)no:</b> no se puede escribir en el hueco, solo se pueden introducir los valores 
+arrastrando y soltando</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapPopOutFrame</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(xml/nombre del frame)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Al hacer doble-clic en un hueco se abre una ventana con una 
+escena de la que se pueden elegir varios valores. En la escena emergente debe haber varios 
+objetos genéricos que deben tener la acción &quot;<b><i>return</i></b>&quot; que cierra la ventana y en el 
+campo <i>valor</i> debe estar la cadena de texto que se incluirá en el hueco.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapSize</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(número de caracteres)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Define el tamaño del hueco por el número de caracteres que puede incluir. Si 
+se pone el valor 0 el hueco se adaptará al tamaño de la respuesta para ese 
+hueco.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">adjustByLength</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Este parámetro solo está activo cuando hemos definido gapSize=0.</font></p>
+<p align="justify"><font face="Arial"><b>a) yes:</b> el hueco se adapta exactamente al tamaño en píxeles de la respuesta 
+correcta.</font></p>
+<p align="justify"><font face="Arial"><b>b) no:</b> el hueco se adapta al número de caracteres de la respuesta correcta, 
+tomando como medida de cada carácter la letra <b>m</b>, que suele ser la más larga.</font></p>
+<p align="justify"><font face="Arial">Si un hueco tiene más de una solución posible, toma como tamaño de referencia 
+la solución más larga.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapPad</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(valor numérico)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Define el margen entre la contestación y el borde interior del hueco. En 
+número de caracteres.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapSeparation</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(valor numérico)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Define la separación entre el hueco y el texto que le rodea. En píxeles.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapFGCOLOR</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color del texto que se introduce en los huecos. Los parámetros de color 
+aceptan valores hexadecimales (ejemplo: FFA02D) y también de texto (&quot;red&quot;, &quot;cyan&quot;, 
+&quot;blue&quot;, &quot;black&quot;, &quot;yellow&quot;, &quot;green&quot;, &quot;gray&quot;, &quot;lightgray&quot;, &quot;white&quot;, &quot;magenta&quot;, 
+&quot;orange&quot;). Si no se introduce ningún valor adopta los valores del 
+objeto 
+en que se encuentra el hueco.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapBGCOLOR</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color de fondo del hueco. Como en el caso anterior.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapFONT</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(nombre fuente)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Fuente del texto dentro de los huecos. Se elige de un menú desplegable donde 
+aparecen todas las fuentes disponibles. </font> </p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapALIGNMENT</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">left/center/right</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Define la alineación del texto en el hueco. Si no se define ningún valor 
+adopta el del objeto en que se encuentra el hueco.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapBORDER</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Define si el hueco aparecerá rodeado por un marco negro o no.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapCORRECT</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color que toma al corregir el texto de los huecos rellenados correctamente. 
+Por defecto azul.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapWRONG</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color que toma al corregir el texto de los huecos rellenados incorrectamente. 
+Por defecto rojo.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapSolutionCORRECT</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color de las soluciones de los campos que hayan sido rellenados 
+correctamente.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapSolutionWRONG</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(color)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Color de las soluciones de los campos que hayan sido rellenados 
+incorrectamente.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">ignoreCase </font> </font><font COLOR="#008000">
+<font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Con el valor activado (yes) el programa da por válidas las respuestas 
+escritas con mayúsculas o minúsculas indistintamente.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">equivStrings</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(text/nombre del fichero)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Indica el fichero de texto donde se pueden incluir palabras equivalentes que 
+el programa aceptará indistintamente al corregir (por ejemplo contracciones en 
+inglés: is not = isn't). En el fichero de texto cada palabra debe aparecer en 
+una línea.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">autoJump</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Hace que el cursor salte automáticamente al siguiente hueco cuando se ha 
+escrito la misma cantidad de caracteres que la solución correcta.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">verifyTimes </font> </font><font COLOR="#008000">
+<font face="Arial">(valor numérico)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Define el número de veces que se permitimos al alumno verificar el ejercicio. 
+El valor por defecto es 0 que significa todas las que se quiera. Este parámetro 
+no es muy compatible con un botón Borrar (acción &quot;<i><b>clear</b></i>&quot; o &quot;<b><i>clearAll</i></b>&quot;) ya que al 
+pulsarlo el ejercicio comienza de nuevo y el alumno podría verificar de nuevo la 
+cantidad de veces que hayamos definido.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">verifyText</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(texto)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Permite personalizar el texto de la ventana que aparece al corregir el 
+ejercicio. Se pueden usar distintas variables. Por ejemplo, para obtener un 
+texto donde diga el número de aciertos, errores y puntuación (en porcentaje) 
+habría que escribir lo siguiente en la ventana valores:</font></p>
+<font SIZE="3" COLOR="#0000ff" face="Arial">
+<p align="justify"><i>&nbsp;&nbsp;&nbsp;&nbsp; Has conseguido <b>#correct</b> aciertos y <b>#wrong</b> errores. Puntuación: 
+<b>#score</b> %</i></p>
+</font><b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">bounce</font></font><font face="Arial"> <font COLOR="#008000">yes/no</font></font></b><font face="Arial">
+</font> </p>
+<p align="justify"><font face="Arial">Hace que el texto que se arrastra a una posición rebote a su posición 
+original si no se ha colocado de forma correcta. Si se activa este parámetro no 
+es necesario ningún botón que corrija el ejercicio, ya que esto se hace sobre la 
+marcha.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">bounceSound</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">(audio/nombre del fichero)</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Define el sonido que se escuchará cuando rebote un elemento mal colocado.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">dragAppearance</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Permite arrastrar la apariencia de los objetos de texto que se arrastran 
+(color de texto y fondo del objeto). Si no está activado, el texto tomará 
+la apariencia del objeto de destino.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">dragOnClick</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">yes/no</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Cuando se activa este parámetro los objetos no pueden ser arrastrados, sino 
+que se colocan en los marcos de destino haciendo clic en los elementos que 
+queremos colocar. Con esta opción debemos pulsar en los elementos en el orden en 
+el que aparecerán en los marcos de destino.</font></p>
+<b><font COLOR="#ff0000">
+<p align="justify"><font face="Arial">gapType</font></font><font face="Arial"> </font> <font COLOR="#008000">
+<font face="Arial">textField/comboBox</font></p>
+</font></b>
+<p align="justify"><font face="Arial">Por defecto el valor que aparece es textField, que presenta un cuadro de 
+texto en el que podemos escribir o arrastrar un texto hasta él. Si seleccionamos 
+la opción comboBox en cada hueco aparecerá un menú desplegable con todas las 
+opciones que estén dentro del marco &quot;Options&quot;. En este caso es aconsejable 
+que definamos el tamaño de los huecos (parámetro gapSize) de modo manual en 
+lugar de hacer que se adapte al tamaño de la respuesta correcta.</font></p>
+
+</body>
+
+</html>

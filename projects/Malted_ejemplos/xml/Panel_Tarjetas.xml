@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Panel"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Completar"
+ DESCRIPTION="Completar: Completar huecos con texto"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Panel y Tarjetas" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="153" TOP="106" WIDTH="100" HEIGHT="200" width="80" height="30" RANDOM="false" BGCOLOR="black" DISPLAY="center">
+         <MEDIA LABEL="azul" VALUE="panel(Main) card(blueCard)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-cccc01"/>
+         <MEDIA LABEL="rojo" VALUE="panel(Main) card(redCard)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="red"/>
+         <MEDIA LABEL="amarillo" VALUE="panel(Main) card(yellowCard)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-cd"/>
+         <MEDIA LABEL="verde" VALUE="panel(Main) card(greenCard)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-ff00cd"/>
+         <MEDIA LABEL="negro" VALUE="panel(Main) card(blackCard)" ACTION="show" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="255" TOP="106" WIDTH="480" HEIGHT="344" RANDOM="false" DISPLAY="center">
+         <PANEL NAME="Main" DISPLAY="no">
+                  <CARD NAME="blueCard" BGCOLOR="blue" DISPLAY="center">
+                  </CARD>
+                  <CARD NAME="redCard" BGCOLOR="red" DISPLAY="center">
+                  </CARD>
+                  <CARD NAME="yellowCard" BGCOLOR="yellow" DISPLAY="center">
+                  </CARD>
+                  <CARD NAME="greenCard" BGCOLOR="green" DISPLAY="center">
+                  </CARD>
+                  <CARD NAME="blackCard" BGCOLOR="black" DISPLAY="center">
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Esta pantalla muestra como acceder a distintas tarjetas con acciones en botones" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="376" TOP="486" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+</MALTED>
+

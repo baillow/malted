@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Completar"
+ VERSION="1.2"
+ INTERACTION="GapFilling"
+ TITLE="Completar"
+ DESCRIPTION="Completar: Completar huecos con texto"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="verify" VALUE="anyTime"/>
+<PARAM NAME="gapWRONG" VALUE="red"/>
+<PARAM NAME="autoJump" VALUE="no"/>
+<PARAM NAME="gapSize" VALUE="0"/>
+<PARAM NAME="ignoreCase" VALUE="yes"/>
+<PARAM NAME="gapFONT" VALUE="TimesRoman"/>
+<PARAM NAME="bounce" VALUE="no"/>
+<PARAM NAME="gapBGCOLOR" VALUE="white"/>
+<PARAM NAME="gapPad" VALUE="1"/>
+<PARAM NAME="bounceSound" VALUE=""/>
+<PARAM NAME="dragAppearance" VALUE="no"/>
+<PARAM NAME="gapSeparation" VALUE="1"/>
+<PARAM NAME="dragOnClick" VALUE="no"/>
+<PARAM NAME="verifyText" VALUE=""/>
+<PARAM NAME="gapSolutionWRONG" VALUE="red"/>
+<PARAM NAME="gapSolutionCORRECT" VALUE="blue"/>
+<PARAM NAME="mode" VALUE="fields"/>
+<PARAM NAME="gapFGCOLOR" VALUE=""/>
+<PARAM NAME="verifyTimes" VALUE="0"/>
+<PARAM NAME="equivStrings" VALUE=""/>
+<PARAM NAME="adjustByLength" VALUE="yes"/>
+<PARAM NAME="gapType" VALUE="textField"/>
+<PARAM NAME="gapsEditable" VALUE="yes"/>
+<PARAM NAME="gapALIGNMENT" VALUE="center"/>
+<PARAM NAME="gapCORRECT" VALUE="blue"/>
+<PARAM NAME="gapBORDER" VALUE="yes"/>
+<PARAM NAME="gapPopOutFrame" VALUE=""/>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Completar" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Completa los huecos escribiendo o arrastrando la palabra." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_completar.gif" VALUE="projects/Malted_25/html/Plantilla_Completar.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="349" TOP="420" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="162" TOP="78" WIDTH="596" HEIGHT="352" RANDOM="false" BGCOLOR="-1145" DISPLAY="center">
+         <PANEL NAME="Main" DISPLAY="no">
+                  <CARD NAME="1">
+                  <BOUNDS UNIFORM="true" LEFT="20" TOP="19" WIDTH="514" HEIGHT="39" RANDOM="false">
+                        <MEDIA LABEL="Completa el texto con una de estas palabras." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="55" TOP="55" WIDTH="409" HEIGHT="87" RANDOM="false">
+                        <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green8\blue209;\red0\green0\blue0;}\f1\fs32\b\i\cf0  fuego           levant\u243             mientras            repente\fs16\par      \par   \fs32 tenuemente       tormentosa       ventanal       vieja\cf1\fs24\b0\i0\par}" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="13" TOP="141" WIDTH="535" HEIGHT="192" RANDOM="false" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA TEXT="La noche era oscura y [tormentosa]. El sal&oacute;n de la [vieja] mansi&oacute;n estaba [tenuemente] iluminado por la luz del fuego de la chimenea. La chica tocaba el piano suavemente [mientras] su perro dormitaba junto al [fuego].&#x000a;De [repente], dej&oacute; de tocar. Crey&oacute; haber o&iacute;do un ruido en el exterior. Se [levant&oacute;] y se acerc&oacute; al [ventanal] m&aacute;s pr&oacute;ximo." BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="ITALIC" FONTSIZE="18"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="2">
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="13" TOP="141" WIDTH="535" HEIGHT="192" RANDOM="false" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA TEXT="La noche era oscura y [tormentosa]. El sal&oacute;n de la [vieja] mansi&oacute;n estaba [tenuemente] iluminado por la luz del fuego de la chimenea. La chica tocaba el piano suavemente [mientras] su perro dormitaba junto al [fuego].&#x000a;De [repente], dej&oacute; de tocar. Crey&oacute; haber o&iacute;do un ruido en el exterior. Se [levant&oacute;] y se acerc&oacute; al [ventanal] m&aacute;s pr&oacute;ximo." BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="ITALIC" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="20" TOP="19" WIDTH="514" HEIGHT="39" RANDOM="false">
+                        <MEDIA LABEL="Escribe la palabra o arrastra las opciones al lugar correcto." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Options" UNIFORM="true" LEFT="32" TOP="61" WIDTH="510" HEIGHT="68" width="105" height="30" RANDOM="true" DISPLAY="center">
+                        <MEDIA LABEL="fuego" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                        <MEDIA LABEL="levant&oacute;" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                        <MEDIA LABEL="mientras" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                        <MEDIA LABEL="repente" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                        <MEDIA LABEL="tenuemente" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                        <MEDIA LABEL="tormentosa" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                        <MEDIA LABEL="ventanal" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                        <MEDIA LABEL="vieja" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="3">
+                  <BOUNDS NAME="Options" UNIFORM="true" LEFT="53" TOP="56" WIDTH="431" HEIGHT="111" width="80" height="22" RANDOM="true" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+                        <MEDIA LABEL="Con" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="diez" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="ca&ntilde;ones" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="por" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="banda" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="viento" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="en" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="popa" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="a" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="toda" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="vela" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="no" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="corta" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="el" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="mar" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="sino" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="vuela" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="un" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="velero" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="bergant&iacute;n" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Phrases" UNIFORM="true" LEFT="50" TOP="173" WIDTH="499" HEIGHT="156" RANDOM="false" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                        <MEDIA TEXT="text/texto_completar2.txt" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="ITALIC" FONTSIZE="20"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="6" TOP="4" WIDTH="514" HEIGHT="61" RANDOM="false">
+                        <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Times New Roman;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs36\u191 C\u243 mo comenzaba la &#x22;\i Canci\u243 n del pirata\i0 &#x22; de Espronceda?\f0\fs48\par}" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="180" TOP="480" WIDTH="533" HEIGHT="60" width="120" height="50" RANDOM="false" BGIMAGE="" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA IMAGE="image/boton_corregir0.gif" ROLLOVER_IMAGE="image/boton_corregir1.gif" VALUE="panel(Main)" ACTION="check" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" VALUE="panel(Main)" ACTION="clear" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA IMAGE="image/boton_borrartodo0.gif" ROLLOVER_IMAGE="image/boton_borrartodo1.gif" VALUE="panel(Main)" ACTION="clearAll" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+</MALTED>

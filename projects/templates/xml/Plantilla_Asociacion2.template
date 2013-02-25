@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Asociacion"
+ VERSION="1.3"
+ INTERACTION="Match2"
+ TITLE="Ejercicio de asociacion"
+ DESCRIPTION="Asociacion: Asociar texto con texto, imagen o sonido"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="markUsed" VALUE="no"/>
+<PARAM NAME="dragOnClick" VALUE="no"/>
+<PARAM NAME="arrowWidth" VALUE="3"/>
+<PARAM NAME="correctBGCOLOR" VALUE="white"/>
+<PARAM NAME="arrowColor" VALUE="black"/>
+<PARAM NAME="markedBGCOLOR" VALUE="white"/>
+<PARAM NAME="markedFGCOLOR" VALUE="lightGray"/>
+<PARAM NAME="wrongBGCOLOR" VALUE="white"/>
+<PARAM NAME="verify" VALUE="onAssociation"/>
+<PARAM NAME="arrowNumber" VALUE="1"/>
+<PARAM NAME="correctFGCOLOR" VALUE="blue"/>
+<PARAM NAME="wrongFGCOLOR" VALUE="red"/>
+<PARAM NAME="dragAppearance" VALUE="no"/>
+<PARAM NAME="bounce" VALUE="no"/>
+   <MEDIA NAME="titulo" LABEL="Asociaci&oacute;n 2" DVETYPE="0" LEFT="175" TOP="5" WIDTH="520" HEIGHT="55" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   <MEDIA NAME="instrucciones" LABEL="Instrucciones" DVETYPE="0" VALUE="Arrastra las opciones de abajo hasta su lugar correspondiente (pulsa la flecha para ir al segundo ejemplo)" ACTION="popOutText" LEFT="10" TOP="10" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda1" LABEL="Ayuda 1" DVETYPE="0" VALUE="xml/ayuda.xml" ACTION="popOutFrame" LEFT="10" TOP="60" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda2" LABEL="Ayuda 2" DVETYPE="0" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" LEFT="10" TOP="110" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="vinculo_next" IMAGE="image/boton_siguiente2.gif" DVETYPE="0" VALUE="next" ACTION="courseLink" LEFT="710" TOP="545" WIDTH="70" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <MEDIA NAME="notas_plantilla" IMAGE="image/bot_asociacion.gif" DVETYPE="0" VALUE="projects/templates/html/Plantilla_Asociacion.htm" ACTION="openURL" LEFT="25" TOP="485" WIDTH="109" HEIGHT="96" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_borrar" IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="clear" LEFT="349" TOP="491" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <PANEL NAME="Main" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16" LEFT="152" TOP="78" WIDTH="601" HEIGHT="388">
+      <CARD NAME="Main.card0">
+      <BOUNDS NAME="Answers" UNIFORM="true" LEFT="296" TOP="10" WIDTH="238" HEIGHT="360" width="200" height="50" RANDOM="true" DISPLAY="center">
+            <MEDIA NAME="Answers1" DVETYPE="0" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="red"/>
+            <MEDIA NAME="Answers2" DVETYPE="0" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="green"/>
+            <MEDIA NAME="Answers3" DVETYPE="0" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="blue"/>
+            <MEDIA NAME="Answers4" DVETYPE="0" VALUE="4" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="yellow"/>
+            <MEDIA NAME="Answers5" DVETYPE="0" VALUE="5" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-990001"/>
+      </BOUNDS>
+      <BOUNDS NAME="Options" UNIFORM="true" LEFT="33" TOP="10" WIDTH="161" HEIGHT="360" width="100" height="50" RANDOM="true" BGCOLOR="-333334" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="ITALIC" FONTSIZE="22">
+            <MEDIA NAME="Options1" LABEL="rojo" DVETYPE="0" VALUE="1" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Options2" LABEL="verde" DVETYPE="0" VALUE="2" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Options3" LABEL="azul" DVETYPE="0" VALUE="3" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Options4" LABEL="amarillo" DVETYPE="0" VALUE="4" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+            <MEDIA NAME="Options5" LABEL="cian" DVETYPE="0" VALUE="5" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      </BOUNDS>
+      </CARD>
+   </PANEL>
+</MALTED>

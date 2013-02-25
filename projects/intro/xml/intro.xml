@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Blank"
+ VERSION="1.3"
+ INTERACTION="Null"
+ TITLE="Blank"
+ DESCRIPTION="Blank template: Can be used for any type of exercise"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fond.jpg" DISPLAY="center" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+ onShow="play(audio/intro.mp3)">
+   <BOUNDS NAME="isftic" UNIFORM="true" APUNIFORM="false" LEFT="599" TOP="2" WIDTH="203" HEIGHT="48" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME="media1" DVETYPE="0" VALUE="http://www.isftic.mepsyd.es/" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS NAME="malted1" UNIFORM="true" APUNIFORM="false" LEFT="14" TOP="61" WIDTH="161" HEIGHT="71" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container1.media1" DVETYPE="0" VALUE="http://malted.cnice.mec.es/" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS NAME="malted2" UNIFORM="true" APUNIFORM="false" LEFT="263" TOP="-3" WIDTH="332" HEIGHT="52" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME="media1" DVETYPE="0" VALUE="http://malted.cnice.mec.es/" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS NAME="mepsyd" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="1" WIDTH="253" HEIGHT="48" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container3.media1" DVETYPE="0" VALUE="http://www.mepsyd.es/" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS NAME="online" UNIFORM="true" APUNIFORM="false" LEFT="457" TOP="443" WIDTH="289" HEIGHT="146" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container5.media1" DVETYPE="0" VALUE="http://malted.cnice.mec.es/unidades/projects/index/xml/index.cxml" ACTION="goToCourse" BORDER_WIDTH="1" BORDER_COLOR="-857567" onMouseOver="show(panel(online)card(on))" onMouseOut="show(panel(online)card(off))"/>
+   </BOUNDS>
+   <BOUNDS NAME="red" UNIFORM="true" APUNIFORM="false" LEFT="19" TOP="257" WIDTH="274" HEIGHT="187" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container7.media1" DVETYPE="0" VALUE="file:/M:/" ACTION="Course_select" BORDER_WIDTH="1" BORDER_COLOR="-857567" onMouseOver="show(panel(mired)card(on))" onMouseOut="show(panel(mired)card(off))"/>
+   </BOUNDS>
+   <BOUNDS NAME="mi_pc" UNIFORM="true" APUNIFORM="false" LEFT="438" TOP="142" WIDTH="213" HEIGHT="135" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container9.media1" DVETYPE="0" VALUE="./projects" ACTION="Course_select" BORDER_WIDTH="1" BORDER_COLOR="-857567" onMouseOver="show(panel(mipc)card(on))" onMouseOut="show(panel(mipc)card(off))"/>
+   </BOUNDS>
+   <MEDIA NAME="cabecera" IMAGE="image/banner_ministerio2.gif" DVETYPE="1" LEFT="0" TOP="0" WIDTH="800" HEIGHT="152" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <MEDIA NAME="cerrar" DVETYPE="0" ACTION="RTS_exit" LEFT="750" TOP="531" WIDTH="45" HEIGHT="66" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <PANEL NAME="mipc" LEFT="24" TOP="148" WIDTH="413" HEIGHT="108">
+      <CARD NAME="off" DISPLAY="no">
+      </CARD>
+      <CARD NAME="on" DISPLAY="no">
+      <MEDIA NAME="on.media1" DVETYPE="4" TEXT="text/MiPC.rtf" LEFT="2" TOP="2" WIDTH="400" HEIGHT="95" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-999a00"/>
+      </CARD>
+   </PANEL>
+   <PANEL NAME="mired" LEFT="299" TOP="263" WIDTH="501" HEIGHT="197">
+      <CARD NAME="off" BGCOLOR="-99cc01" DISPLAY="no">
+      </CARD>
+      <CARD NAME="on" DISPLAY="no">
+      <MEDIA NAME="on.media1" DVETYPE="4" TEXT="text/Redlocal.rtf" LEFT="2" TOP="12" WIDTH="475" HEIGHT="133" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-9a9b00" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="10"/>
+      <MEDIA NAME="on.media3" DVETYPE="4" TEXT="text/Redlocal2.rtf" LEFT="33" TOP="86" WIDTH="458" HEIGHT="101" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" BGCOLOR="-9b9c00" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="10"/>
+      </CARD>
+   </PANEL>
+   <PANEL NAME="online" LEFT="51" TOP="444" WIDTH="391" HEIGHT="154">
+      <CARD NAME="off" DISPLAY="no">
+      </CARD>
+      <CARD NAME="on" DISPLAY="no">
+      <MEDIA NAME="on.media1" DVETYPE="4" TEXT="text/Online.rtf" LEFT="2" TOP="1" WIDTH="378" HEIGHT="142" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-9a9b00"/>
+      </CARD>
+   </PANEL>
+</MALTED>

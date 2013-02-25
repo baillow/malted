@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="ayuda"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="ayuda"
+ DESCRIPTION="Pantalla de ayuda"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="-1134" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS UNIFORM="true" LEFT="257" TOP="218" WIDTH="285" HEIGHT="126" RANDOM="false" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16">
+         <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs28  \par  \fs36 Este pa\u237 s est\u225  situado entre\par  Argentina, Brasil y Bolivia.\fs24\par}" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="338" TOP="334" WIDTH="129" HEIGHT="52" RANDOM="false" BGCOLOR="lightGray">
+         <MEDIA IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" ACTION="return" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-996601" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+</MALTED>

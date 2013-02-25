@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Texto"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Malted"
+ DESCRIPTION="Plantilla basica"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS UNIFORM="true" LEFT="404" TOP="138" WIDTH="384" HEIGHT="130" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA IMAGE="image/etiquetas.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="534" TOP="337" WIDTH="254" HEIGHT="100" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA IMAGE="image/rtf_bar.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="540" WIDTH="799" HEIGHT="43" width="120" height="30" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" ACTION="return" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="5" WIDTH="799" HEIGHT="65" RANDOM="false" BGIMAGE="" DISPLAY="no">
+         <MEDIA LABEL="Texto" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}{\colortbl\red0\green153\blue0;\red0\green0\blue0;\red160\green0\blue0;}\f1\fs40 Los dos tipos de texto usados por Malted son el \cf0\b\i texto plano\cf1\b0\i0  (\cf2 txt\cf1 ) y el \cf0\b\i texto de formato enriquecido\b0\i0\cf1  (\cf2 rtf\cf1 ).\fs24\par}" LEFT="20" TOP="61" WIDTH="761" HEIGHT="69" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="no" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;}\f1\fs40\b\ul Texto plano\fs44\b0\ulnone : \fs32 Solo tenemos que introducir el texto y definir su apariencia al editar el objeto (imagen de la derecha). Si usamos esta modalidad todo el texto siempre tendr\u225  la misma apariencia. Abajo tenemos dos ejemplos del mismo texto pero con distinta configuraci\u243 n:\fs24\par}" LEFT="26" TOP="126" WIDTH="382" HEIGHT="137" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="no" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;\f2\fcharset0 Arial;}\f1\fs32 Fuente: \fs28\b Helv\u233 tica \fs32\b0  Tama\u241 o: \fs28\b 14\fs32\b0    Estilo: \fs28\b Normal\fs24\b0\par}" LEFT="38" TOP="252" WIDTH="366" HEIGHT="35" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="no" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;}\f0\fs32 Fuente: \fs28\b TimesRoman\fs32\b0   Tama\u241 o: \fs28\b 17\fs32\b0    Estilo: \fs28\b Cursiva\fs32\b0\par}" LEFT="405" TOP="252" WIDTH="386" HEIGHT="35" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="no" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   <MEDIA TEXT=" La construcci&oacute;n de las pir&aacute;mides se remonta a ..." LEFT="50" TOP="290" WIDTH="340" HEIGHT="25" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"/>
+   <MEDIA TEXT=" La construcci&oacute;n de las pir&aacute;mides se remonta a ..." LEFT="415" TOP="288" WIDTH="370" HEIGHT="28" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="center" ALIGNMENT="left" FONTNAME="TimesRoman" FONTSTYLE="ITALIC" FONTSIZE="17"/>
+   <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;\f2\fcharset0 Arial;\f3\fcharset0 Arial;\f4\fcharset0 Times New Roman;\f5\fcharset0 Arial;\f6\fcharset0 Arial;\f7\fcharset0 Arial;}{\colortbl\red0\green152\blue198;\red0\green0\blue0;\red203\green141\blue0;\red225\green0\blue165;}\f1\fs40\b\ul Texto rtf\fs44\b0\ulnone : \fs32 En este caso el formato se define dentro del propio texto lo que nos permite distintas apariencias dentro del mismo texto. Para editarlo aparece una barra de edici\u243 n en la parte superior del objeto. Podemos elegir la \f4\fs36 fuente\f3\fs32 , el \i estilo\i0 , \ul subrayados\ulnone  y el \cf0\b color\cf1\b0  \cf2\b del\cf1  \cf3 texto\b0\cf1 . \fs24\par}" LEFT="26" TOP="330" WIDTH="508" HEIGHT="106" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="no" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   <MEDIA TEXT="Los textos habitualmente son fijos, pero&#x000a;tambi&eacute;n  podemos hacerlos editables, es&#x000a;decir, que pueden ser modificados en pantalla:" LEFT="121" TOP="456" WIDTH="333" HEIGHT="73" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   <MEDIA TEXT="Escribe aqu&iacute;:" LEFT="458" TOP="455" WIDTH="216" HEIGHT="74" EDITABLE="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" BGIMAGE="" DISPLAY="center" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+</MALTED>

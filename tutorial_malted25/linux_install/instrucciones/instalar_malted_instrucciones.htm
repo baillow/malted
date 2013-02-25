@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <link href="" rel="stylesheet" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<script language="JavaScript">
+
+<!--
+
+
+
+
+
+<!--
+
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+
+}
+
+MM_reloadPage(true);
+
+// -->
+
+//-->
+
+  </script>
+<link rel="stylesheet" href="" type="text/css">
+<title>Instalaci&oacute;n MALTED en Linux</title>
+<style type="text/css">
+<!--
+.Estilo5 {font-size: 12px}
+.Estilo6 {
+	color: #0066FF;
+	font-size: 24px;
+}
+.Estilo7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.Estilo8 {font-size: 14px}
+.Estilo10 {font-size: 14px; font-weight: bold; }
+-->
+</style>
+</head>
+<body background="images/logo1.gif"
+ topmargin="0" leftmargin="0">
+<table width="645" height="0" border="0" align="center" with="760">
+  <tbody>
+    <tr> 
+      <td valign="top" colspan="3" height="49"><div align="center"><span class="Estilo6">Instalaci&oacute;n MALTED v.2.5</span>
+          <map name="Map">
+            <area shape="rect" coords="3,-1,186,66"
+ href="">
+          </map>
+      </div></td>
+    </tr>
+    <tr> 
+      <td colspan="3" valign="top" height="2140"> 
+        <div align="center"></div>        <p><font size="2" face="Arial, Helvetica, sans-serif">1.- <a href="#jre">Instalar J2RE</a></font></p>        
+        <p><font size="2" face="Arial, Helvetica, sans-serif">2.- <a href="#malted">Instalar MALTED</a></font></p>
+        <p align="center"><font size="2" face="Arial, Helvetica, sans-serif">----------------------------------</font></p>
+        <span class="Estilo8"><font face="Arial, Helvetica, sans-serif"><a name="jre"><strong>Instalar J2RE Linux (autoextra&iacute;ble) </strong></a><a href="archivos/jre-1_5_0_09-linux-i586.bin">jre-1_5_0_09-linux-i586.bin</a></font></span>        <p><font face="Arial, Helvetica, sans-serif"><span
+ style="font-size: 14pt;"><span class="Estilo5">(Instrucciones de la p&aacute;gina de Sun Microsistems): <a href="http://www.java.com/es/download/help/5000010500.xml#selfextracting" target="_blank">http://www.java.com/es/download/help/5000010500.xml#selfextracting</a><br>
+                  <a href="http://www.java.com/es/">http://www.java.com/es/</a> </span></span></font></p>
+        <font face="Arial, Helvetica, sans-serif"><span
+ style="font-size: 14pt;"><span class="Estilo5"><strong>Los archivos para la instaci&oacute;n se encuentran en CD Malted en la carpeta Linux</strong>. <br>
+        </span></span></font><font size="2" face="Arial, Helvetica, sans-serif"><span
+ style="font-size: 14pt;"><br>
+  </span></font><span class="Estilo10"><font face="Arial, Helvetica, sans-serif">      Siga estas instrucciones: </font><a href="../archivos/jre-1_5_0_09-linux-i586.bin"></a></span><a href="../archivos/jre-1_5_0_09-linux-i586.bin"><br>
+  </a><span class="Estilo7">Guarde este fichero en su ordenador (por ejemplo en /usr/java) <a href="archivos/jre-1_5_0_09-linux-i586.bin">jre-1_5_0_09-linux-i586.bin</a><br>
+  </span>  <ol class="Estilo7">
+          <li>En el terminal, escriba: <br>
+              <strong>su </strong>
+          <li>Escriba la contrase&ntilde;a de usuario root.
+<li>Cambie al directorio en el que desee efectuar la instalaci&oacute;n. Escriba: <br>
+                  <strong>cd &lt;ruta de acceso al directorio&gt; </strong><br>
+    Por ejemplo, para instalar el software en el directorio /usr/java, escriba: <br>
+    <strong>cd /usr/java/ </strong><br>
+    <br>
+    <em><strong>Nota acerca del acceso root: </strong> Para instalar el JRE en una ubicaci&oacute;n accesible desde todo el sistema, como /usr/local, deber&aacute; iniciar la sesi&oacute;n como usuario root para obtener los permisos necesarios. Si no tiene acceso de usuario root, instale el JRE en su directorio de inicio o en un subdirectorio para el que disponga de permisos de escritura. </em>
+          <li>Cambie los permisos del archivo descargado para hacerlo ejecutable. Escriba: <br>
+                  <strong>chmod a+x jre-1_5_0-linux-i586.bin </strong>
+          <li class="Estilo7">Compruebe que dispone de permiso para ejecutar el archivo. Escriba: <br>
+                  <strong>ls -l </strong></li>
+        </ol>
+        <div align="center" class="Estilo7"><br>
+            <br>
+          <img src="images/1.jpg" alt="Compruebe que el archivo de instalaci&oacute;n dispone de permiso de ejecutable." width="385" height="79"> </div>
+        <ol>
+          <li>
+            <div align="left"><span class="Estilo7">Inicie el proceso de instalaci&oacute;n. Escriba: <br>
+                <br>
+                <strong>./jre-1_5_0-linux-i586.bin </strong><br>
+                <br>
+              Se mostrar&aacute; el contrato de licencia de archivos binarios. L&eacute;alo. Pulse la barra espaciadora para pasar a la p&aacute;gina siguiente. Al llegar al final, escriba <strong>yes </strong> para proseguir con la instalaci&oacute;n.<br>
+              <br>
+            </span>
+              <div align="center" class="Estilo7"><br>
+                <img src="images/2.jpg" alt="escriba S&Iacute; para aceptar el acuerdo de licencia" width="385" height="195"><br>
+                <br>
+              </div>
+            </div>
+          </li>
+          <li class="Estilo7">El JRE se ha instalado en su propio directorio. En este ejemplo se ha instalado en el directorio <strong>/usr/java/jre1.5.0 </strong>. Una vez finalizada la instalaci&oacute;n se mostrar&aacute; la palabra <strong>Terminado </strong>. </li>
+        </ol>
+        <div align="center">
+          <p>              <span class="Estilo7"><br>
+              <img src="images/3.jpg" alt="La instalaci&oacute;n ha finalizado." width="385" height="195"> </span></p>
+          <p align="left" class="Estilo7">3. El JRE se ha instalado en el subdirectorio jre1.5. (n&uacute;mero de versi&oacute;n) del directorio actual. En este caso, el JRE se ha instalado en el directorio <strong>/usr/java/jre1.5.0 </strong>. Compruebe que el subdirectorio <strong>jre1.5.0 </strong> aparezca en el directorio actual. Escriba: <br>
+              <strong>ls </strong></p>
+        </div>
+        <div align="center">
+          <p> <br>
+              <img src="images/4.jpg" alt="Verifique el nombre del archivo de instalaci&oacute;n" width="385" height="79"></p>
+          <p align="left" class="Estilo7"><strong> Activar y configurar </strong></p>
+          <p align="left" class="Estilo7"> <strong>Mozilla 1.4 y posteriores </strong><br>
+          </p>
+          <div align="left">
+            <ol class="Estilo7">
+              <li>Vaya al subdirectorio de complementos, situado dentro del directorio de instalaci&oacute;n de Mozilla. <br>
+                  <strong>cd &lt;directorio de instalaci&oacute;n de Mozilla&gt;/plugins </strong>
+              <li>En el directorio actual, cree un v&iacute;nculo simb&oacute;lico al archivo del JRE <strong>ns7 </strong>/libjavaplugin_oji.so. Escriba: <br>
+        ln -s &lt;directorio de instalaci&oacute;n del JRE&gt;/plugin/i386/ <strong>ns7 </strong>/libjavaplugin_oji.so <br>
+        Ejemplo: <br>
+        <ul>
+          <li>Si Mozilla est&aacute; instalado en este directorio: <br>
+              <strong>/usr/lib/mozilla-1.4/ </strong>
+          <li>y el JRE est&aacute; instalado en este directorio: <br>
+              <strong>/usr/java/jre1.5.0 </strong>
+          <li>Para ir al directorio de complementos del navegador escriba en el terminal: <br>
+              <strong>cd /usr/lib/mozilla-1.4/plugins </strong>
+          <li>Escriba el comando siguiente para crear un v&iacute;nculo simb&oacute;lico al complemento Java para el navegador Mozilla. <br>
+              <strong>ln -s /usr/java/jre1.5.0/plugin/i386/ns7 <br>
+            /libjavaplugin_oji.so . </strong></li>
+        </ul>
+              <li>Inicie el navegador Mozilla o rein&iacute;cielo si ya se estaba ejecutando. Tenga en cuenta que, si se est&aacute; ejecutando alg&uacute;n otro componente de Mozilla (como Messenger, Composer, etc.) deber&aacute; tambi&eacute;n reiniciarlo.
+              <li>Vaya a <strong>Editar </strong> &gt; <strong>Preferencias </strong>. En la categor&iacute;a <strong>Avanzadas </strong>, seleccione <strong>Activar Java </strong>. </li>
+            </ol>
+            <span class="Estilo7"><br>
+            <strong>Mozilla 1.2, Netscape 6 y posteriores </strong><br>
+            </span>
+            <ol>
+              <li class="Estilo7">Vaya al subdirectorio de complementos, situado dentro del directorio de Netscape. <br>
+                  <strong>cd &lt;Mozilla1.2&gt;/plugins </strong>
+              <li class="Estilo7">Cree un v&iacute;nculo simb&oacute;lico al archivo <strong>ns7-gcc29 </strong>/libjavaplugin_oji.so: <br>
+        ln -s &lt;JRE&gt;/plugin/i386/ <strong>ns7-gcc29 </strong>/libjavaplugin_oji.so <br>
+        Ejemplo: <br>
+        <ul>
+          <li>Si Netscape est&aacute; instalado en este directorio: <br>
+              <strong>/usr/lib/Mozilla1.2/ </strong>
+          <li>y el JRE est&aacute; instalado en este directorio: <br>
+              <strong>/usr/java/jre1.5.0 </strong>
+          <li>Para ir al directorio de complementos del navegador escriba en el terminal: <br>
+              <strong>cd /usr/lib/Mozilla1.2/plugins </strong>
+          <li>Escriba el comando siguiente para crear un v&iacute;nculo simb&oacute;lico al software del complemento Java para el navegador Mozilla. <br>
+              <strong>ln -s /usr/java/jre1.5.0/plugin/i386/ns7-gcc29 <br>
+            /libjavaplugin_oji.so . </strong></li>
+        </ul>
+              <li class="Estilo7">Inicie el navegador Mozilla o rein&iacute;cielo si ya se estaba ejecutando. Tenga en cuenta que, si se est&aacute; ejecutando alg&uacute;n otro componente de Mozilla (como Messenger, Composer, etc.) deber&aacute; tambi&eacute;n reiniciarlo.
+              <li class="Estilo7"> Vaya a <strong>Editar </strong> &gt; <strong>Preferencias </strong>. En la categor&iacute;a <strong>Avanzadas </strong>, seleccione <strong>Activar Java </strong>. </li>
+            </ol>
+          </div>
+          <ol>
+          </ol>
+           <div align="left"><strong><span class="Estilo8"><font face="Arial, Helvetica, sans-serif"><a name="malted" id="malted">Instalar Malted Linux</a></font></span>
+              </strong></div>
+          <p align="left" class="Estilo7">La instalaci&oacute;n de Malted en Linux ha sido automatizada a trav&eacute;s de un instalador en Java. De este modo debe hacerse una instalaci&oacute;n autom&aacute;tica en su sistema operativo. Para la instalaci&oacute;n de Malted debe por tanto tener instalada la M&aacute;quina Virtual de Java tal y c&oacute;mo se indica al principio de esta p&aacute;gina.</p>
+          <p align="left" class="Estilo7"> Desde la consola vaya a la unidad de CD carpeta Linux y ejecute la siguiente l&iacute;nea:</p>
+          <p align="left" class="Estilo7"><strong>/usr/java/jre1.5.0/bin/java -jar ./malted-install.jar</strong>          </p>
+          <p align="left" class="Estilo7">Siguiendo los ejemplos anteriores Java est&aacute; instalado en el directorio &quot;/usr/java/jre1.5.0&quot;, si usted lo tiene instalado en otro lugar modifique esa ruta por el directorio en el que tiene instalado java.</p>
+          <p align="left" class="Estilo7">El programa de instalaci&oacute;n crea enlaces directos en el escritorio y en el men&uacute; de programas del usuario que lo instala (o en el de todos los usuarios si la instalaci&oacute;n se realiza como root). Esta creaci&oacute;n de entradas en los men&uacute;s y accesos directos puede no funcionar siempre, ya que la gesti&oacute;n de los men&uacute;s de sistema var&iacute;a mucho entre distribuciones.</p>
+          <p align="left" class="Estilo7">Si el programa de instalaci&oacute;n se ejecuta como root intenta configurar el plug&iacute;n de java para en navegador mozilla del sistema.</p>
+          <p align="left" class="Estilo7">Para incorporar las unidades did&aacute;cticas a su instalaci&oacute;n deber&aacute; copiar las carpetas de unidades que hay en el CD en la ruta <strong>Programas/projects/</strong> en el directorio projects de tu instalaci&oacute;n <strong>usuario/malted/projects/ </strong>(instalando como usuario) o en <strong>/usr/local/malted/projects/</strong> (instalando como root).<br>
+          </p>
+          <p align="left" class="Estilo7"><strong>Ejecuci&oacute;n del programa</strong></p>
+          <p align="left" class="Estilo7">La forma m&aacute;s sencilla es hacer doble click sobre los enlaces directos al programa que crea el programa de instalaci&oacute;n en el escritorio o en el men&uacute; de programas. Otra opci&oacute;n es abrir un explorador de archivos, localizar el directorio en el que hemos instalado Malted y hacer doble click sobre el fichero &quot;rts.sh&quot; (para ejecutar Malted en una ventana) o &quot;rts_full.sh&quot; (para ejecutar Malted a pantalla completa)<br>
+          </p>
+          <p align="left" class="Estilo7">El programa de instalaci&oacute;n intenta crear enlaces al programa en el escritorio y en los men&uacute;s de programas, pero esto en funci&oacute;n de la distribuci&oacute;n de Linux que se est&eacute; usando no siempre es posible. En cualquier caso siempre tendremos la posibilidad de ejecutar el programa manualemente. Para esto abrimos una consola y ejecutamos lo siguiente:</p>
+          <p align="left" class="Estilo7">(1) Cambiamos el directorio actual por el directorio de instalaci&oacute;n de Malted que hemos escogido en la instalaci&oacute;n. Los valores por defecto con &quot;/usr/local/Malted&quot; si lo instalamos como usuario root y &quot;/home/carlos/Malted&quot; si lo hemos instalado con el usuario de nombre carlos. Por ejemplo en el caso de haber instalado Malted con usuario de nombre carlos escribir&iacute;amos lo siguiente:</p>
+          <p class="Estilo7"><strong> cd /home/usuario/Malted</strong></p>
+          <p align="left" class="Estilo7">(2) Ejecutar&iacute;amos el fichero &quot;rts.sh&quot; para ejecutar Malted en una ventana o &quot;rts_full.sh&quot; para ejecutar Malted en pantalla completa. Por ejemplo para ejecutar Malted en pantalla completa escribir&iacute;amos:</p>
+          <p class="Estilo7"><strong> ./rts_full.sh</strong></p>
+        </div>
+        <p><br>
+        </p>        <div align="center"></div>        <p><font size="2" face="Arial, Helvetica, sans-serif"><br>
+          </font></p></td>
+    </tr>
+    <tr> 
+      <td width="661" height="26" valign="top"> <blockquote> 
+          <p><font size="2" face="Arial, Helvetica, sans-serif"><a
+ href="mailto:webmastermalted@boj.pntic.mec.es">Consultas email</a> o <a href="http://news.pntic.mec.es/cgi-bin/dnewsweb?cmd=xover&group=pntic.curso.malted2&from=&utag=&sub=y" target="_blank">Foro 
+            MALTED</a></font></p>
+        </blockquote></td>
+      <td width="92" valign="top"> <div align="right"><font
+ face="Arial, Helvetica, sans-serif" size="2">          </font></div></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</body>
+</html>

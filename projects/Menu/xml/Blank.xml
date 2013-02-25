@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Blank"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Blank"
+ DESCRIPTION="Blank template: Can be used for any type of exercise"
+ SCREEN="800x531"
+ FITSCREEN="true"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+  FGCOLOR="black" BGCOLOR="-ffff9a" BGIMAGE="image/fondocred.gif" DISPLAY="center" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS UNIFORM="true" LEFT="737" TOP="494" WIDTH="63" HEIGHT="39" RANDOM="false" DISPLAY="no">
+         <MEDIA ACTION="return"/>
+   </BOUNDS>
+</MALTED>

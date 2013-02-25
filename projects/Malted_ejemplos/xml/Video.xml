@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Video"
+ VERSION="1.2"
+ INTERACTION="Null"
+ TITLE="Malted"
+ DESCRIPTION="Plantilla basica"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="130" WIDTH="799" HEIGHT="39" width="60" height="30" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="mpg" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="18"/>
+         <MEDIA LABEL="mov" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="18"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="19" TOP="80" WIDTH="761" HEIGHT="80" RANDOM="false" DISPLAY="no">
+         <MEDIA TEXT="Los principales formatos de v&iacute;deo que soporta malted son:" SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="22"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="359" TOP="254" WIDTH="324" HEIGHT="264" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Video1.mpg" VIDEO="video/Video1.mpg" EMBEDDED="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="114" TOP="254" WIDTH="249" HEIGHT="266" RANDOM="false" DISPLAY="no">
+         <MEDIA TEXT="Los archivos de v&iacute;deo pueden aparecer asociados a botones, como los dos ejemplos de arriba, o incrustados, como el ejemplo de la derecha. En este &uacute;ltimo caso el primer fotograma del v&iacute;deo y la barra de control son siempre visibles." SCROLLBAR="false" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="165" WIDTH="799" HEIGHT="54" width="100" height="50" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="V&iacute;deo mpg" VIDEO="video/Video3.mpg" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+         <MEDIA LABEL="V&iacute;deo mov" VIDEO="video/Video2.mov" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="540" WIDTH="799" HEIGHT="43" width="120" height="30" RANDOM="false" DISPLAY="no">
+         <MEDIA IMAGE="image/boton_cerrar0.gif" ROLLOVER_IMAGE="image/boton_cerrar1.gif" ACTION="return" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="1" TOP="5" WIDTH="799" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="V&iacute;deo" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+</MALTED>

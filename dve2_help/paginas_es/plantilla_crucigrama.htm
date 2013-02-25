@@ -1,0 +1,225 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Malted - Plantilla Crucigrama</title>
+<style fprolloverstyle>A:hover {color: #66FFFF; font-weight: bold}
+</style>
+</head>
+
+<body bgcolor="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="800">
+    <tr>
+      <td>
+      <p align="center">
+      <img border="0" src="../images/titulo_crucigrama.gif" width="173" height="35"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Esta 
+      plantilla permite generar ejercicios de crucigramas en los que el alumno completa las palabras 
+escribiendo mediante el teclado directamente en los huecos. La definición 
+correspondiente al hueco activo aparecerá en un cuadro, y opcionalmente podemos 
+hacer que también aparezca una imagen.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_crucigrama01.gif" width="402" height="277" hspace="10"></p>
+<p style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">ELEMENTOS NECESARIOS</p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">1. </font> </b><font face="Arial">Panel con Nombre &quot;<i><b>Main</b></i>&quot;.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_crucigrama02.gif" width="171" height="103" hspace="10" align="right"><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;<b><i>Main</i></b>&quot;,&nbsp; 
+un objeto con nom</font><font face="Arial">bre</font><font face="Arial"> &quot;<b><i>Crossword</i></b>&quot; vinculado a 
+un fichero de texto que tiene que tener un formato especial (ver más abajo). El 
+tamaño del crucigrama se ajustará automáticamente al tamaño de este objeto, 
+y el tamaño de los números que indican las definiciones será el 
+tamaño de la fuente del objeto.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_crucigrama03.gif" width="170" height="98" hspace="10" align="right"><font face="Arial">3. </font></b><font face="Arial">Dentro del panel &quot;<b><i>Main</i></b>&quot;, 
+un objeto de texto con Nombre &quot;<i><b>Definitions</b></i>&quot; que es en el que aparecerán las 
+definiciones. En este objeto debemos escribir las palabras 
+&quot;Horizontal&quot; y &quot;Vertical&quot; (o las que consideremos adecuadas 
+según el idioma de la actividad) separadas por una barra vertical. Estas 
+palabras servirán de encabezamiento a las definiciones. </font></p>
+      <b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">4. </font></b><font face="Arial">Dentro del panel &quot;<i><b>Main</b></i>&quot;, 
+dos objetos con Nombres &quot;<i><b>Across</b></i>&quot; (horizontales) y &quot;<i><b>Down</b></i>&quot; (verticales) que 
+servirán para mostrar las imágenes que queramos asociar a las definiciones (esto 
+es opcional, no es necesario si nuestro crucigrama se va a basar sólo en 
+definiciones de texto)</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">5. </font></b><font face="Arial">Objeto con acción &quot;<i><b>verify</b></i>&quot; 
+o &quot;<b><i>check</i></b>&quot; y 
+valor &quot;<i><b>Panel(Main)</b></i>&quot; asociada al evento <b>Acción</b> o
+<b>Clic</b> que corrige las respuestas del alumno. La acción 
+&quot;<b><i>verify</i></b>&quot; (botón <i>Comprobar</i>) comprueba las respuestas correctas e 
+incorrectas y las marca mediante distintos colores (azul=correcto, rojo=incorrecto), mientras que la acción &quot;<i><b>check</b></i>&quot; (botón <i>Corregir</i>) deja las 
+respuestas correctas y borra las incorrectas. Lo más habitual es usar sólo una 
+de las dos opciones y eliminar la otra.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_comprobar.gif" width="336" height="74" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">6. </font></b><font face="Arial">Objeto con acción &quot;<i><b>clear</b></i>&quot; 
+o &quot;<b><i>clearAll</i></b>&quot; y valor &quot;<b><i>Panel(Main)</i></b>&quot; 
+asociada al evento <b>Acción</b> o
+<b>Clic</b> que permite al alumno borrar lo escrito en 
+los huecos (botón <i>Borrar</i>). La acción &quot;<i><b>clear</b></i>&quot; solo se aplica a la tarjeta 
+activa, mientras que &quot;<b><i>clearAll</i></b>&quot; se aplicaría a todas las tarjetas del panel (si 
+hay más de una).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_borrar.gif" width="336" height="76" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">7. </font></b><font face="Arial">También se puede incluir 
+un objeto con acción &quot;<b><i>solve</i></b>&quot; y valor &quot;<b><i>Panel(Main)</i></b>&quot; 
+(botón <i>Solucionar</i>) que completará las 
+letras que falten del crucigrama, pero marcándolas en rojo.</font></p>
+<b>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_solucionar.gif" width="335" height="76" hspace="10"></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      &nbsp;</p>
+      </b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">NOTA: Todos los demás elementos que componen esta plantilla (los botones de 
+ayuda e instrucciones, el icono de la mano para pasar al siguiente ejercicio, 
+etc.) no son necesarios, están ahí para servir de ejemplo. Elimina los que no 
+vayas a usar para tu ejercicio (como por ejemplo el botón que abre la 
+explicación de la plantilla).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">FICHERO DE TEXTO DEL CRUCIGRAMA</p>
+      </font></b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">La definición del crucigrama debe ser un fichero de texto 
+en formato <b>txt</b>, que debe tener los siguientes elementos:</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">a) Tamaño de la cuadrícula (ejemplo:
+<b>10x10</b>)</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">b) En las siguientes líneas definiremos la estructura 
+del crucigrama:</font></p>
+<p align="justify" style="margin-left: 100; margin-right: 80"><font face="Arial">Los dos corchetes (<b>[ ]</b>) 
+indican 
+la existencia de un cuadro. Si es un cuadro negro se escribe un asterisco detrás 
+de los corchetes (<b>[ ]*</b>). Si es un cuadro en 
+el que se puede escribir, se pondrá la letra correcta detrás de los corchetes (<b>[ 
+]A</b>). En la primera letra de cada definición debemos poner un número 
+que servirá para asociarlo con la definición; este número se pone entre los 
+corchetes (<b>[ 6]C</b>).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">c) Finalmente se incluyen las definiciones, encabezadas 
+por las palabras &quot;<b><i>Across</i></b>&quot; (horizontales) y &quot;<b><i>Down</i></b>&quot; (verticales). El texto de las 
+definiciones debe comenzar con el número que le hayamos puesto delante de la 
+primera letra de cada definición. La definición se compone de una primera parte de 
+texto, y, opcionalmente, podemos también asociarla con una imagen (o un texto 
+adicional). Estas dos partes deben ir separadas por una barra vertical. (<b>Numero. 
+Texto de la definición | ruta de la imagen asociada</b>)</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Comprueba lo explicado en este ejemplo de crucigrama 
+musical:</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/crossfile.gif" width="570" height="292" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+      <font face="Arial">Y este sería el crucigrama resultante ya resuelto:</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/crossfile2.gif" width="186" height="166" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">
+      &nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 80; margin-right: 80">
+      <b><font face="Arial">PARÁMETROS CONFIGURABLES (</font><font face="Arial" color="#FFFFFF">Interacción </font>
+      <font face="Arial" color="#99CCFF">Crossword2</font><font face="Arial" color="#FFFFFF">)</font></b></p>
+      <p style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/parametros_crossword2.gif" width="330" height="227" align="left" hspace="10"></p>
+      <p style="margin-left: 80; margin-right: 80" align="justify"><b>
+      <font face="Arial" color="#99FFCC">verify</font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">(valores: </font>
+      <font face="Arial" color="#FFFFCC"><b>anyTime</b> / <b>atEnd</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Modo de verificación de las respuestas.</font><b><font face="Arial"><font color="#FFFFFF"><br>
+      </font><i><font color="#FFFFCC">anyTime:</font></i><font color="#FFFFFF">
+      </font></font></b><font color="#FFFFFF"><font face="Arial">el alumno puede 
+      verificar en cualquier momento.</font><b><font face="Arial"><br>
+      </font></b></font><b><font color="#FFFFCC" face="Arial"><i>atEnd:</i></font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">no puede verificar hasta que 
+      complete todas las casillas del crucigrama.<br>
+      Al verificar el programa muestra las letras correctas en un color y las 
+      incorrectas en otro.</font></p>
+      <p style="margin-left: 80; margin-right: 80" align="justify"><b>
+      <font face="Arial" color="#99FFCC">check</font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">(valores: </font>
+      <font face="Arial" color="#FFFFCC"><b>anyTime</b> / <b>atEnd</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Modo de corrección de las respuestas.</font><b><font face="Arial"><font color="#FFFFFF"><br>
+      </font><i><font color="#FFFFCC">anyTime:</font></i><font color="#FFFFFF">
+      </font></font></b><font color="#FFFFFF"><font face="Arial">el alumno puede 
+      corregir en cualquier momento.</font><b><font face="Arial"><br>
+      </font></b></font><b><font color="#FFFFCC" face="Arial"><i>atEnd:</i></font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">no puede corregir hasta que 
+      complete todas las casillas del crucigrama.<br>
+      Al corregir el programa deja en pantalla las letras correctas y hace 
+      desaparecer las incorrectas.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">ActiveBorderColor</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color del borde de la casilla que se encuentra activa.<br>
+      Los parámetros de color aceptan valores hexadecimales (ejemplo: FFA02D) y 
+      también de texto (&quot;red&quot;, &quot;cyan&quot;, &quot;blue&quot;, &quot;black&quot;, &quot;yellow&quot;, &quot;green&quot;, 
+      &quot;magenta&quot;, &quot;gray&quot;, &quot;lightgray&quot;, &quot;white&quot;, &quot;orange&quot;).</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">CorrectColor</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color del texto de las casillas rellenadas correctamente. Por defecto 
+      azul.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">WrongColor</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>color</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Color del texto de las casillas rellenadas incorrectamente. Por defecto 
+      rojo.</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">verifyText</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>texto</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Permite personalizar el texto de la ventana que aparece al corregir el 
+      ejercicio.<br>
+      Se pueden usar distintas variables. Por ejemplo, para obtener un texto 
+      donde diga el número de aciertos, errores y puntuación (en porcentaje) 
+      habría que escribir lo siguiente en la ventana valores:</font></p>
+      <font color="#FFFFFF" face="Arial" size="3">
+      <p style="margin-left: 80; margin-right: 80" align="justify"><i>&nbsp;&nbsp;&nbsp;&nbsp; Has 
+      conseguido <b>#correct</b> aciertos y <b>#wrong</b> errores. Puntuación:
+      <b>#score</b> %</i></p>
+      </font><b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">caseSensitive</font></b><font face="Arial" color="#FFFFFF"> 
+      (valores: </font><font face="Arial" color="#FFFFCC"><b>si</b> / <b>n</b></font><b><font face="Arial" color="#FFFFCC">o</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Permite decidir si queremos que el programa distinga entre mayúsculas y 
+      minúsculas, y si admite caracteres especiales. Al tratarse de un 
+      crucigrama, lo más habitual es deshabilitar este parámetro (valor: no).</font></p>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#FFFFFF"><br>
+      &nbsp;</font></p>
+      <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

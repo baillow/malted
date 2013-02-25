@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Fichero de texto en Crossword2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<table cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" width="760">
+		<p align="center"><br>
+		<b>CÓMO RELLENAR UN FICHERO DE TEXTO PARA QUE CONTENGA EL 
+		CRUCIGRAMA </b></p>
+		<ul>
+			<li>
+			<p align="justify">La mejor manera elaborar el crucigrama es escribiéndolo en un 
+			fichero de texto aparte, y posteriormente asociarlo al objeto media 
+			Crossword, en el campo Text file. <br>
+			<br>
+			Hay que seguir una serie de reglas para especificar correctamente 
+			los datos del 
+			crucigrama que queramos diseñar. <br>
+			&nbsp;<ul>
+				<li>
+				<p align="justify">En primer lugar, el crucigrama ha de tener forma cuadrada, 
+				por lo que el primer paso consistirá en especificar el número de filas y de 
+				columnas de las que va a constar. Esto se debe indicar en la 
+				primera línea de todas. Por ejemplo, si queremos que el crucigrama 
+				tenga 7 filas por 7 columnas, lo indicaremos poniendo en la 
+				primera línea del fichero de texto &quot; 7x7 &quot;, siendo el símbolo de 
+				en medio una &quot;x&quot; minúscula y sin dejar espacio entre medias. <br>
+				&nbsp;</li>
+				<li>
+				<p align="justify">En la segunda línea y sucesivas es donde se va a 
+				situar el 
+				crucigrama propiamente dicho. Especificarlo no es tan complicado como puede 
+				parecer a primera vista: <br>
+				Se ha de ir especificando casilla por casilla, en el mismo orden 
+				que el crucigrama original. Es decir, en cada línea del fichero 
+				de texto, va a ir una fila del crucigrama con todas sus 
+				casillas. Se van a poder especificar hasta tres tipos diferentes 
+				de casillas: <br>
+				&nbsp;<ol>
+					<li>
+					<p align="justify">Si se quiere poner una casilla en negro, se deben poner 
+					entre corchetes dos (2) espacios en blanco, y después poner un 
+					asterisco. Ej.: [ ]* (flecha roja) .</li>
+					<li>
+					<p align="justify">Si se quiere asociar una letra a una casilla, se pondrán 
+					entre corchetes dos (2) espacios en blanco y seguida la letra 
+					que queramos. Ej.: [ ]A (flecha azul). Esta letra no 
+					aparece; es la que el alumno posteriormente deberá 
+					introducir para que su respuesta sea correcta. 
+					</li>
+					<li>
+					<p align="justify">Si se quiere poner una casilla en la que aparezca el 
+					número de la definición a la que hace referencia, y que 
+					también tenga una letra asociada, se deberá poner el número 
+					deseado entre corchetes, seguido de la letra en cuestión. 
+					Ej.: [17]A (flecha verde). <br>
+					<br>
+					<strong>Nota </strong>: si el número fuese de una sola 
+					cifra, hay que dejar un espacio en blanco delante del mismo. Por 
+					ejemplo: <br>
+					[ 8]C.</li>
+				</ol>
+				<p align="justify">Los tres tipos de casillas quedan recogidos en la siguiente 
+				figura.</li>
+			</ul>
+			</li>
+		</ul>
+		<p>&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" align="middle"><img height="300" src="imagenes/Crossword2_fig9.gif" width="324"></td>
+  </tr>
+  <tr>
+    <td valign="top"><ul>
+			<p align="justify">&nbsp;</p>
+		<p align="justify">Se ha de repetir este paso tantas veces como casillas vaya a haber 
+			en nuestro crucigrama, disponiendo cada fila de casillas en una 
+			línea distinta de texto. </p>
+			<li>
+			<p align="justify">Después de realizada la especificación del crucigrama, queda por último 
+			escribir las definiciones. La forma de insertarlas es como sigue: <br>
+			&nbsp;<ol>
+				<li>
+				<p align="justify">En primer lugar, se debe poner en una línea una palabra para 
+				hacer referencia a las definiciones horizontales, por ejemplo Across. En realidad, da igual qué palabra se ponga; el único 
+				requisito que se debe cumplir es que este nombre coincida 
+				exactamente con el especificado en el campo Text del objeto 
+				media Definitions como se aprecia en la figura. </li>
+			</ol>
+			</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td valign="top" align="middle"><img height="263" src="imagenes/Crossword2_fig10.gif" width="450"></td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;<ol>
+			<ol>
+				<li>A continuación, y en líneas consecutivas, se pondrán cada una 
+				de las definiciones del crucigrama con el siguiente formato: <br>
+				&quot;<strong>Número. Texto de la definición | texto o imagen 
+				asociada</strong>&quot;.<br>
+				<br>
+				Esta sintaxis significa que lo primero que hay que indicar es el 
+				número de definición seguido de un punto. A continuación debe ir 
+				la definición textual, y por último, tras una barra vertical 
+				separadora, se puede poner un texto o una imagen relacionada con 
+				la definición; en este caso se debe especificar la ruta de la 
+				imagen y el nombre del archivo de imagen. <br>
+				<br>
+				Por ejemplo: <br>
+				<em>7.Strong wind, like on the ocean|7 across <br>
+				10.Northern Ireland (abbr.)|image/right.gif <br>
+				&nbsp;</em></li>
+				<li>Por último, hay que hacer lo mismo, pero para las 
+				definiciones verticales. Es decir, hay que poner en una línea 
+				aparte la palabra Down, que va a hacer referencia a las 
+				definiciones verticales. Al igual que en el caso de Across, el 
+				único requisito es que el nombre que se le dé coincida 
+				exactamente con el especificado en el campo Text del objeto 
+				media Definitions. <br>
+				&nbsp;</li>
+				<li>De igual forma que para el caso de las definiciones 
+				horizontales, se deben especificar cada una de las definiciones 
+				verticales con el mismo formato que en el caso anterior: <br>
+				&quot;<strong>Número. Texto de la definición | texto o imagen 
+				asociada</strong>&quot;.<br>
+				&nbsp;</li>
+			</ol>
+			Un ejemplo completo de todo esto se muestra a continuación . En este 
+			caso, se trata de un crucigrama de 9x 9 y lleva imágenes asociadas en 
+			las casillas 10 horizontal y 4 vertical. Este crucigrama se deberá 
+			almacenar en un fichero con extensión .txt 
+		</ol>
+		<p>&nbsp;</td>
+  </tr>
+  <tr>
+    <td valign="top" align="middle"><img height="546" src="imagenes/Crossword2_fig11.gif" width="450"></td>
+  </tr>
+  <tr>
+    <td valign="top"><p><br>
+        Para descargarse este fichero, pulse <a href="imagenes/TheWeather.txt" target="_blank">aqu&iacute; </a> y 
+	después sobre Guardar como... del menú Archivo de su navegador. </p>
+	<p>&nbsp;</p></td>
+  </tr>
+</table>
+</body>
+</html>

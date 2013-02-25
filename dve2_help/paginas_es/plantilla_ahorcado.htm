@@ -1,0 +1,102 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Malted - Plantilla Ahorcado</title>
+<style fprolloverstyle>A:hover {color: #66FFFF; font-weight: bold}
+</style>
+</head>
+
+<body bgcolor="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="800">
+    <tr>
+      <td>
+      <p align="center">
+      <img border="0" src="../images/titulo_ahorcado.gif" width="148" height="27"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">Con esta plantilla se puede hacer un ejercicio basado en el clásico juego del 
+&quot;ahorcado&quot;. El alumno debe adivinar una palabra pulsando sobre las letras. Si la palabra contiene la letra pulsada, aparece en su 
+posición dentro de la palabra. Si no la contiene el panel que contiene los dibujos (en 
+este caso el reloj de arena) avanza un paso. La pista para que el alumno adivine 
+la palabra puede ser una definición, una imagen, un acertijo, etc.</font></p>
+<p style="margin-left: 80; margin-right: 80" align="center">
+      <img border="0" src="../images/plant_ahorcado01.gif" width="368" height="347" hspace="10"></p>
+<p style="margin-left: 80; margin-right: 80" align="center">&nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">ELEMENTOS NECESARIOS</p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">1. </font> </b><font face="Arial">Panel con Nombre &quot;<i><b>Main</b></i>&quot;.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">2. </font> </b><font face="Arial">Dentro del Panel &quot;<i><b>Main</b></i>&quot;, un 
+Marco con nombre &quot;<i><b>hiddenWord</b></i>&quot; que 
+contiene un <b><i>objeto genérico</i></b> con la palabra que el alumno debe 
+adivinar en el campo <i>Valor</i>. También podemos incluir dentro del panel <i>
+<b>Main</b></i> uno o más objetos que contengan la pista para deducir 
+la palabra (puede ser un texto, imagen, sonido, etc.). Para evitar errores de 
+funcionamiento es conveniente que la palabra que hay que adivinar se escriba con 
+mayúsculas.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">3. </font> </b><font face="Arial">Contenedor que contenga tantos
+<b>
+<i>objetos</i></b> como letras puede pulsar 
+el alumno. Estos objetos deben ser etiquetas que contengan una letra. Es 
+importante que usemos letras mayúsculas para que coincidan con las de la palabra 
+buscada (el programa trata como letras distintas las mayúsculas y las minúsculas).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_ahorcado02.gif" width="416" height="219" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">6. </font> </b><font face="Arial">Panel con Nombre &quot;<i><b>Pictures</b></i>&quot; que tendrá tantas tarjetas como pasos por 
+los pasa el dibujo del ahorcado. Según el número de tarjetas 
+que&nbsp; incluyamos así será la cantidad de errores que permitimos al alumno. Los dibujos que 
+sirvan como indicador pueden ser todo lo variados que queramos, desde el clásico 
+&quot;ahorcado&quot;, un reloj de arena como en este caso, o cualquier otra secuencia que 
+os imaginéis.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">6. </font> </b><font face="Arial">
+Opcionalmente, también podemos incluir un objeto con acción &quot;<i><b>clear</b></i>&quot; 
+(con el campo <i>Valor</i> vacío) asociado al evento <b>Acción</b> o <b>Clic</b> 
+(botón <i>Borrar</i>) que borra todas las entradas y permite comenzar la 
+actividad de nuevo, y 
+un objeto con acción &quot;<i><b>solve</b></i>&quot; (con el campo <i>Valor</i> 
+vacío) asociado al evento <b>Acción</b> o <b>Clic</b> 
+(botón <i>Solucionar</i>) que muestra la 
+solución a la palabra (pero se escucha el sonido negativo de no haberla acertado).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_ahorcado03.gif" width="305" height="166" hspace="10"></p>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">NOTA: Todos los demás elementos que componen esta plantilla (los botones de 
+ayuda e instrucciones, el icono de la mano para pasar al siguiente ejercicio, 
+etc.) no son necesarios, están ahí para servir de ejemplo. Elimina los que no 
+vayas a usar para tu ejercicio (como por ejemplo el botón que abre la 
+explicación de la plantilla).</font></p>
+      <p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      <p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 80; margin-right: 80">
+      <b><font face="Arial">PARÁMETROS CONFIGURABLES (</font><font face="Arial" color="#FFFFFF">Interacción </font>
+      <font face="Arial" color="#99CCFF">Hangman</font><font face="Arial" color="#FFFFFF">)</font></b></p>
+      <p style="margin-left: 80; margin-right: 80">
+      <font face="Arial" color="#FFFFFF">Esta interacción no tiene parámetros 
+      configurables.</font></p>
+      <p style="margin-left: 80; margin-right: 80">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

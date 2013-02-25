@@ -1,0 +1,142 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Malted - Plantilla Ordenar</title>
+<style fprolloverstyle>A:hover {color: #66FFFF; font-weight: bold}
+</style>
+</head>
+
+<body bgcolor="#000000" link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF">
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="800">
+    <tr>
+      <td>
+      <p align="center">
+      <img border="0" src="../images/titulo_ordenar.gif" width="129" height="27"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">
+      Esta plantilla permite ofrecer una oración fragmentada 
+para que el alumno coloque las partes en el orden correcto. Para ello debe 
+arrastrar cada elemento a su posición. Es necesario empezar por el 
+primer elemento de la serie porque todos los  situados detrás del lugar al que se 
+arrastra se moverán un paso hacia atrás.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_ordenar01.gif" width="408" height="229" hspace="10"></p>
+<p style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<b><font face="Arial">
+<p style="margin-left: 80; margin-right: 80">ELEMENTOS NECESARIOS</p>
+      </font>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">1. </font> </b><font face="Arial">Panel con Nombre &quot;<i><b>Main</b></i>&quot;.</font></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;<i><b>Main</b></i>&quot;, 
+un marco con nombre &quot;<b><i>Questions</i></b>&quot;. Dentro del marco tantos 
+textos en etiquetas como 
+trozos en los que queremos dividir la frase. Al crear el ejercicio debemos escribir las partes 
+en el orden correcto, ya que el programa se encargará automáticamente de 
+desordenarlas aleatoriamente al ejecutar el ejercicio. Si queremos incluir 
+varias frases en el ejercicio podemos incluir más marcos, y añadirle algo 
+al nombre &quot;Questions&quot; para facilitar su identificación (ejemplo: &quot;Questions_1&quot;, 
+&quot;Questions_2&quot;, &quot;Questions_3&quot;, etc.)</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_ordenar02.gif" width="363" height="146" hspace="10"></p>
+<p align="left" style="margin-left: 80; margin-right: 80">
+      <font face="Arial">La disposición de las palabras dentro del marco es 
+      libre, puede ser tanto horizontal, como vertical, o incluso en cuadrado,</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/plant_ordenar03.gif" width="428" height="240" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">3. </font></b><font face="Arial">Objeto 
+genérico con acción &quot;<b><i>verify</i></b>&quot; 
+y valor &quot;<b><i>Panel(Main)</i></b>&quot; asociada al evento <b>Acción</b> o
+<b>Clic</b> que comprueba el orden de la oración y muestra las partes 
+que están en su lugar correcto y las que no (botón <i>Comprobar</i>).</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_comprobar.gif" width="336" height="74" hspace="10"></p>
+<b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">4. </font></b><font face="Arial">Objeto 
+genérico con acción &quot;<b><i>clear</i></b>&quot; 
+o &quot;<b><i>clearAll</i></b>&quot; y valor &quot;<b><i>Panel(Main)</i></b>&quot; 
+asociada al evento <b>Acción</b> o
+<b>Clic</b> que borra las marcas de corrección. La acción 
+&quot;<b><i>clear</i></b>&quot; (botón <i>Borrar</i>) solo se aplica a la tarjeta activa, mientras que &quot;<b><i>clearAll</i></b>&quot; 
+(botón <i>Borrar Todo</i>) se aplica a todas las tarjetas del panel. Lo más 
+habitual es usar sólo uno de los dos botones.</font></p>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/boton_borrar.gif" width="336" height="76" hspace="10"></p>
+<b>
+<p align="center" style="margin-left: 80; margin-right: 80">
+      &nbsp;</p>
+      </b>
+<p align="justify" style="margin-left: 80; margin-right: 80"><font face="Arial">NOTA: Todos los demás elementos que componen esta plantilla (los botones de 
+ayuda e instrucciones, el icono de la mano para pasar al siguiente ejercicio, 
+etc.) no son necesarios, están ahí para servir de ejemplo. Elimina los que no 
+vayas a usar para tu ejercicio (como por ejemplo el botón que abre la 
+explicación de la plantilla).</font></p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+<p align="justify" style="margin-left: 80; margin-right: 80">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 80; margin-right: 80">
+      </p>
+      <p style="margin-left: 80; margin-right: 80">
+      </p>
+      <p style="margin-left: 80; margin-right: 80">
+      <b><font face="Arial">PARÁMETROS CONFIGURABLES (</font><font face="Arial" color="#FFFFFF">Interacción </font>
+      <font face="Arial" color="#99CCFF">Order</font><font face="Arial" color="#FFFFFF">)</font></b></p>
+      <p style="margin-left: 80; margin-right: 80">
+      <img border="0" src="../images/parametros_order.gif" width="330" height="147" align="left" hspace="10"></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80">
+      <font face="Arial" color="#99FFCC"><br>
+      verify</font><font face="Arial" color="#FFFFFF"> </font></b>
+      <font face="Arial" color="#FFFFFF">(valores: </font><b>
+      <font face="Arial" color="#FFFFCC">anyTime</font></b><font face="Arial" color="#FFFFFF"> 
+      / </font><b><font face="Arial" color="#FFFFCC">atEnd</font></b><font face="Arial" color="#FFFFFF">)<br>
+      Modo de corrección de las respuestas.</font><b><font face="Arial"><font color="#FFFFFF"><br>
+      </font><i><font color="#FFFFCC">anyTime:</font></i><font color="#FFFFFF">
+      </font></font></b><font face="Arial" color="#FFFFFF">corrige solo la 
+      tarjeta activa del panel.</font><font color="#FFFFFF"><b><font face="Arial"><br>
+      </font></b></font><b><font color="#FFFFCC" face="Arial"><i>atEnd:</i></font><font face="Arial" color="#FFFFFF">
+      </font></b><font face="Arial" color="#FFFFFF">corrige de una vez todas las 
+      tarjetas del panel Main.<br>
+      &nbsp;</font></p>
+      <b>
+      <p style="margin-left: 80; margin-right: 80" align="justify">
+      <font face="Arial" color="#99FFCC">verifyText</font></b><font face="Arial" color="#FFFFFF"> 
+      (valor: </font><font face="Arial" color="#FFFFCC"><b>texto</b></font><font face="Arial" color="#FFFFFF">)<br>
+      Permite personalizar el texto de la ventana que aparece al corregir el 
+      ejercicio.<br>
+      Se pueden usar distintas variables. Por ejemplo, para obtener un texto 
+      donde diga el número de aciertos, errores y puntuación (en porcentaje) 
+      habría que escribir lo siguiente:</font></p>
+      <font color="#FFFFFF" face="Arial" size="3">
+      <p style="margin-left: 80; margin-right: 80" align="justify"><i>&nbsp;&nbsp;&nbsp;&nbsp; Has 
+      conseguido <b>#correct</b> aciertos y <b>#wrong</b> errores. Puntuación:
+      <b>#score</b> %</i></p>
+      </font>
+      <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <p style="margin-left: 100; margin-right: 100">&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

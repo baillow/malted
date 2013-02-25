@@ -1,0 +1,422 @@
+<Malted Language>
+<instructions>
+WRITE ON THE RIGHT HAND SIDE OF THE = YOUR OWN VERSION
+OTHERWISE THE DEFAULT WRITTING ( LEFT HAND SIDE ) WILL BE CONSIDERED.
+<\instructions>
+<menuMgt>
+File = Archivo
+Edit = Edición
+Import Media =  Importar media
+Preview = Previsualización
+Windows = Modo
+Help = Ayuda 
+Open... = Abrir...
+Close = Cerrar
+Save = Guardar
+SaveAs... = Guardar como...
+Exit = Salir
+Delete = Borrar
+Options = Preferencias
+Properties = Propiedades
+Behaviour = Propiedades
+Courseware = Curso
+Frame = Frame
+Run frame = Ejecutar frame
+About... = Acerca de...
+Help topic = Ayuda Malted
+New Frame= Nuevo frame
+New Projec= Nuevo proyecto
+Open Project= Abrir proyecto
+Close Project= Cerrar proyecto
+Edit script= Editar script
+Copy = Copia
+Run Courseware = Ejecutar el Curso
+Reload Script = Actualizar Frame
+Cut = Cortar
+Paste = Pegar
+Undo = Deshacer
+Project = Proyecto
+Rename Project = Renombrar Proyecto
+Create Course Html = Crear html del Curso
+<\menuMgt>
+<labelMgt>
+Go to the upper left corner = Ir a la esquina superior izquierda
+Frames collection = Frames del proyecto
+Do you really want to delete this file? = ¿Seguro que quiere borrar este fichero?
+Media collection = Carpetas media
+COURSEWARE Management  = Editor de CURSOS
+FRAME Management  = Editor de FRAMES
+Save:  = Guardar:
+ = 
+image = imagen
+audio = audio
+video = video
+text = texto
+Enter the new filename = Escriba el nuevo nombre del fichero
+New filename = Nuevo nombre del fichero
+This file already exits. =  Este fichero ya existe.
+Please, save it before running = Para ejecutar el frame debe guardarlo antes.
+No external application is defined for this extension = No hay ninguna aplicación externa asociada a esta extensión.
+Define one application using the 'Edit/Options' =  Puede definir una aplicación utilizando 'Edición'/Opciones'.
+New  = Nuevo
+New file= Nuevo fichero
+File: = Fichero:
+This document is not saved.Save it to edit the script. = Documento no guardado. Guárdelo para editar el script.
+Preview = Previsualización
+Bad caracters! = ¡Caracteres no aceptados!
+Rename = Renombrar
+New name = Nuevo nombre
+The start frame is not defined. = No se ha definido el frame de incio
+Select one in Courseware Properties. = Seleccionar uno en propiedades del curso.
+Do you want to override it? = ¿Desea sobreescribirlo?
+Do you want to paste the card or the whole panel = ¿Desea pegar la tarjeta o el panel completo?
+Do you want to delete the card or the whole panel = ¿Desea borrar la tarjeta o el panel completo? 
+There is only one card in this panel = Solo hay una tarjeta en el panel
+Delete the Panel? = ¿Borrar el panel?
+The following assets are missing:  = Lo siguientes ficheros no se encuentran
+<\labelMgt>
+<menuCourseware>
+Up = Arriba
+Down = Abajo
+Courseware = Curso
+New Courseware = Nuevo curso
+is not found.= no se ha encontrado.
+ = 
+ = 
+This frame is edited. Close it in the frame management = Este frame se está editando. Debe cerrarla en el manejo de frames.
+Add Frame= Agregar frame
+Edit link = Editar link
+Edit Frame= Editar frame
+This frame is new. Edit and save it before to add in the courseware.= Este frame es nuevo.\n Debe editarlo y guardarlo antes de agregarlo al curso.
+Import Course = Importar cursos.
+This frame is used in courseware opened. = Este frame se usa en un curso abierto.
+<\menuCourseware>
+<menuFrame>
+Media File =  Media
+Editors = Herramientas
+Export to the AB =  Exportar a la base de datos
+(No editors defined) =  (No hay editores definidos)
+The path of this application is not correct. =  La dirección de esta aplicación no es correcto.
+Do you really want to remove this card ? = ¿Quiere borrar este objeto?
+Delete the object = Borrar un objeto
+This media is used in frame opened. = Este media se está utilizando en un frame abierto.
+<\menuFrame>
+<dialogOptions>
+text txt = texto txt
+text rtf = texto rtf
+image gif = imagen gif
+image jpeg = imagen jpeg
+sound/video wave = sonido/video wawe
+sound sun = sonido sun
+sound midi = sonido midi
+sound aiff =sonido aiff
+sound rmf = sonido rmf
+video avi = video avi
+video mpeg = video mpeg
+video/sound quicktime = video/sonido quicktime
+video gsm = video gsm
+video mpeg2 = video mpeg2
+video rtp = video rtp
+Options = Opciones
+Language = Idioma
+Media Format = Formato media
+extension = extensión
+application to use = application que se quiere utilizar
+General = General
+Editors = Editores
+User profile = Peril del usuario
+Information = Información
+Set Default = Por defecto
+Name = Nombre
+Address = Dirección
+Institution = Institución
+Assets Base = Base de datos
+IP address = Dirección IP
+Login name = Usuario
+select an application = Seleccione una aplicación
+enter a name for the new AB = Escriba un nombre para la nueva base de datos
+This name is used. Please choose a different name. = Este nombre se está usando. Por favor, elija uno diferente.
+No space for a new AB = No hay espacio para la nueva base de datos.
+Telephone = Teléfono
+Fax = Fax
+E-Mail = Correo electrónico
+Function = Función
+Start with = Empezar con
+Look = Apariencia
+Courseware = Editor de cursos
+Frame = Editor de frames
+Account = Cuenta
+Start by opening the old project =  Abrir el último proyecto al inicio
+Script = Script
+text html = texto html
+Ask confirmation when delete = Pedir confirmación al borrar
+Show text with icons in the menu bar = Mostrar texto en los iconos del menú
+<\dialogOptions>
+<buttons>
+OK = Aceptar
+Cancel = Cancelar
+Remove Media = Borrar Media
+Add = Agregar
+Yes = Sí
+No = No
+Edit Card = Editar la tarjeta
+Remove Card = Borrar la tarjeta
+Insert Card = Insertar una tarjeta
+Add Media = Insertar media
+Back = Anterior
+Next = Siguiente
+Insert Container = Insertar un contenedor
+Add Card = Agregar una tarjeta
+Refresh = Actualizar
+Add Panel = Agregar un panel
+Remove Panel = Borrar Panel
+Remove Container = Borrar Contenedor
+Remove = Borrar 
+Insert = Insertar 
+The card = Tarjeta
+The panel = Panel
+Insert media = Insertar media
+Insert Panel = Insertar Panel
+Close = Cerrar
+Crossword = Crucigrama
+toFront = Al frente
+toBack = Al fondo
+<\buttons>
+<dialogInsertMedia>
+Image =  Imagen
+Info = Info
+Text = Texto
+Audio = Audio
+Video = Video
+Unknown = Desconocido
+Insert Media = Insertar Media
+Search local disks = Buscar en los discos locales
+Remove from list = Borrar de la lista
+Remote Import = Importación Remota
+Display = Mostrar
+Preview = Previsualización
+Following files have unknown media type : = Los siguientes ficheros son de un tipo desconocido :
+Remove them or update their media type with the combo box = Debe borrarlos o actualizar su tipo usando la lista desplegable
+File names already in project media = Hay ficheros con estos nombres en el proyecto
+File names already in list of chosen files = Nombre de fichero ya existente en la lista
+File extension unknown by Malted = Extensión de fichero desconocida para Malted
+Close = Cerrar
+Query tool = QueryTool
+Query tool (media) = QueryTool (media)
+Media is not an image. No preview = Este media no es una imagen. No se puede visualizar.
+Preview of  = Visualización de
+Bytes = Bytes
+Remove all = Borrar todo
+Add list to project = Agregar la lista al proyecto
+Local Import = Importación Local
+Fill the required = Rellene los campos necesarios
+fields and click Export = y pulse Exportar
+files = ficheros
+Successfully published = Publicado correctamente
+Error importing = Error al importar
+Select Remote or Local Import = Seleccione Importación Remota o Local
+Import to the active project all the files that are on the list = Importar al proyecto actual todos los ficheros de la lista
+Cancel the importation = Cancelar la importación
+Cancel the exportation = Cancelar la exportación
+Search on other projects = Buscar en otros proyectos
+Search on other projects or on your local disks = Buscar en otros proyectos o en los discos locales
+Remove the selected files from the list = Borrar los archivos seleccionados de la lista
+Remove all the files from the list = Borrar todos los ficheros de la lista
+Click to preview the object = Pulse para visualizar el objeto
+Do you want to exit without adding the list to the project? = ¿Quiere salir sin agregar la lista al proyecto?
+Error publishing = Error al publicar
+<\dialogInsertMedia>
+<dialogProperties>
+Frame properties = Propiedades del frame
+Courseware properties = Propiedades del curso
+Filename = Nombre del fichero
+Description = Descripción
+Please complete all the fields. = Rellene todos los campos.
+Name in course: = 
+Structure : = Estructura:
+ = 
+Linear = Lineal
+Complex = Compleja
+Start: = Inicio:
+No defined = No definido.
+ = 
+Filename not changed: = Nombre de fichero no cambiado
+a file with the same name is currently edited = Archivo ya en modo edición
+This name already exists in the course = Este nombre ya existe
+set the structure as linear = configurar estructura lineal
+set the structure as complex = configurar estructura compleja
+set the frame from which the courseware starts = define el frame con el que comienza el curso
+a start frame must be selected = seleccione frame de inicio
+<\dialogProperties>
+<dialogEdit1>
+Panel Name: = Nombre de panel
+Interaction: = Interacción
+Screen size: = Tamaño de pantalla
+Fit screen: = Pantalla completa
+The audio feedback: = Sonido de respuesta
+Correct: = Acierto
+Wrong: = Error
+Parameters: = Parámetros
+Values: = Valores
+Image file: = Fichero de imagen
+Display type: = Tipo de despliegue
+No display = No despliegue
+Center = Centrado
+Patch = Repetido
+Stretch = Estirado
+Label properties: = Etiquetas
+Font: = Fuente
+Style: = Estilo
+Plain = Normal
+Bold = Negrita
+Italic = Cursiva
+Bold+Italic = Negrita+Cursiva
+Size: = Tamaño
+Colour: = Color
+Background = Fondo
+Foreground = Letra
+Aligment: = Alineación
+Left = Izquierda
+Center = Centrado
+Right = Derecha
+Text = Texto
+Image file: = Fichero imagen
+ROImage file: = Fichero img. sust.
+Text file: = Fichero texto
+Audio file: = Fichero Audio
+Video file: = Fichero Video
+Label: = Etiqueta
+Transparent: =Transparente
+CheckBox: = Casilla de verif.:
+Action: = Acción:
+Value: = Valor:
+Value list: = Lista de valores:
+Link color: = Color enlace:
+links = Enlaces
+visited links = Enlaces visitados 
+mother tongue: = Lengua materna
+target language: = Idioma aprend.
+editable text = Zona editable
+Other = Eventos
+Translation = Traducción
+AutoActions = Ac. Auto.
+embedded = Incrustar
+scrollbar = Barra desplazamiento
+hasBorder = Borde
+borderWidth = Grosor
+borderColor = Color
+TOOLTIP = Ayuda (Tooltip)
+onClick = Clic (onClick)
+onRightClick = Clic derecho (onRightClick)
+onMouseOver = Pasar ratón (onMouseOver)
+onMouseOut = Salir ratón (onMouseOut)
+onMouseDown = Pulsar ratón (onMouseDown)
+onMouseUp = Levantar ratón (onMouseUp)
+onCorrect = Si Correcto (onCorrect)
+onWrong = Si Incorrecto (onWrong)
+onShow = Al mostrar (onShow)
+onAllCorrect = Si todo correcto (onAllCorrect)
+onAllCorrectVerify = Al comprobar todo correcto (onAllCorrectVerify)
+onError = Si algún error (onError)
+onErrorVerify = Al comprobar errores (onErrorVerify)
+onVerifyTimes0 = Intentos 0 (onVerifyTimes0)
+onVerify = al verificar (onVerify)
+onNoCardsLeft = No quedan tarjetas (onNoCardsLeft)
+LMS inform: = LMS:
+<\dialogEdit1>
+<dialogEdit2>
+Container bounds: = Límites del contenedor
+Left: = Izquierda
+Top: = Arriba
+Width: = Ancho
+Height: = Alto
+Objects insides: = Tamaño de los objetos interiores
+Width: = Ancho
+Height: = Alto
+Fit Container = Llenar
+Transparent: = Transparente
+Random display: = Despliegue aleatorio
+Checkbox display: = Despliegue CheckBox
+Description = Descripción
+Parameters = Parámetros
+Background Image = Imagen de fondo
+Properties = Descripción
+Content = Contenido
+Dimensions = Dimensiones
+Object = Objeto
+Remove Media = Borrar Media
+Container = Contenedor
+Remove Container = Borrar contenedor
+Card = Tarjeta
+Remove Card = Borrar tarjeta
+Behaviour = Propiedades
+Are you sure to remove this element? = ¿Quiere borrar este elemento?
+Please, Enter an integer value. = Escriba un número entero, por favor.
+Your value is not in the bounds. = Este valor no está dentro de los límites.
+Editing = Edición
+Add Panel = Añadir Panel
+<\dialogEdit2>
+<dialogNewFrame>
+New Frame = Nuevo frame
+Select a template = Seleccione una plantilla
+Description = Descripción
+dialogNewFrame = Nombre del frame
+Please, complete all the fields = Rellene todos los campos
+List of Frames: = Lista de frames:
+<\dialogNewFrame>
+<dialogOpenFrame>
+Open Frame = Abrir un frame
+Select a frame = Seleccionar un frame
+Description = Descripción
+Frame title:  = Título de un frame
+<\dialogOpenFrame>
+<dialogAbout>
+About = Acerca de
+Malted Developer Tools = Malted Developer Tools
+v.1.4 December 2000 = v.1.4 Diciembre 2000
+Supported by the EC Educational Multimedia Taskforce = 
+(DG XIII Telematics Applications Programme & DG XXII Socrates and Leonardo da Vinci Programmes) = 
+<\dialogAbout>
+<project>
+Enter the project name: = Escriba el nombre del proyecto:
+Are you sure to erase the old project? = ¿Quiere borrar el proyecto?
+Please, enter a project name. = Escriba el nombre de un proyecto.
+Select a project: = Seleccione un proyecto.
+<\project>
+<dialogOpenCourseware>
+Open Courseware = Abrir un curso
+Select a courseware = Seleccionar un curso
+Description = Descripción
+New Courseware = Nuevo curso
+<\dialogOpenCourseware>
+<dialogLinks>
+Edit links = Edición de enlaces
+Frame: = Frame:
+Exit system = Salir del sistema
+Link: = Link:
+Destination: = Destino:
+Condition = Condición:
+Value: = Valor:
+Click to see the list = Pincha para ver la lista
+Press [enter] to validate the fields = 
+Order = Orden
+<\dialogLinks>
+<dialogImportCourse>
+Import Courseware = Importar Curso
+Local Disk... = Disco local...
+QueryTool = QueryTool
+<\dialogImportCourse>
+<dialogImportFrame>
+Import Frame = Importar frame
+List of frames: = Lista de frames
+Local Frame... = Frame local
+Remove =  Borrar
+QueryTool =  QueryTool
+<\dialogImportFrame>
+<dialogExportMedia>
+Export Media =  Exportar el media
+QueryTool = QueryTool
+Close = Cerrar
+To AssetBase = A la base de datos
+<\dialogExportMedia>
+<\Malted Language>

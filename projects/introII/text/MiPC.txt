@@ -1,0 +1,2 @@
+Abrir Unidades en Mi PC
+Selecciona (./projects) de la ventana emergente y luego elije la unidad deseada de la lista inferior.

@@ -1,0 +1,6 @@
+./projects
+file:/C:/Malted2/projects/
+file:/C:/Malted25/projects/
+file:/home/usuariolinux/smb4k/profesor/projects
+file:/M:/
+http://malted.cnice.mec.es/unidades/projects/

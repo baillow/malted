@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Exec=/usr/lib/jvm/java-6-sun-1.6.0.00/jre/bin/java -jar /home/xchi/Malted/Uninstaller/uninstaller.jar
+Icon=/home/xchi/Malted/MaltedSmallImage.png
+Path=/home/xchi/Malted
+Name=Desinstalar Malted
+Categories=X-Mandrakelinux-MoreApplications;Education

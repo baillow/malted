@@ -1,0 +1,135 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Test</title>
+</head>
+
+<body>
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">
+    <p align="center">
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+Test</b></u></font></td>
+    <td width="34%">
+    <p align="right"><a href="#" onclick="javascript:window.print();">
+        <img border="0" src="print.gif" width="100" height="26"></a></td>
+  </tr>
+</table>
+</b></u></font>
+<p><font face="Arial">Esta plantilla permite crear un ejercicio de preguntas con 
+varias posibles respuestas entre las que el alumno debe elegir la correcta. La 
+plantilla se puede configurar para que el alumno solo pueda elegir una 
+respuesta, o para que pueda elegir varias como correctas (ver &quot;Parámetros 
+configurables - Otros parámetros&quot; más abajo).</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>ELEMENTOS NECESARIOS</p>
+</u></font>
+<p><font face="Arial">1. </font></b><font face="Arial">Panel con Nombre &quot;Main&quot;.</font></p>
+<b>
+<p><font face="Arial">2. </font></b><font face="Arial">Dentro del Panel &quot;Main&quot; 
+uno o varios <i>media</i> con la pregunta o el estímulo (imagen, sonido, etc.).</font></p>
+<b>
+<p><font face="Arial">3. </font></b><font face="Arial">Dentro del Panel &quot;Main&quot; 
+uno o varios contenedores con nombre &quot;Answers&quot; que contendrán tantos media como 
+posibles respuestas tenga cada pregunta. Al editar el contenedor debemos marcar 
+la casilla &quot;Despliegue CheckBox&quot; si queremos que aparezca al lado de cada 
+posible respuesta una casilla para poder marcarla. También marcaremos la casilla 
+&quot;Despliegue Aleatorio&quot; si queremos que el programa desordene automáticamente las 
+respuestas.</font></p>
+<b>
+<p><font face="Arial">4. </font></b><font face="Arial">Los <i>media</i> 
+contenidos dentro del contenedor &quot;Answers&quot; deben tener las siguientes 
+características:</font></p>
+<p><font face="Arial">a) En el campo etiqueta escribiremos el texto que servirá 
+como respuesta (también podemos usar una imagen asociada en lugar de texto).</font></p>
+<p><font face="Arial">b) En el campo Valor escribiremos &quot;<b>true</b>&quot; si la 
+respuesta es correcta y &quot;<b>false</b>&quot; si la respuesta no es correcta.</font></p>
+<b>
+<p><font face="Arial">5. </font></b><font face="Arial">Si hemos optado por que 
+aparezcan casillas de marcado junto a las respuestas, necesitaremos un <i>Media</i> 
+con Acción &quot;verify&quot; o &quot;check&quot; y Valor &quot;Panel(Main)&quot; que comprueba las respuestas 
+marcadas. La acción &quot;verify&quot; (botón <i>Comprobar</i>) indica las respuestas 
+correctas e incorrectas, mientras que la acción &quot;check&quot; (botón <i>Corregir</i>) 
+deja las respuestas correctas y borra las incorrectas para que el alumno las 
+intente de nuevo.</font></p>
+<p><font face="Arial">Si por el contrario hemos decidido que no aparezcan las 
+casillas de marcado, la corrección es inmediata al pulsar una opción mediante 
+los sonidos de Acierto y Error (podemos configurarlos en las Propiedades del 
+ejercicio, en la pestaña &quot;parámetros&quot;)</font></p>
+<b>
+<p><font face="Arial">6. </font></b><font face="Arial">Si aparecen las casillas 
+de marcado podemos usar un <i>Media</i> con Acción &quot;clear&quot; o &quot;clearAll&quot; y Valor 
+&quot;Panel(Main)&quot; que permite al alumno borrar las respuestas marcadas, o ya 
+corregidas. La acción &quot;clear&quot; (botón <i>Borrar</i>) solo se aplica a la tarjeta 
+activa, mientras que &quot;clearAll&quot; (botón <i>Borrar Todo</i>) se aplica a todas las 
+tarjetas del panel.</font></p>
+<p><font face="Arial">NOTA: Todos los demás elementos que componen esta 
+plantilla (los botones de ayuda e instrucciones, el icono de la mano para pasar 
+al siguiente ejercicio, etc.) no son necesarios, están ahí para servir de 
+ejemplo. Elimina los que no vayas a usar para tu ejercicio (como por ejemplo el 
+botón que abre esta explicación).</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>PARÁMETROS CONFIGURABLES</p>
+</b></u></font><b><font COLOR="#ff0000">
+<p><font face="Arial">Tamaño de pantalla</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">640x480 800x600 1024x768</font></p>
+</font><font COLOR="#ff0000">
+<p><font face="Arial">Pantalla completa</font></font><font face="Arial">
+<font COLOR="#008000">(marcado/desmarcado)</font></font></b><font face="Arial"> 
+Cuando está activado ajusta los elementos a la resolución de la pantalla. Si 
+está desactivado mantiene siempre la misma apariencia.</font></p>
+<b><font COLOR="#ff0000">
+<p><font face="Arial">Sonido de respuesta: Acierto / Error</font></font><font face="Arial">
+<font COLOR="#008000">(nombre del fichero)</font></font></b><font face="Arial"> 
+Se puede definir un fichero de sonido (se elige desde la lista desplegable) que 
+sonará al corregir el ejercicio dependiendo si todas las respuestas son 
+correctas o no.</font></p>
+<i><b>
+<p><font COLOR="#0000ff" face="Arial">Otros parámetros:</p>
+</font></b></i><b><font COLOR="#ff0000">
+<p><font face="Arial">verify</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">anyTime/atEnd</font></p>
+</font></b>
+<p><font face="Arial">a) el alumno puede corregir en cualquier momento. El 
+programa corrige y da el porcentaje de aciertos y fallos sólo en la tarjeta 
+activa.</font></p>
+<p><font face="Arial">b) no puede corregir hasta que conteste a todas las 
+preguntas de todas las tarjetas. El porcentaje de aciertos y fallos es el total 
+de todas las tarjetas.</font></p>
+<p><font face="Arial">Estas opciones solo funcionan si los <i>media</i> de 
+respuesta tienen marcada la opción &quot;Casilla de verificación&quot;. Si no esta 
+marcada, la verificación será inmediata en cuanto pulsemos una opción mediante 
+el sonido de Acierto y Error que hayamos definido.</font></p>
+<b><font COLOR="#ff0000">
+<p><font face="Arial">checkOnlyOne</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">yes/no</font></p>
+</font></b>
+<p><font face="Arial">a) solo se permite elegir una entre las opciones que se 
+dan.</font></p>
+<p><font face="Arial">b) permite marcar varias respuestas como correctas.</font></p>
+<b><font COLOR="#ff0000">
+<p><font face="Arial">verifyText</font></font><font face="Arial"> </font>
+<font COLOR="#008000"><font face="Arial">(texto)</font></p>
+</font></b>
+<p><font face="Arial">Permite personalizar el texto de la ventana que aparece al 
+corregir el ejercicio. Se pueden usar distintas variables. Por ejemplo, para 
+obtener un texto donde diga el número de aciertos, errores y puntuación (en 
+porcentaje) habría que escribir lo siguiente en la ventana valores:</font></p>
+<font SIZE="3" COLOR="#0000ff" face="Arial">
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <i>Has conseguido <b>#correct </b>aciertos y <b>#wrong
+</b>errores. Puntuación: <b>#score </b>%</i></p>
+</font>
+
+</body>
+
+</html>

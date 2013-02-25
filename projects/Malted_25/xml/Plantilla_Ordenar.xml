@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Ordenar"
+ VERSION="1.2"
+ INTERACTION="Order"
+ TITLE="Ejercicio de Ordenacion"
+ DESCRIPTION="Ordenar palabras en una oracion, o partes de un dibujo"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="black" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="12"
+>
+<PARAM NAME="verifyText" VALUE=""/>
+<PARAM NAME="verify" VALUE="anyTime"/>
+   <BOUNDS UNIFORM="true" LEFT="349" TOP="420" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12">
+         <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" BGCOLOR="white" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" BGCOLOR="white" DISPLAY="no">
+         <MEDIA LABEL="Ordenar" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12">
+         <MEDIA IMAGE="image/bot_ordenar.gif" VALUE="projects/Malted_25/html/Plantilla_Ordenar.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12">
+         <MEDIA LABEL="Instrucciones" VALUE="Coloca las partes en el orden correcto. Empieza arrastrando la primera palabra a su lugar." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="180" TOP="480" WIDTH="402" HEIGHT="60" width="120" height="50" RANDOM="false" BGCOLOR="white" BGIMAGE="" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="12">
+         <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" VALUE="panel(Main)" ACTION="clear" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA IMAGE="image/boton_borrartodo0.gif" ROLLOVER_IMAGE="image/boton_borrartodo1.gif" VALUE="panel(Main)" ACTION="clearAll" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="94" TOP="142" WIDTH="701" HEIGHT="287" RANDOM="false" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+         <PANEL NAME="Main" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="BOLD_ITALIC" FONTSIZE="16">
+                  <CARD NAME="1" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+                  <BOUNDS NAME="Questions1c" UNIFORM="true" LEFT="1" TOP="171" WIDTH="680" HEIGHT="85" width="115" height="30" RANDOM="false" BGCOLOR="-330067" DISPLAY="center">
+                        <MEDIA LABEL="Mis" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="amigos" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="del" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="pueblo" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="no" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="han" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="ido" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="a" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="la" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="playa" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="en" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="Agosto." BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Questions1a" UNIFORM="true" LEFT="1" TOP="14" WIDTH="678" HEIGHT="40" width="110" height="30" RANDOM="false" BGCOLOR="-185ba5" DISPLAY="center">
+                        <MEDIA LABEL="Ordena" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="las" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="palabras" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="de" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="esta" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="oraci&oacute;n." BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Questions1b" UNIFORM="true" LEFT="1" TOP="95" WIDTH="568" HEIGHT="40" width="110" height="30" RANDOM="false" BGCOLOR="-666601" DISPLAY="center">
+                        <MEDIA LABEL="&iquest; Qu&eacute;" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="quer&iacute;a" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="tu" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="t&iacute;o" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="Juan ?" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="2">
+                  <BOUNDS NAME="Questions2c" UNIFORM="true" LEFT="357" TOP="1" WIDTH="324" HEIGHT="196" width="100" height="40" RANDOM="false" BGCOLOR="-330067" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+                        <MEDIA LABEL="Mis" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="amigos" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="del" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="pueblo" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="no" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="han" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="ido" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="a" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="la" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="playa" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="en" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="Agosto." BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Questions2b" UNIFORM="true" LEFT="205" TOP="1" WIDTH="130" HEIGHT="219" width="110" height="30" RANDOM="false" BGCOLOR="-666601" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+                        <MEDIA LABEL="&iquest; Qu&eacute;" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="quer&iacute;a" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="tu" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="t&iacute;o" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="Juan ?" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Questions2a" UNIFORM="true" LEFT="51" TOP="1" WIDTH="130" HEIGHT="259" width="110" height="30" RANDOM="false" BGCOLOR="-185ba5" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+                        <MEDIA LABEL="Ordena" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="las" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="palabras" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="de" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="esta" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="oraci&oacute;n." BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+</MALTED>

@@ -1,0 +1,19 @@
+2012-06-13 21:27:08,730 [main] ERROR com.malted.launcher.Launcher - No ha podido cargarse el Look & Feel incorporado
+javax.swing.UnsupportedLookAndFeelException: [The Microsoft Office 2003 Look and Feel - org.fife.plaf.Office2003.Office2003LookAndFeel] not supported on this platform
+	at javax.swing.UIManager.setLookAndFeel(UIManager.java:519)
+	at javax.swing.UIManager.setLookAndFeel(UIManager.java:576)
+	at com.malted.launcher.Launcher.config(Launcher.java:174)
+	at com.malted.launcher.Launcher.init(Launcher.java:71)
+	at com.malted.launcher.Launcher.main(Launcher.java:67)
+2012-06-13 21:27:38,516 [AWT-EventQueue-0] WARN  com.malted.launcher.appbus.Resources - No se ha encontrado la cadena: actions.aboutdialog.icon
+2012-06-13 21:27:38,517 [AWT-EventQueue-0] WARN  com.malted.launcher.appbus.Resources - No se ha encontrado la cadena: actions.seeoutofnextsequence.icon
+2012-06-13 21:27:38,519 [AWT-EventQueue-0] WARN  com.malted.launcher.appbus.Resources - No se ha encontrado la cadena: actions.showhelp.icon
+2012-06-13 21:27:49,842 [AWT-EventQueue-0] INFO  com.malted.dvecursos.model.AppContext - com.malted.dvecursos.eventbus.CourseDirtyMessage@9501e2
+2012-06-13 21:27:49,847 [AWT-EventQueue-0] INFO  com.malted.dvecursos.model.AppContext - com.malted.dvecursos.eventbus.UndoManagerChangedMessage@196563d
+2012-06-13 21:27:50,157 [AWT-EventQueue-0] INFO  com.malted.dvecursos.model.AppContext - Time limit exceeded for EventServiceSubscriber. Handling time=243, Time limit=200, event:com.malted.dvecursos.eventbus.CourseChangedMessage@fbd47a, EventServiceSubscribercom.malted.dvecursos.view.PanelFramesProyecto[,0,0,977x436,invalid,layout=com.malted.dvecursos.view.PanelFramesProyecto$CustomLayout,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.synth.SynthBorder@1b51af1,flags=9,maximumSize=,minimumSize=,preferredSize=], start:1339615669911, end:1339615670154
+2012-06-13 21:27:50,158 [AWT-EventQueue-0] INFO  com.malted.dvecursos.model.AppContext - com.malted.dvecursos.eventbus.CourseChangedMessage@fbd47a
+2012-06-13 21:27:50,160 [AWT-EventQueue-0] INFO  com.malted.dvecursos.miniatura.MiniaturaFrameRepainter - loadJComponent java.awt.Dimension[width=160,height=120] /home/xchi/programs/Malted/projects/M7/xml/indice.xml
+2012-06-13 21:28:06,738 [AWT-EventQueue-0] INFO  com.malted.dvecursos.model.AppContext - com.malted.dvecursos.eventbus.FrameSelectedChangedMessage@195cad6
+2012-06-13 21:28:06,740 [AWT-EventQueue-0] INFO  com.malted.dvecursos.model.AppContext - com.malted.dvecursos.eventbus.CourseDirtyMessage@61bf94
+2012-06-13 21:28:06,744 [AWT-EventQueue-0] INFO  com.malted.dvecursos.model.AppContext - com.malted.dvecursos.eventbus.UndoManagerChangedMessage@168bdf4
+2012-06-13 21:28:06,757 [AWT-EventQueue-0] INFO  com.malted.dvecursos.model.AppContext - com.malted.dvecursos.eventbus.CourseChangedMessage@18f1128

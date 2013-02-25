@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Dialogo"
+ VERSION="1.3"
+ INTERACTION="Dialog"
+ TITLE="Dialog template"
+ DESCRIPTION="Dialogue Template: Listening to and reading dialogue in L1 and L2"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT=""
+ WRONG=""
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+   <BOUNDS NAME="flechas" UNIFORM="true" APUNIFORM="false" LEFT="346" TOP="485" WIDTH="188" HEIGHT="39" width="60" height="35" RANDOM="false" DISPLAY="no">
+         <MEDIA NAME=".container15.media1" IMAGE="image/boton_anterior1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" ALIGNMENT="right" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="14" TOOLTIP="Anterior"/>
+         <MEDIA NAME="Main.cardNumber" DVETYPE="0" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+         <MEDIA NAME=".container15.media5" IMAGE="image/boton_siguiente1.gif" DVETYPE="1" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" ALIGNMENT="left" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="14" TOOLTIP="Siguiente"/>
+   </BOUNDS>
+   <MEDIA NAME="notas_plantilla" IMAGE="image/bot_dialogo.gif" DVETYPE="0" VALUE="projects/Malted_ejemplos/html/Plantilla_Dialogo.htm" ACTION="openURL" LEFT="25" TOP="485" WIDTH="109" HEIGHT="96" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="titulo" LABEL="Di&aacute;logo" DVETYPE="0" LEFT="175" TOP="5" WIDTH="520" HEIGHT="55" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   <MEDIA NAME="instrucciones" LABEL="Instrucciones" DVETYPE="0" VALUE="Graba tu parte del di&aacute;logo. Cuando termines, pulsa 'Di&aacute;logo completo' para escucharlo." ACTION="popOutText" LEFT="10" TOP="10" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda1" LABEL="Ayuda 1" DVETYPE="0" VALUE="xml/ayuda.xml" ACTION="popOutFrame" LEFT="10" TOP="60" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda2" LABEL="Ayuda 2" DVETYPE="0" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" LEFT="10" TOP="110" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="vinculo_next" IMAGE="image/boton_siguiente2.gif" DVETYPE="0" VALUE="next" ACTION="courseLink" LEFT="710" TOP="545" WIDTH="70" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <MEDIA NAME="boton_dialogocompleto" IMAGE="image/boton_dialogo0.gif" ROLLOVER_IMAGE="image/boton_dialogo1.gif" DVETYPE="0" ACTION="RunAllDialog" LEFT="390" TOP="532" WIDTH="100" HEIGHT="45" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" TOOLTIP="Escuchar todo el di&aacute;logo."/>
+   <PANEL NAME="Main" DISPLAY="no" LEFT="149" TOP="75" WIDTH="576" HEIGHT="404">
+      <CARD NAME="1">
+      <BOUNDS NAME="herramientas_grabacion_1" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="340" WIDTH="230" HEIGHT="58" width="70" height="50" RANDOM="false">
+            <MEDIA NAME="rec_1" IMAGE="image/boton_rec1.gif" DVETYPE="0" VALUE="audio/rec1.wav" ACTION="record" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Grabar"/>
+            <MEDIA NAME="play_1" IMAGE="image/boton_audio1.gif" DVETYPE="0" VALUE="audio/rec1.wav" ACTION="play" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar lo grabado"/>
+      </BOUNDS>
+      <MEDIA NAME="imagen_chica" IMAGE="image/mujer2.gif" DVETYPE="1" LEFT="351" TOP="6" WIDTH="184" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="imagen_chico" IMAGE="image/alumno1.gif" DVETYPE="1" LEFT="6" TOP="5" WIDTH="203" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="texto_1a" DVETYPE="0" TEXT="           &iexcl;Buenos d&iacute;as!&#x000a;   &iquest;C&oacute;mo se llama usted?" LEFT="6" TOP="270" WIDTH="220" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="texto_1b" DVETYPE="0" LEFT="330" TOP="270" WIDTH="230" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      </CARD>
+      <CARD NAME="2">
+      <MEDIA NAME="imagen_chica" IMAGE="image/mujer1.gif" DVETYPE="1" LEFT="351" TOP="6" WIDTH="184" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="imagen_chico" IMAGE="image/alumno2.gif" DVETYPE="1" LEFT="6" TOP="5" WIDTH="203" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="texto_2a" DVETYPE="0" LEFT="6" TOP="270" WIDTH="220" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="texto_2b" DVETYPE="0" TEXT="      Hola. Me llamo Patricia." LEFT="330" TOP="270" WIDTH="230" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="Audio_2" IMAGE="image/boton_audio1.gif" AUDIO="audio/dialogo_c2.mp3" DVETYPE="0" LEFT="403" TOP="345" WIDTH="70" HEIGHT="48" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar"/>
+      </CARD>
+      <CARD NAME="3">
+      <BOUNDS NAME="herramientas_grabacion_3" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="340" WIDTH="230" HEIGHT="58" width="70" height="50" RANDOM="false">
+            <MEDIA NAME="rec_3" IMAGE="image/boton_rec1.gif" DVETYPE="0" VALUE="audio/rec3.wav" ACTION="record" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Grabar"/>
+            <MEDIA NAME="play_3" IMAGE="image/boton_audio1.gif" DVETYPE="0" VALUE="audio/rec3.wav" ACTION="play" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar lo grabado"/>
+      </BOUNDS>
+      <MEDIA NAME="imagen_chica" IMAGE="image/mujer2.gif" DVETYPE="1" LEFT="351" TOP="6" WIDTH="184" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="imagen_chico" IMAGE="image/alumno1.gif" DVETYPE="1" LEFT="6" TOP="5" WIDTH="203" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="texto_3b" DVETYPE="0" LEFT="330" TOP="270" WIDTH="230" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="texto_3a" DVETYPE="0" TEXT="     &iquest;Cu&aacute;ntos a&ntilde;os tiene?" LEFT="6" TOP="270" WIDTH="220" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      </CARD>
+      <CARD NAME="4">
+      <MEDIA NAME="imagen_chica" IMAGE="image/mujer1.gif" DVETYPE="1" LEFT="351" TOP="6" WIDTH="184" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="imagen_chico" IMAGE="image/alumno2.gif" DVETYPE="1" LEFT="6" TOP="5" WIDTH="203" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="texto_4a" DVETYPE="0" LEFT="6" TOP="270" WIDTH="220" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="texto_4b" DVETYPE="0" TEXT="          Tengo 29 a&ntilde;os." LEFT="330" TOP="270" WIDTH="230" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="Audio_4" IMAGE="image/boton_audio1.gif" AUDIO="audio/dialogo_c4.mp3" DVETYPE="0" LEFT="403" TOP="345" WIDTH="70" HEIGHT="48" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar"/>
+      </CARD>
+      <CARD NAME="5">
+      <BOUNDS NAME="herramientas_grabacion_5" UNIFORM="true" APUNIFORM="false" LEFT="1" TOP="340" WIDTH="230" HEIGHT="58" width="70" height="50" RANDOM="false">
+            <MEDIA NAME="rec_5" IMAGE="image/boton_rec1.gif" DVETYPE="0" VALUE="audio/rec5.wav" ACTION="record" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Grabar"/>
+            <MEDIA NAME="play_5" IMAGE="image/boton_audio1.gif" DVETYPE="0" VALUE="audio/rec5.wav" ACTION="play" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar lo grabado"/>
+      </BOUNDS>
+      <MEDIA NAME="imagen_chica" IMAGE="image/mujer2.gif" DVETYPE="1" LEFT="351" TOP="6" WIDTH="184" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="imagen_chico" IMAGE="image/alumno1.gif" DVETYPE="1" LEFT="6" TOP="5" WIDTH="203" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="texto_5b" DVETYPE="0" LEFT="330" TOP="270" WIDTH="230" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="texto_5a" DVETYPE="0" TEXT="   &iquest;Cu&aacute;l es su profesi&oacute;n?" LEFT="6" TOP="270" WIDTH="220" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      </CARD>
+      <CARD NAME="6">
+      <MEDIA NAME="imagen_chica" IMAGE="image/mujer1.gif" DVETYPE="1" LEFT="351" TOP="6" WIDTH="184" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="imagen_chico" IMAGE="image/alumno2.gif" DVETYPE="1" LEFT="6" TOP="5" WIDTH="203" HEIGHT="255" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="texto_6a" DVETYPE="0" LEFT="6" TOP="270" WIDTH="220" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cd0000" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="texto_6b" DVETYPE="0" TEXT="  Soy profesora de Ciencias." LEFT="330" TOP="270" WIDTH="230" HEIGHT="65" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-cccd00" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+      <MEDIA NAME="Audio_6" IMAGE="image/boton_audio1.gif" AUDIO="audio/dialogo_c6.mp3" DVETYPE="0" LEFT="403" TOP="345" WIDTH="70" HEIGHT="48" BORDER_WIDTH="1" BORDER_COLOR="-857567" TOOLTIP="Escuchar"/>
+      </CARD>
+   </PANEL>
+</MALTED>

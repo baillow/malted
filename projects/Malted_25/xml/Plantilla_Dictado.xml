@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Dictado"
+ VERSION="1.2"
+ INTERACTION="Transcription"
+ TITLE="Dictado"
+ DESCRIPTION="Dictado: Transcribir de un texto leido"
+ MOTHER_TONGUE="Spanish"
+ TARGET_LANGUAGE="English"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="verifyText" VALUE="Debes corregir el error antes de continuar."/>
+<PARAM NAME="ignoreCase" VALUE="yes"/>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Dictado" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_dictado.gif" VALUE="projects/Malted_25/html/Plantilla_Dictado.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Pulsa el icono de audio y escribe lo que escuches." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="311" TOP="480" WIDTH="271" HEIGHT="60" width="120" height="50" RANDOM="false" FGCOLOR="white" BGIMAGE="" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" ACTION="clear" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="167" TOP="105" WIDTH="561" HEIGHT="363" RANDOM="false" DISPLAY="center">
+         <PANEL NAME="Main" DISPLAY="no">
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="48" TOP="28" WIDTH="79" HEIGHT="61" RANDOM="false">
+                        <MEDIA IMAGE="image/boton_audio1.gif" AUDIO="audio/dictado.mp3" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="396" TOP="38" WIDTH="103" HEIGHT="45" RANDOM="false" DISPLAY="center">
+                        <MEDIA LABEL="Soluci&oacute;n" VALUE="text/texto_dictado.rtf &#x22;SOLUCI&Oacute;N&#x22;" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-666601" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="20"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Text" UNIFORM="true" LEFT="10" TOP="104" WIDTH="523" HEIGHT="234" RANDOM="false" BGCOLOR="-2f2f30" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+                        <MEDIA VALUE="text/texto_dictado.txt" EDITABLE="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+</MALTED>

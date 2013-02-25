@@ -1,0 +1,12 @@
+Instrucciones para instalar unidades Malted:
+
+1. Extraer el archivo .zip a la carpeta "projects" que se encuentra dentro del directorio donde se ha instalado Malted2. Típicamente será:
+
+C:\Malted2\projects
+
+Esto genera automáticamente una carpeta con el nombre de la unidad en cuestión dentro de al carpeta "projects".
+
+2. La unidad ya está lista para verse. Sólo hace falta Abrir el Navegador Malted (RTS) y pulsar sobre el icono Abrir Unidad en mi PC.
+
+Para instrucciones más detalladas visitar:
+http://malted.cnice.mecd.es/instalar/unidadeszip/installcourses.htm

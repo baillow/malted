@@ -1,0 +1,351 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>8. Interacciones y Plantillas</title>
+</head>
+<body bgcolor="#FFFFFF" background="imagenes/logo1.gif">
+<table width="600" border="0" align="center" cellpadding="3" cellspacing="0">
+  <tr> 
+    <td width="588"> <div align="center"> 
+        <p><strong><u><font size="3" face="Arial, Helvetica, sans-serif"><font color="#003366"><font color="#000066">8. 
+          Interacciones y Plantillas</font></font></font></u></strong></p>
+      </div></td>
+  </tr>
+  <tr> 
+    <td> <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Las 
+        <strong>Interacciones</strong> son propiedades que podemos asignar a un 
+        Frame de Malted que precisan de una serie de Objetos Media, Paneles y 
+        Contenedores para su correcto funcionamiento. Permiten crear ejercicios 
+        de diversa &iacute;ndole y con capacidad de verificaci&oacute;n o correci&oacute;n 
+        (salvo la Interacci&oacute;n Null). La Interacci&oacute;n a aplicar se 
+        selecciona en el men&uacute; <font color="#CC0000">Frame &gt; Propiedades</font> 
+        , pesta&ntilde;a <font color="#CC0000">Descripci&oacute;n</font>. Cada 
+        Interacci&oacute;n tiene asociada una serie de <strong>Par&aacute;metros</strong> 
+        modificables que se pueden cambiar en la pesta&ntilde;a <font color="#CC0000">Par&aacute;metros</font>. 
+        Adem&aacute;s, la lista de Acciones disponibles al editar los Objetos 
+        Media cambia en funci&oacute;n de la Interacci&oacute;n elegida.<br>
+        <br>
+        Las <strong>Plantillas</strong> de Malted se basan en &eacute;stas Interacciones 
+        e incluyen todos los elementos necesarios para que funcione cada una, 
+        de modo que s&oacute;lo hace falta introducir los textos y ficheros media 
+        (im&aacute;genes, audio, etc) para crear un ejercicio completamente funcional.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Por 
+        &oacute;rden alfab&eacute;tico las interacciones posibles son las siguientes:<font color="#CC0000"><u><br>
+        <br>
+        Interacci&oacute;n Crossword:<br>
+        </u></font><strong>Plantillas:</strong> Crossword_000.template<br>
+        <br>
+        Esta interacci&oacute;n es un Crucigrama: el usuario debe arrastrar las 
+        letras a las casillas para rellenar todos los huecos en base a las definiciones 
+        proporcionadas. La interacci&oacute;n precisa los siguientes componentes:<br>
+        <br>
+        1. Panel con Nombre &quot;Main&quot;<br>
+        2. Dentro del Panel &quot;Main&quot;, un Contenedor con Nombre &quot;Crossword&quot;<br>
+        3. Dentro del Contenedor &quot;Crossword&quot; van las casillas. Cada 
+        una es un Media:<br>
+        - Casilla con n&uacute;mero: Media con Etiqueta &quot;el n&uacute;mero&quot;, 
+        Valor &quot;nogap&quot;<br>
+        - Casilla de letra: Media con Valor &quot;la letra en cuesti&oacute;n&quot;<br>
+        - Casilla transparente: Media con Valor &quot;nogap&quot;, y transparente<br>
+        - Casilla negra: Media con Valor &quot;nogap&quot; y fondo negro<br>
+        4. Dentro del Panel &quot;Main&quot;, un Contenedor con Nombre &quot;Letters&quot;<br>
+        5. Dentro del Contenedor &quot;Letters&quot;, las letras que se arrastran. 
+        <br>
+        - Cada letra va dentro de un Media con Etiqueta &quot;la letra en cuesti&oacute;n&quot;<br>
+        6. Media asociado a un fichero de texto que contiene las pistas o definiciones 
+        <br>
+        7. Media con Acci&oacute;n &quot;verify&quot; o &quot;check&quot; que 
+        verifica las entradas<br>
+        8. Media con Acci&oacute;n &quot;clear&quot; o &quot;clearAll&quot; que 
+        borra las entradas</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        </font><font color="#CC0000" size="2" face="Arial, Helvetica, sans-serif">Crossword2</font><font color="#CC0000">:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        Crossword2_000.template<br>
+        <br>
+        Esta interacci&oacute;n es un Crucigrama: el usuario debe ESCRIBIR las 
+        letras en las casillas para rellenar todos los huecos en base a las definiciones 
+        proporcionadas.<br>
+        La interacci&oacute;n precisa los siguientes componentes:<br>
+        <br>
+        1. Panel con Nombre &quot;Main&quot;<br>
+        2. Dentro del Panel &quot;Main&quot;, un Contenedor con Nombre &quot;Crossword&quot;<br>
+        3. Dentro del Contenedor &quot;Crossword&quot;, un Media con Nombre &quot;Crossword&quot; 
+        vinculado a un fichero de texto con un formato particular (ver Ayuda &gt; 
+        Interacciones &gt; Crossword2)<br>
+        4. Dentro del Panel &quot;Main&quot; un Media con Nombre &quot;Across&quot;<br>
+        5. Dentro del Panel &quot;Main&quot; un Media con Nombre &quot;Down&quot;<br>
+        6. Dentro del Panel &quot;Main&quot; un Media con Nombre &quot;Definitions&quot; 
+        <br>
+        7. Media con Acci&oacute;n &quot;verify&quot; o &quot;check&quot; y Valor 
+        &quot;Panel(Main)&quot; que verifica las entradas<br>
+        8. Media con Acci&oacute;n &quot;clear&quot; o &quot;clearAll&quot; que 
+        borra las entradas</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        Dialog:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        Dialog_000.template<br>
+        <br>
+        Esta interacci&oacute;n sirve para simular un di&aacute;logo que el alumno 
+        puede seguir mediante audio y texto. El di&aacute;logo puede ser entre 
+        2 personajes de la unidad o entre el ordenador y el alumno si a&ntilde;adimos 
+        opciones de grabaci&oacute;n.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">La 
+        modalidad de di&aacute;logo <strong>ORDENADOR - ORDENADOR</strong> requiere 
+        los siguientes componentes:<br>
+        <br>
+        1. Panel con Nombre &quot;Main&quot; con tantas tarjetas como partes en 
+        que dividimos el di&aacute;logo.<br>
+        2. Dentro del Panel &quot;Main&quot;, cada personaje suele tener:<br>
+        - 1 Media con imagen del personaje<br>
+        - 1 Media con texto escrito del personaje<br>
+        - 1 Media asociado a Fichero Audio y a la vez a un Fichero Imagen (icono 
+        de Play)<br>
+        Al presionar este media se reproduce el audio de la tarjeta en que nos 
+        encontramos.<br>
+        3. Dentro del Panel &quot;Main&quot; un Contenedor de barra de navegaci&oacute; 
+        n de tarjetas que contiene:<br>
+        - Indicador de n&uacute;mero de tarjeta: 1 Media con Nombre &quot;Main.cardNumber&quot;<br>
+        - Flecha Retroceder: 1 Media con Accion &quot;previous&quot; y Valor &quot;panel(Main)&quot; 
+        asociado a imagen de flecha<br>
+        - Flecha Siguiente: 1 Media con Accion &quot;next&quot; y Valor &quot;panel(Main)&quot; 
+        asociado a imagen de flecha</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">La 
+        modalidad de di&aacute;logo <strong>ORDENADOR - ALUMNO</strong> se construye 
+        igual que la anterior con la siguiente diferencia:<br>
+        <br>
+        El personaje que interpreta el alumno debe tener:<br>
+        - 1 Media con Accion &quot;record&quot; y Valor &quot;audio/(nombredelfichero).mp3&quot;<br>
+        - 1 Media con Accion &quot;play&quot; y Valor &quot;audio/(nombredelfichero).mp3&quot; 
+        </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Otras 
+        acciones asignables a los Media en la Interacci&oacute;n Dialog son:<br>
+        - &quot;RunAllDialog&quot; reproduce todas las tarjetas del panel con 
+        sus audios de manera secuencial<br>
+        - &quot;Recap&quot; reproduce desde la 1&ordf; tarjeta hasta la tarjeta 
+        en que nos encontramos<br>
+        - &quot;Continue&quot; reproduce desde la tarjeta en que nos encontramos 
+        hasta la &uacute;ltima tarjeta</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        GapFilling:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        Spelling.template, TextGapas.template, TextGapsWithContractions.template, 
+        Transcription.template, Translate.template, TranslateWords.template, WordGaps.template 
+        <br>
+        <br>
+        Esta interacci&oacute;n permite crear ejercicios de texto con huecos para 
+        ser rellenados por el alumno. Adem&aacute;s, en conjunci&oacute;n con 
+        audio puede ser &uacute;til para elaborar ejercicios de ortograf&iacute;a 
+        o traducci&oacute;n.<br>
+        <br>
+        Elementos necesarios:<br>
+        1. Panel con Nombre &quot;Main&quot;<br>
+        2. Dentro del Panel &quot;Main&quot;, un Contenedor con Nombre &quot;Phrases&quot;<br>
+        3. Dentro del Contenedor &quot;Phrases&quot; un Media con el texto del 
+        ejercicio:<br>
+        Existen 2 formas de introducir el texto:<br>
+        a) Vinculando el Media a un fichero de texto de la carpeta text/<br>
+        El fichero contiene el texto &iacute;ntegro con las palabras que se desean 
+        omitir entre corchetes.<br>
+        ej: [Where] do they live? Do [they live in] England?<br>
+        b) Introduciendo el texto con las palabras a omitir entre corchetes en 
+        el cuadro &quot;Texto&quot; del Media.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> Si 
+        existen varias soluciones posibles para un hueco, las podemos implementar 
+        separ&aacute;ndolas <br>
+        por medio de barras verticales (Alt Gr +1).<br>
+        ej:[we&acute;ll go|we will go|we're going|we are going] tomorrow to the 
+        movies.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">4. 
+        Media con Acci&oacute;n &quot;verify&quot; o &quot;check&quot; y Valor 
+        &quot;Panel(Main)&quot; que verifica lo que ha escrito el alumno.<br>
+        5. Media con Acci&oacute;n &quot;clear&quot; o &quot;clearAll&quot; y 
+        Valor &quot;Panel(Main)&quot; que permite al almuno borrar sus entradas</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        HangMan:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        HangMan_000.template, HangMan_001.template<br>
+        <br>
+        Esta interacci&oacute;n permite crear un ejercicio basado en el juego 
+        del ahorcado.<br>
+        <br>
+        Elementos necesarios:<br>
+        1. Panel con Nombre &quot;Pictures&quot; que alberga en tarjetas los distintos 
+        estad&iacute;os por los que pasa el dibujo del ahorcado<br>
+        2. Panel con Nombre &quot;Main&quot; dentro del cual hay:<br>
+        3. Contenedor con Nombre &quot;hiddenWord&quot; en el cual hay un Media 
+        con Valor &quot;lapalabrabuscada&quot;<br>
+        4. Contenedor con 30 Medias, cada una con una letra en el campo Etiqueta<br>
+        5. Contenedor con un Media que sirve de pista (texto, im&aacute;gen, audio 
+        o v&iacute;deo)<br>
+        6. Media con Acci&oacute;n &quot;clear&quot;<br>
+        7. Media con Acci&oacute;n &quot;solve&quot;</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        Match2:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        Association.template, Match_000.template, orderParagraphs.template, orderSentences.template, 
+        orderText.template, orderWords.template, <br>
+        <br>
+        Esta plantilla permite crear ejercicios de emparejar objetos/palabras.<br>
+        Plantillas: Association, Match, OrderWords, OrderSentences</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Elementos 
+        necesarios:<br>
+        1. Panel con Nombre &quot;Main&quot; dentro del cual deber&aacute; haber<br>
+        2. Contenedor con nombre &quot;Options&quot; que contiene las soluciones 
+        que tendremos que arrastar:<br>
+        - Cada soluc&iacute;on es un Media con Etiqueta &quot;lasolucion&quot; 
+        y Valor un n&uacute;mero que coincidir&aacute; con el Valor del Media 
+        al que arrastramos.<br>
+        3. Contenedor con nombre &quot;Answers&quot; en el que se encuentran las 
+        cajas adonde arrastramos los primeros Media.<br>
+        - Las cajas receptoras son Medias con Etiqueta vac&iacute; a o no, y con 
+        Valor un n&uacute;mero que coincide con el Valor del Media soluci&oacute;n 
+        alojado dentro del contenedor Options.<br>
+        4. Opcionalmente podemos incluir tambien 1 Contenedor con nombre &quot;Questions&quot; 
+        que aloja Medias con preguntas y que se emparejan con las cajas receptoras 
+        vac&iacute;as asign&aacute;ndoles el mismo Valor. (ver plantilla Match_000 
+        para un ejemplo) <br>
+        5. Media con Acci&oacute;n &quot;verify&quot; o &quot;check&quot; y Valor 
+        &quot;Panel(Main)&quot; que verifica las entradas<br>
+        6. Media con Acci&oacute;n &quot;clear&quot; o &quot;clearAll&quot; y 
+        Valor &quot;Panel(Main)&quot; que borra las entradas</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">El 
+        emparejado se hace arrastrando las soluciones a su lugar apropiado. <br>
+        En los Par&aacute;metros de la Interacci&oacute;n podemos elegir c&uacute;ando 
+        permitimos verificar:<br>
+        a) anyTime: en cualquier momento<br>
+        b) atEnd: s&oacute; lo tras haber completado el ejercicio<br>
+        c) onAssociation: verifica de forma autom&aacute;tica al asociar cada 
+        pareja, y al arrastar la soluci&oacute;n a su lugar se dibuja una flecha 
+        tras haber completado el ejercicio (atEnd), en cualquier momento (anyTime), 
+        o de forma autom&aacute;tica al asociar dos objetos (onAssociation).<br>
+        <br>
+        </font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        Match DND:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><br>
+        A extinguir, sus funcionalidades est&aacute;n incluidas en Match2.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        Memory:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        </font><br>
+        <font color="#CC0000"><br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> 
+        Esta interacci&oacute;n permite crear un ejercicio de emparejado integrado 
+        en el cl&aacute;sico juego de memoria:<br>
+        Las &quot;cartas&quot; est&aacute;n dadas la vuelta y s&oacute;lo se pueden 
+        ver de dos en dos, hay que ir encontrando las parejas hasta desvelarlas 
+        todas.<br>
+        <br>
+        Elementos necesarios:<br>
+        1. Panel con Nombre &quot;Main&quot;<br>
+        2. Dentro del Panel &quot;Main&quot;, un Contenedor con Nombre &quot;Options&quot;<br>
+        3. Dentro del Contenedor &quot;Options&quot; los Media que ser&aacute;n 
+        las cartas del ejercicio:<br>
+        - pueden ser im&aacute;genes o llevar texto en la Etiqueta.<br>
+        - Cada pareja de Medias debe tener asignada en el campo Valor el mismo 
+        numero.<br>
+        4. Media con Acci&oacute;n &quot;retry&quot; y Valor &quot;Panel(Main)&quot; 
+        que devuelve las cartas a su estado inicial.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        MultipleChoice:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        MCh_1Q_anyTime.template, MCh_1Q_atEnd.template, MCh_1Q_onClick.template, 
+        MCh_MQ_anyTime.template, MCh_MQ_atEnd.template, MCh_MQ_onClick.template, 
+        TrueFalse_anyTime.template, TrueFalse_atEnd.template, TrueFalse_onClick.template, 
+        WordGaps.template <br>
+        <br>
+        Esta interacci&oacute;n permite la creaci&oacute;n de ejercicios de selecci&oacute;n 
+        m&uacute;ltiple y de verdadero/falso.<br>
+        <br>
+        Elementos necesarios:<br>
+        1. Panel con Nombre &quot;Main&quot;<br>
+        2. Dentro del Panel &quot;Main&quot;, un Media con el est&iacute; mulo/pregunta 
+        (texto, imagen, etc.)<br>
+        3. Dentro del Panel &quot;Main&quot;, un Contenedor con Nombre &quot;Answers&quot; 
+        con la opci&oacute;n &quot;Despliegue CheckBox&quot; activada o no seg&uacute;n 
+        si queramos posibilitar marcas de contestaci&oacute;n<br>
+        4. Dentro del Contenedor &quot;Answers&quot; los Media que ser&aacute;n 
+        las distintas respuestas posibles.<br>
+        5. Cada Media tendr&aacute;:<br>
+        - Etiqueta: el texto respuesta <br>
+        - Valor: &quot; true&quot; o &quot;false&quot; seg&uacute;n sea verdadera 
+        o falsa la respuesta<br>
+        - Casilla de verificaci&oacute;n: <br>
+        - activada: permite seleccionar varias respuestas a la vez, marc&aacute;ndolas, 
+        y es necesario a&ntilde;adir un bot&oacute;n de verificaci&oacute;n aparte<br>
+        - sin activar: al pulsar sobre la respuesta la verificaci&oacute;n es 
+        autom&aacute;tica mediante sonido de fallo o acierto </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> Si 
+        tenemos las casillas de verificaci&oacute;n activadas: <br>
+        6. Media con Acci&oacute;n &quot;verify&quot; que verifica las repuestas 
+        y muestra las correctas/incorrectas &oacute; Media con Acci&oacute;n &quot;check&quot; 
+        que muestra s&oacute;lamente los aciertos que ha tenido el usuario.<br>
+        7. Media con Acci&oacute;n &quot;clear&quot; que borra las respuestas 
+        marcadas. En los Par&aacute;metros de la interacci&oacute;n MultipleChoice 
+        tenemos la opci&oacute;n &quot;checkOnlyOne&quot; que permite dar la posibilidad 
+        al alumno de marcar varias respuestas o s&oacute;lo una.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        Null:</font><br>
+        </u><strong>Plantillas:</strong> _Blank.template, acknowledgements.template, 
+        freeWriting.template, Functions.template, Menu_001.template, onePanel.template, 
+        plantilla_portada.template, plantilla_templates.template<br>
+        <u><br>
+        </u>Es la ausencia de interacci&oacute;n. Se emplea en ejercicios que 
+        no precisan de alguna de las dem&aacute;s interacciones, bien porque son 
+        simplemente pantallas para ser vistas sin m&aacute;s, bien porque se basta 
+        con las Acciones y propiedades de los Media para generar interacci&oacute;n 
+        con el usuario (ejercicios de escritura, audiciones, v&iacute;deos, y 
+        en general <strong>cualquier ejercicio que no precise de un bot&oacute;n 
+        de verificaci&oacute;n</strong>).</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        Order:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        Order_000.template<br>
+        <br>
+        Plantilla que presenta una serie de palabras al usuario para que las ordene 
+        y construya una frase.<br>
+        <br>
+        Elementos necesarios:<br>
+        1. Panel con Nombre &quot;Main&quot;<br>
+        2. Dentro del Panel &quot;Main&quot;, un Contenedor con nombre &quot;Questions&quot;<br>
+        3. Dentro del Contenedor &quot;Questions&quot; tantos Media como trozos 
+        en los que hemos dividido la frase. <br>
+        - Cada Media tiene de Etiqueta el trozo de frase, y la frase est&aacute; 
+        escrita sin desordenar (la interacci&oacute;n Order desordena autom&aacute;ticamente 
+        los trozos al ejecutar el frame).<br>
+        4. Para introducir varias frases crear m&aacute;s Contenedores con los 
+        nombres &quot;Questions1&quot;, &quot;Questions2&quot;, &quot;Questions3&quot;, 
+        etc.<br>
+        5. Media con Acci&oacute;n &quot;verify&quot; que verifica las repuestas 
+        y muestra las correctas/incorrectas. <br>
+        6. Media con Acci&oacute;n &quot;clear&quot; que borra los resultados 
+        para poder repetir el ejercicio.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font color="#CC0000">Interacci&oacute;n 
+        Transcription:<br>
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Plantillas:</strong> 
+        <br>
+        <br>
+        Esta interacci&oacute;n se encarga de la verificaci&oacute;n de un texto 
+        escrito. Compara el texto que intoduce el usuario con el original y si 
+        hay diferencias devuelve fallo. <br>
+        <br>
+        Elementos necesarios:<br>
+        1. Panel con Nombre &quot;Main&quot;<br>
+        2. Dentro del Panel &quot;Main&quot;, un Contenedor con Nombre &quot;Text&quot;<br>
+        3. Dentro del Contenedor &quot;Text&quot; un Media con la casilla &quot;Zona 
+        Editable&quot; marcada y con la ruta del texto original como Valor.<br>
+        ej. Valor: text/Transcription.txt<br>
+        4. Media con el est&iacute;mulo (audio en caso de dictado, o texto en 
+        el caso de una pregunta, etc.)<br>
+        5. Media con Acci&oacute;n &quot;verify&quot; o &quot;check&quot; que 
+        verifica las entradas.<br>
+        6. Media con Acci&oacute;n &quot;clear&quot; o &quot;clearAll&quot; que 
+        borra las entradas.</font></p></td>
+  </tr>
+  <tr> 
+    <td><div align="right"><font size="2" face="Arial, Helvetica, sans-serif"><a href="Acciones.htm"><br>
+        &gt;&gt; Acciones de los Objetos Media</a></font></div></td>
+  </tr>
+</table>
+</body>
+</html>

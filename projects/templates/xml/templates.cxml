@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE COURSE SYSTEM "../../templates/dtd/Course.dtd">
+<COURSE
+   NAME="Course"
+   TITLE="templates.cxml"
+   DESCRIPTION="Curso de Malted"
+   STRUCTURE="complex"
+   VERSION="1.2"
+   START="0"
+   >
+   <FRAME NAME="0" SCRIPT="Plantilla_Basica.template" >
+      <LINK NAME="next" DESTINATION="1" />
+   </FRAME>
+   <FRAME NAME="1" SCRIPT="Plantilla_Ahorcado.template" >
+      <LINK NAME="next" DESTINATION="2" />
+   </FRAME>
+   <FRAME NAME="2" SCRIPT="Plantilla_Asociacion1.template" >
+      <LINK NAME="next" DESTINATION="3" />
+   </FRAME>
+   <FRAME NAME="3" SCRIPT="Plantilla_Asociacion2.template" >
+      <LINK NAME="next" DESTINATION="4" />
+   </FRAME>
+   <FRAME NAME="4" SCRIPT="Plantilla_Completar.template" >
+      <LINK NAME="next" DESTINATION="5" />
+   </FRAME>
+   <FRAME NAME="5" SCRIPT="Plantilla_Crucigrama.template" >
+      <LINK NAME="next" DESTINATION="6" />
+   </FRAME>
+   <FRAME NAME="6" SCRIPT="Plantilla_Dialogo.template" >
+      <LINK NAME="next" DESTINATION="7" />
+   </FRAME>
+   <FRAME NAME="7" SCRIPT="Plantilla_Dictado.template" >
+      <LINK NAME="next" DESTINATION="8" />
+   </FRAME>
+   <FRAME NAME="8" SCRIPT="Plantilla_Escribir.template" >
+      <LINK NAME="next" DESTINATION="9" />
+   </FRAME>
+   <FRAME NAME="9" SCRIPT="Plantilla_Grabacion.template" >
+      <LINK NAME="next" DESTINATION="10" />
+   </FRAME>
+   <FRAME NAME="10" SCRIPT="Plantilla_Memory.template" >
+      <LINK NAME="next" DESTINATION="11" />
+   </FRAME>
+   <FRAME NAME="11" SCRIPT="Plantilla_Ordenar.template" >
+      <LINK NAME="next" DESTINATION="12" />
+   </FRAME>
+   <FRAME NAME="12" SCRIPT="Plantilla_Test.template" >
+      <LINK NAME="next" DESTINATION="System" />
+   </FRAME>
+</COURSE>

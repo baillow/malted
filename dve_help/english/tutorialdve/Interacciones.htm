@@ -1,0 +1,503 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>8. Interactions and Templates</title>
+</head>
+<body bgcolor="#FFFFFF" background="/imagenes/logo1.gif">
+<table width="600" border="0" align="center" cellpadding="3" cellspacing="0">
+  <tr> 
+    <td width="588"> <div align="center"> 
+        <p><strong><font size="3" face="Arial, Helvetica, sans-serif"><font color="#003366"><font color="#000066">8.
+                     Interactions and Templates</font></font></font></strong></p>
+      </div></td>
+  </tr>
+  <tr> 
+    <td> <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">The <strong>interactions </strong>are properties applicable to a <strong>Malted
+            Frame</strong>, which
+        require a range of <strong>Media Objects</strong>, <strong>Panels</strong> and <strong>Containers</strong> for their correct
+        running. They allow the designer to create different types of exercises
+        that can be verified and checked, except for <strong>Null Interaction</strong>. </font></p>
+      <font color="#000066" size="2" face="Arial, Helvetica, sans-serif">The
+      <strong>interaction</strong> we would like to apply is selected from <font color="#FF0000">Frame&gt;Behaviour</font>,
+      <font color="#FF0000">Description<font color="#000066"> thumb</font></font>. Each <strong>interaction</strong> has several parameters associated to
+      it, which can be modified from the <font color="#FF0000">Parameters </font>thumb. On the other hand,
+      the list of available <strong>Actions</strong> when editing <strong>Media
+      Objects</strong> will change depending
+      on the chosen <strong>Interaction</strong>.<br>
+      <br>
+      <strong>Malted templates</strong> are based on these interactions and they 
+      include all the necessary items so that each interaction works properly, 
+      so that the designer will only have to integrate texts and media files (images, 
+      audio, etc.) in order to develop a fully functional exercise.</font> <br>
+      <font size="2"><font color="#000066" face="Arial, Helvetica, sans-serif"><u><a href="../../../Tutorial/multimedia/index_eng.htm">Demo 
+      Multimedia 6:&quot;Interactions&quot;</a></u></font></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">&nbsp; 
+      </font> 
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> The
+          available interactions are described below in alphabetical order:<font color="#CC0000"><u><br>
+        <br>
+         </u>Crossword <font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><font color="#CC0000">Interaction</font></font><font color="#CC0000">:</font><u><br>
+          </u></font><strong> Templates:</strong> Crossword_000.template<br>
+        <br>
+        
+
+
+ This interaction is a crossword: the user must drag the letters on to the boxes
+ so as to fill in all the gaps following the provided definitions. The interaction
+ requires the following items:<br>
+        <br>
+      1. Panel called Main</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">2. A
+      container called Crossword, inside the Main panel</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">3.
+            
+
+
+ The boxes are included inside the Crossword container. Each box is a media:<br>
+         - </font> <font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Numbered
+         box: media labelled as “the number”,
+         Value=nogap <br>
+         - Lettered box: its value is the required letter</font> <font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><br>
+         - </font> <font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Transparent box: transparent media whose value
+         is nogap</font> <font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><br>
+         - Black box: black background media whose value
+         is nogap <br>
+        4. A container called Letters inside the Main Panel</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">5.
+             The draggable letters inside the Letters container<br>
+        - 
+  
+
+ Each letter is a media which must be labelled as that same letter<br>
+        6. A media associated to a text file including the prompts or definitions</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">7.
+          A media whose action will be verify or check and that will verify
+          the entries</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">8.
+            A media whose action will be clear or clearAll that rubs out the entries</font> </p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><font color="#CC0000" size="2" face="Arial, Helvetica, sans-serif">Crossword2 </font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><font color="#CC0000">Interaction</font></font><font color="#CC0000">:<u><br>
+        </u></font><strong> Templates:</strong> 
+        Crossword2_000.template<br>
+        <br>
+ This interaction consists of a crossword. The user must write the letters in
+ the boxes so as to fill in all the gaps following the provided definitions.<br>
+ The interaction requires the following items:<br>
+        <br>
+        1. Panel called Main</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">2.
+          A container called Crossword inside the Main panel</font> </p>      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">3. A
+          media called Crossword, inside the Crossword container, linked to a
+          text file with a specific format (see Help&gt;Interactions&gt;Crossword2) </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">4.
+          A media called Across inside the Main Panel</font> </p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">5. A
+          media called Down inside the Main Panel </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">6.
+          A media called Definitions inside the Main Panel </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">7.
+          A media whose action
+          is verify or check and whose value is “Panel(
+          Main )” which verifies the entries</font> </p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">8. A
+          media whose action is clear or clearAll that rubs out the entries </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> <font color="#CC0000">Dialogue 
+        Interaction:<u><br>
+        </u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font size="2"><font color="#000066" face="Arial, Helvetica, sans-serif"><u><a href="../../../Tutorial/multimedia/index_eng.htm">Demo 
+        Multimedia 5:&quot;Dialogue template&quot;</a></u></font></font><font color="#CC0000"> 
+        </font></u></font><font color="#CC0000"><u> <br>
+        </u></font><strong> Templates:</strong> Dialog_000.template<br>
+        <br>
+        This interaction simulates a dialogue that the student can follow both 
+        with sound and text. The dialogue can take place between two characters 
+        from the teaching unit or between the computer and the student if recording 
+        options are added.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> The
+          dialogue mode COMPUTER-COMPUTER requires the following items:<br>
+        <br>
+        1.Panel
+        called Main including as many cards as parts in which the dialogue is
+        divided </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">2.Inside
+          the Main panel, each character usually has: </font></p>      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- a
+          media with the character image</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- a
+            media with the text associated to the character </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- a
+          media associated to both an audio file and an image file (Play icon). </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">When clicking this media, the sound of the active card is played. </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">1. A
+          container that behaves as a navigation bar inside the Main panel which
+          shows the number of cards that the panel has: </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- Card
+          number displayer: a media called Main.cardNumber </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- Back
+          arrow: a media whose action is previous and whose value is panel( Main
+          ), associated to an arrow image </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- Next
+          arrow: a media whose action is next and whose value is panel( Main
+          ) associated to an arrow image </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> The
+          dialogue mode COMPUTER – STUDENT is developed exactly in the same way
+          as the previous one but taking the following into account:<br>
+        <br>
+        The character that the student plays must have: </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- </font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">A
+          media with Record Action and Value “audio/(nameofthefile).mp3” </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- </font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">A
+          media with Play Action and Value “audio/(nameofthefile).mp3” </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">Below you can read other actions which are applicable to the media from
+      the Dialog Interaction: </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- RunAllDialog
+          plays all the cards within a panel with their audio files in a linear
+        way.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- Recap
+            plays the audios included in all the cards, from the first card up
+          to the active one </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">- Continue
+      plays from the active card up to the last one </font></p>      
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">        <font color="#CC0000">GapFilling              <font size="2" face="Arial, Helvetica, sans-serif">Interaction</font>:<u><br>
+              </u></font><strong> Templates:</strong> 
+        Spelling.template, TextGaps.template, TextGapsWithContractions.template,
+         Transcription.template, Translate.template, TranslateWords.template,
+        WordGaps.template 
+        <br>
+        <br>
+ This interaction allows the designer to develop gap exercises for the student
+ to fill in. Besides, used with audio files, it can also be useful to develop
+ spelling or translation exercises.<br>
+        <br>
+ Necessary items:<br>
+        1. 
+
+
+ A panel called Main<br>
+        2. 
+
+
+ Inside the Main panel, a container called Phrases<br>
+        3. 
+
+
+ Inside the container called Phrases, a media with the exercise text:<br>
+ There are two ways of incorporating the text:<br>
+        a) 
+
+
+ By linking the media to a text file from the text folder<br>
+        The file contains the whole text with the gap words between square
+        brackets, i.e. [Where] do they live? Do [they live in] England? <br>
+  b) 
+
+
+ By keying the text with the gap words between square brackets into the Media
+ Text field.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> When
+          there are several likely solutions for a gap, we can add them separating
+ them by the use of vertical bars (Alt Gr+1). i.e. [we'll go|we will go|we're
+ going|we are going] tomorrow to the movies.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">4.
+
+
+ A media with verify or check Action and Value panel( Main ), which verifies
+ what the student has written.<br>
+        5. 
+
+
+ A media with clear or clearAll action and Value panel( Main ), which allows
+ the student to rub out the entries</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">        <font color="#CC0000">HangMan
+              <font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><font color="#CC0000">Interaction</font></font><font color="#CC0000">:</font><u><br>
+                          </u></font><strong> Templates:</strong> 
+        HangMan_000.template, HangMan_001.template<br>
+        <br>
+ This interaction allows the designer to develop an exercise based on the hangman
+ game.<br>
+ Necessary items:<br>
+        1. 
+
+
+ A panel called Pictures that contains cards including the different stages through
+ which the drawing portraying the hangman goes<br>
+        2. 
+
+
+ A panel called Main within which you can find:<br>
+        3. 
+
+
+ A container called hiddenWord in which there is a media whose value must be
+ the word that we are searching for<br>
+        4. 
+
+
+ A container with 30 medias, each of which are labelled with a letter in the
+ Label field<br>
+        5. A container with a media that behaves as a clue (text, image,
+        audio or video) <br>
+        6. 
+
+
+ A media with clear Action <br>
+        7. 
+
+
+ A media with solve Action
+
+</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">
+               <font color="#CC0000">Match2 Interaction:<u><br>
+               </u></font><strong> Templates:</strong> 
+        Association.template, Match_000.template, orderParagraphs.template, orderSentences.template, 
+        orderText.template, orderWords.template, <br>
+        <br>
+ This interaction allows the designer to develop exercises in which the student
+ must match objects or words.<br>
+ Templates: Association, Match, OrderWords, OrderSentences</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> Necessary
+          items:<br>
+        1. 
+
+
+ A panel called Main within which there will be:<br>
+        2. 
+
+
+ A container called Options that includes the solutions that the students will
+ drag:<br>
+        - 
+
+
+ Each solution is a media labelled in the same way and a value consisting of
+ a number that will coincide with the value of the dragged media.<br>
+        3. 
+
+
+ A container called Answers where there are boxes to which the students drag
+ the former media.<br>
+        - 
+
+
+ These boxes are media which can be labelled or not, and whose value is a number
+ that coincides with the value of the media called solution that was inside the
+ container Options.<br>
+        4. 
+
+
+ Optionally, the designer can also add a Container called Questions which includes
+ the media with the questions and that match with the empty boxes, as long as
+ they have the same Value. (see Match_000 template)<br>
+        5. 
+
+
+ A media with verify or check Action and a value panel( Main ) that verifies
+ the entries<br>
+        6. 
+
+
+ A media with clear or clearAll action and a value panel( Main ) that rubs out
+ the entries
+
+</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> The
+          matching takes place by dragging the solutions to its corresponding
+          box. <br>
+ In the Interaction parameters the designer can decide when to verify:<br>
+        a) anyTime, that is the student will be able to check the answers
+        at any time <br>
+        b) atEnd: 
+
+
+ that is the student will only be able to check after having completed the whole
+ exercise<br>
+        c) onAssociation: 
+
+
+ that is the student will automatically check when matching each couple; while
+ dragging each solution to its corresponding box an arrow will be shown on the
+ screen. That arrow can be checked again after completing the exercise (atEnd),
+ at any time while doing the exercise (anytime), or after matching two objects
+ (onAssociation).<br>
+        <br>
+        <u><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><font color="#CC0000">DND</font></font> <font color="#CC0000">Match <font size="2" face="Arial, Helvetica, sans-serif">Interaction</font><font color="#CC0000">:</font></font></u><u><font color="#CC0000"><br>
+        </font></u> On the verge of extinction, since its functionalities are
+        included in Match2.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif">        <font color="#CC0000">Memory <font size="2" face="Arial, Helvetica, sans-serif">Interaction</font><font color="#CC0000">:</font></font><u><font color="#CC0000"><br>
+        </font> </u><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><strong>Templates:</strong> 
+        </font><u><br>
+        <font color="#CC0000"><br>
+        </font></u> 
+ This interaction allows the designer to develop an exercise that consists of
+ matching pairs, based on the classical memory game: the cards are on their backside
+ and can only be seen in couples, so that the goal of the exercise is to find
+ the couples until all have been revealed.<br>
+ Necessary items:<br>
+        1. 
+
+
+ Panel called Main<br>
+        2. Within the Main panel, a container called Options <br>
+        3. 
+
+
+ Within the Options container there will be several media that will behave as
+ the cards of the exercise:<br>
+        - 
+
+
+ They can portray images or include text in their Label.<br>
+        - 
+
+
+ Each couple of medias must have a Value with exactly the same number.<br>
+        4. 
+
+
+ A media with retry Action and Value panel( Main ) that returns all the cards
+ to their initial state.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> <font color="#CC0000">MultipleChoice 
+        <font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><font color="#CC0000">Interaction</font></font>:<u><br>
+        </u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u><font size="2"><font color="#000066" face="Arial, Helvetica, sans-serif"><u><a href="../../../Tutorial/multimedia/index_eng.htm">Demo 
+        Multimedia 4:&quot;Multiple Choice template&quot;</a></u></font></font><font color="#CC0000"> 
+        </font></u></font><font color="#CC0000"><u> <br>
+        </u></font><strong> Templates:</strong> MCh_1Q_anyTime.template, MCh_1Q_atEnd.template, 
+        MCh_1Q_onClick.template, MCh_MQ_anyTime.template, MCh_MQ_atEnd.template, 
+        MCh_MQ_onClick.template, TrueFalse_anyTime.template, TrueFalse_atEnd.template, 
+        TrueFalse_onClick.template, WordGaps.template <br>
+        This interaction allows the designer to create multiple choice and true/false 
+        exercises.<br>
+        Necessary items:<br>
+        1. A panel called Main<br>
+        2. Within the Main panel, a media that includes the prompt or question 
+        (text, image, etc)<br>
+        3. Within the Main panel, a container called Answers in which the designer 
+        will decide to activate or not the Checkbox display option, according 
+        to the fact if the designer wishes to enable the answer marks or not<br>
+        4. Within the container called Answers, there will be several media which 
+        will behave as the several likely answers.<br>
+        5. Each media will include:<br>
+        - Label: the answer text <br>
+        - Value: true or false according to the nature of the answer<br>
+        - Checkbox: <br>
+        - if activated, it allows us to select several answers at the same time, 
+        although it will be necessary to add a check button<br>
+        - if not activated, the verification is automatic with a correct or wrong 
+        feedback sound when clicking the answer </font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> If
+          the checkboxes are activated: <br>
+        6. 
+
+
+ A media with verify Action so as to check the answers and to show the right
+ and wrong ones, or a media with check Action that only shows the user's score.<br>
+        7. 
+
+
+ A media with clear Action that rubs out the selected answers. In the Multiple
+ Choice interaction parameters the designer can choose checkOnlyOne, which will
+ enable the student to select several answers or only one.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> <font color="#CC0000">Null 
+        Interaction:</font><u><br>
+        <font size="2"><font color="#000066" face="Arial, Helvetica, sans-serif"><u><a href="../../../Tutorial/multimedia/index_eng.htm">Demo 
+        Multimedia 3:&quot;Blank template&quot;</a></u></font></font><font color="#CC0000"> 
+        </font></u></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"><u> 
+        <br>
+        </u><strong> Templates:</strong> _Blank.template, acknowledgements.template, 
+        freeWriting.template, Functions.template, Menu_001.template, onePanel.template, 
+        plantilla_portada.template, plantilla_templates.template<br>
+        <u><br>
+        </u> It features a lack of interaction. It is used in exercises that do 
+        not require any of the other interactions, either because they are simply 
+        screens to be seen with no other purpose, or because the media actions 
+        and properties are enough so as to produce interaction with the user, 
+        such as writing exercises, listening exercises, video ones or <strong>any 
+        other type of exercise that does not require a verify button</strong>.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> <font color="#CC0000">Order
+              Interaction:<u><br>
+              </u></font><strong> Templates:</strong> 
+        Order_000.template<br>
+        <br>
+ This template features a range of words for the user to order and build a sentence.<br>
+ Necessary items:<br>
+        1. 
+
+
+ A panel called Main<br>
+        2. Within the Main panel, a container called Questions <br>
+        3. 
+
+
+ Within the container called Questions, as many media as chunks of the sentence. <br>
+        - 
+
+
+ Each media will have the chunk of the sentence keyed into the label field, and
+ the sentence will be written in order; the order interaction will automatically
+ break the chunks when running the frame.<br>
+        4. 
+
+
+ If more sentences are needed, it will be necessary to add more containers, which
+ must be named as Questions1, Questions2, Questions3, etc.<br>
+        5. 
+
+
+ A Media with verify Action that verifies the answers and show those right and
+ wrong ones. <br>
+        6. 
+
+
+ A media with clear Action that rubs out the score so that the exercise can be
+ done again.
+
+.</font></p>
+      <p><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"> <font color="#CC0000">Transcription
+              Interaction:<u><br>
+              </u></font><strong> Templates:</strong> 
+        <br>
+        <br>
+ This interaction can verify a written text. It compares the text that the user
+ keys in with a sample one and, if there are differences, it returns the wrong
+ answers. <br>
+        <br>
+ Necessary items:<br>
+        1. A Panel called Main <br>
+        2. 
+
+
+ Within the Main Panel, a container called Text<br>
+        3. 
+
+
+ Within the Text container, a media whose value is the path to the sample text
+ and whose editable text box is ticked, i.e. Value: text/Transcription.txt.<br>
+        4. 
+
+
+ A media that includes the prompt, for instance an audio file if it is a dictation,
+ a text file if it is a question, etc<br>
+        5. 
+
+
+ A media with verify or check Action, which checks the entries.<br>
+        6. 
+
+
+ A media with clear or clearAll action, which rubs out the entries.</font></p></td>
+  </tr>
+  <tr> 
+    <td><div align="right">
+        <hr>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="21%"><font size="2" face="Arial, Helvetica, sans-serif"><a href="Interacciones.htm">&lt;&lt;</a></font></td>
+            <td width="44%"><div align="center"><font size="2" face="Arial, Helvetica, sans-serif"><a href="Indice.htm">back 
+                to index</a></font></div></td>
+            <td width="35%"><div align="right"><font size="2" face="Arial, Helvetica, sans-serif"><a href="Acciones.htm">&gt;&gt; 
+                Media Object Actions</a></font><font color="#000066" size="2" face="Arial, Helvetica, sans-serif"></font></div></td>
+          </tr>
+        </table>
+        <font size="2" face="Arial, Helvetica, sans-serif"><a href="Acciones.htm"><br>
+        </a></font></div></td>
+  </tr>
+</table>
+</body>
+</html>

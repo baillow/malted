@@ -1,0 +1,150 @@
+#
+#
+# Sat Sep 29 14:23:50 CEST 2007
+#
+
+-- listing properties --
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=/usr/lib/jvm/java-6-sun-1.6.0.00/jre/...
+java.vm.version=1.6.0-b105
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) Client VM
+file.encoding.pkg=sun.io
+user.country=ES
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=unknown
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/home/xchi/Malted
+java.runtime.version=1.6.0-b105
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.endorsed.dirs=/usr/lib/jvm/java-6-sun-1.6.0.00/jre/...
+os.arch=i386
+java.io.tmpdir=/tmp
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+com.malted.AB.net.serverHost=195.53.123.82
+os.name=Linux
+sun.jnu.encoding=UTF-8
+java.library.path=/usr/lib/jvm/java-6-sun-1.6.0.00/jre/...
+java.specification.name=Java Platform API Specification
+java.class.version=50.0
+sun.management.compiler=HotSpot Client Compiler
+os.version=2.6.20-16-generic
+user.home=/home/xchi
+user.timezone=Europe/Madrid
+java.awt.printerjob=sun.print.PSPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.6
+user.name=xchi
+java.class.path=.:/home/xchi/Malted/jmf/lib/...
+java.vm.specification.version=1.0
+sun.arch.data.model=32
+java.home=/usr/lib/jvm/java-6-sun-1.6.0.00/jre
+java.specification.vendor=Sun Microsystems Inc.
+user.language=es
+java.vm.info=mixed mode, sharing
+java.version=1.6.0
+java.ext.dirs=/usr/lib/jvm/java-6-sun-1.6.0.00/jre/...
+sun.boot.class.path=/usr/lib/jvm/java-6-sun-1.6.0.00/jre/...
+java.vendor=Sun Microsystems Inc.
+file.separator=/
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport...
+sun.cpu.endian=little
+sun.io.unicode.encoding=UnicodeLittle
+com.malted.AB.net.serverPort=8084
+sun.desktop=gnome
+sun.cpu.isalist=
+Propiedades cargadas correctamente
+#
+#
+# Sat Sep 29 16:06:02 CEST 2007
+#
+
+#
+#
+# Sat Sep 29 16:17:48 CEST 2007
+#
+
+#
+#
+# Sat Sep 29 16:49:07 CEST 2007
+#
+
+#
+#
+# Sat Sep 29 17:01:57 CEST 2007
+#
+
+#
+#
+# Sat Sep 29 17:22:34 CEST 2007
+#
+
+#
+#
+# Sun Apr 20 19:13:57 CEST 2008
+#
+
+#
+#
+# Mon May 26 01:05:56 CEST 2008
+#
+
+#
+#
+# Tue Sep 02 17:22:33 CEST 2008
+#
+
+#
+#
+# Wed Nov 05 21:35:26 CET 2008
+#
+
+#
+#
+# Wed Nov 05 21:36:55 CET 2008
+#
+
+#
+#
+# Tue Feb 03 22:20:47 CET 2009
+#
+
+#
+#
+# Sat Feb 06 02:26:43 CET 2010
+#
+
+#
+#
+# Thu Jul 08 01:26:09 CEST 2010
+#
+
+#
+#
+# Fri Mar 18 18:50:52 CET 2011
+#
+
+#
+#
+# Fri Mar 18 18:51:05 CET 2011
+#
+
+#
+#
+# Fri Mar 18 18:51:27 CET 2011
+#
+
+#
+#
+# Sat Mar 19 00:47:03 CET 2011
+#
+
+#
+#
+# Sat Mar 19 00:55:27 CET 2011
+#
+

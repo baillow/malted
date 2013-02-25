@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Dictado"
+ VERSION="1.3"
+ INTERACTION="Transcription"
+ TITLE="Dictado"
+ DESCRIPTION="Dictado: Transcribir de un texto leido"
+ MOTHER_TONGUE="Spanish"
+ TARGET_LANGUAGE="English"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="verifyText" VALUE="Debes corregir el error antes de continuar."/>
+<PARAM NAME="ignoreCase" VALUE="yes"/>
+   <MEDIA NAME="notas_plantilla" IMAGE="image/bot_dictado.gif" DVETYPE="0" VALUE="projects/Malted_ejemplos/html/Plantilla_Dictado.htm" ACTION="openURL" LEFT="25" TOP="485" WIDTH="109" HEIGHT="96" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="titulo" LABEL="Dictado" DVETYPE="0" LEFT="175" TOP="5" WIDTH="520" HEIGHT="55" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   <MEDIA NAME="instrucciones" LABEL="Instrucciones" DVETYPE="0" VALUE="Pulsa el icono de audio y escribe lo que escuches." ACTION="popOutText" LEFT="10" TOP="10" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda1" LABEL="Ayuda 1" DVETYPE="0" VALUE="xml/ayuda.xml" ACTION="popOutFrame" LEFT="10" TOP="60" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="ayuda2" LABEL="Ayuda 2" DVETYPE="0" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" LEFT="10" TOP="110" WIDTH="120" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   <MEDIA NAME="vinculo_next" IMAGE="image/boton_siguiente2.gif" DVETYPE="0" VALUE="next" ACTION="courseLink" LEFT="710" TOP="545" WIDTH="70" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   <MEDIA NAME="boton_comprobar" IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" DVETYPE="0" VALUE="panel(Main)" ACTION="verify" LEFT="325" TOP="500" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <MEDIA NAME="boton_borrar" IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" DVETYPE="0" ACTION="clear" LEFT="457" TOP="500" WIDTH="110" HEIGHT="25" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="white" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+   <PANEL NAME="Main" DISPLAY="no" LEFT="173" TOP="111" WIDTH="550" HEIGHT="351">
+      <CARD NAME="1">
+      <BOUNDS NAME="Text" UNIFORM="true" APUNIFORM="false" LEFT="10" TOP="104" WIDTH="523" HEIGHT="234" RANDOM="false" BGCOLOR="-2f2f30" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+            <MEDIA NAME="texto_dictado" DVETYPE="0" VALUE="text/texto_dictado.txt" EDITABLE="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="white"/>
+      </BOUNDS>
+      <MEDIA NAME="audio" IMAGE="image/boton_audio1.gif" AUDIO="audio/dictado.mp3" DVETYPE="0" LEFT="59" TOP="36" WIDTH="56" HEIGHT="43" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+      <MEDIA NAME="boton_solucion" LABEL="Soluci&oacute;n" DVETYPE="0" VALUE="text/texto_dictado.rtf &#x22;SOLUCI&Oacute;N&#x22;" ACTION="popOutText" LEFT="400" TOP="42" WIDTH="93" HEIGHT="35" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-666601" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="20"/>
+      </CARD>
+   </PANEL>
+</MALTED>

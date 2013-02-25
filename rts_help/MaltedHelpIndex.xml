@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<!DOCTYPE index
+  PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 1.0//EN"
+         "http://java.sun.com/products/javahelp/index_1_0.dtd">
+
+<index version="1.0">
+
+	<indexitem text="Index">
+	
+	<indexitem text="How to">
+      	
+		<indexitem text="Open a courseware"				target="HowTo.HowTo"/>
+		<indexitem text="Connect to the Asset Base"		target="HowTo.HowTo"/>
+ 		<indexitem text="Exit the application"			target="HowTo.HowTo"/>
+	</indexitem>
+	
+	<indexitem text="Navigation bar">
+      	
+		<indexitem text="Open" 				target="NavBar.NavBar"/>
+		<indexitem text="Back" 				target="NavBar.NavBar"/>
+ 		<indexitem text="Home"  			target="NavBar.NavBar"/>
+ 		<indexitem text="Forward"  			target="NavBar.NavBar"/>
+ 		<indexitem text="Print"  			target="NavBar.NavBar"/>
+ 		<indexitem text="Help"  			target="NavBar.NavBar"/>
+		<indexitem text="Credits" 			target="NavBar.NavBar"/>
+		<indexitem text="Exit" 				target="NavBar.NavBar"/>
+		
+   	</indexitem>
+
+
+</index>

@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Ahorcado"
+ VERSION="1.2"
+ INTERACTION="HangMan"
+ TITLE="HANGMAN"
+ DESCRIPTION="Juego del ahorcado: Adivinar palabras o frases a partir de definiciones o imagenes"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/error.wav"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+   <BOUNDS UNIFORM="true" LEFT="583" TOP="355" WIDTH="130" HEIGHT="110" width="120" height="50" RANDOM="false" BGIMAGE="" DISPLAY="no" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA NAME="clear" IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" ACTION="clear" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA NAME="solve" IMAGE="image/boton_solucion0.gif" ROLLOVER_IMAGE="image/boton_solucion1.gif" ACTION="solve" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="293" TOP="512" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Ahorcado" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_ahorcado.gif" VALUE="projects/Malted_25/html/Plantilla_Ahorcado.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Adivina la palabra oculta. Puedes cometer un m&aacute;ximo de 6 errores." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="185" TOP="65" WIDTH="180" HEIGHT="275" RANDOM="false" DISPLAY="no">
+         <PANEL NAME="Pictures" DISPLAY="center">
+                  <CARD DISPLAY="no">
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="159" HEIGHT="254" RANDOM="false">
+                        <MEDIA IMAGE="image/hm01.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD DISPLAY="no">
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="159" HEIGHT="254" RANDOM="false">
+                        <MEDIA IMAGE="image/hm02.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD DISPLAY="no">
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="159" HEIGHT="254" RANDOM="false">
+                        <MEDIA IMAGE="image/hm03.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD DISPLAY="no">
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="159" HEIGHT="254" RANDOM="false">
+                        <MEDIA IMAGE="image/hm04.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD DISPLAY="no">
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="159" HEIGHT="254" RANDOM="false">
+                        <MEDIA IMAGE="image/hm05.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD DISPLAY="no">
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="159" HEIGHT="254" RANDOM="false">
+                        <MEDIA IMAGE="image/hm06.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD DISPLAY="no">
+                  <BOUNDS UNIFORM="true" LEFT="1" TOP="1" WIDTH="159" HEIGHT="254" RANDOM="false">
+                        <MEDIA IMAGE="image/hm07.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="380" TOP="104" WIDTH="230" HEIGHT="201" width="35" height="35" RANDOM="false" BGCOLOR="-1862c3" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+         <MEDIA LABEL=" " BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="A" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="B" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="C" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="D" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="E" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="F" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="G" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="H" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="I" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="J" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="K" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="L" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="M" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="N" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="&Ntilde;" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="O" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="P" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="Q" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="R" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="S" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="T" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="U" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="V" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="W" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="X" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="Y" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="Z" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="&Ccedil;" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+         <MEDIA LABEL="-" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="173" TOP="325" WIDTH="456" HEIGHT="189" RANDOM="false" DISPLAY="center">
+         <PANEL NAME="Main" DISPLAY="no">
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="40" TOP="10" WIDTH="203" HEIGHT="91" RANDOM="false" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+                        <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;}\f1\fs32\b Medio de locomoci\u243 n con tracci\u243 n humana.\fs24\b0\par}" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="245" TOP="1" WIDTH="126" HEIGHT="101" RANDOM="false" DISPLAY="center">
+                        <MEDIA IMAGE="image/t_bici.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="hiddenWord" UNIFORM="true" LEFT="40" TOP="103" WIDTH="331" HEIGHT="66" RANDOM="false" DISPLAY="center" FONTNAME="Courier" FONTSTYLE="PLAIN" FONTSIZE="20">
+                        <MEDIA VALUE="BICICLETA" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="24"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="3" TOP="10" WIDTH="281" HEIGHT="91" RANDOM="false" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+                        <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;}\f1\fs32\b\u191 Es un p\u225 jaro? \u191 Es un _ _ _ _ _?\par   No, es Superm\u225 n.\fs24\b0\par}" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="285" TOP="1" WIDTH="126" HEIGHT="101" RANDOM="false" BGCOLOR="-1134" DISPLAY="center">
+                        <MEDIA IMAGE="image/t_avion.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="hiddenWord" UNIFORM="true" LEFT="40" TOP="103" WIDTH="331" HEIGHT="66" RANDOM="false" DISPLAY="center" FONTNAME="Courier" FONTSTYLE="PLAIN" FONTSIZE="20">
+                        <MEDIA VALUE="AVION" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="24"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD>
+                  <BOUNDS UNIFORM="true" LEFT="34" TOP="10" WIDTH="209" HEIGHT="91" RANDOM="false" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16">
+                        <MEDIA TEXT="{\rtf1\uc0{\fonttbl\f0\fcharset0 Arial;\f1\fcharset0 Arial;}\f1\fs32\b En \u233 l voy de excursi\u243 n con mis amigos.\fs24\b0\par}" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="245" TOP="1" WIDTH="126" HEIGHT="101" RANDOM="false" BGCOLOR="-1134" DISPLAY="center">
+                        <MEDIA IMAGE="image/t_bus.gif" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="hiddenWord" UNIFORM="true" LEFT="40" TOP="103" WIDTH="331" HEIGHT="66" RANDOM="false" DISPLAY="center" FONTNAME="Courier" FONTSTYLE="PLAIN" FONTSIZE="20">
+                        <MEDIA VALUE="AUTOBUS" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Courier" FONTSTYLE="BOLD" FONTSIZE="24"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+</MALTED>

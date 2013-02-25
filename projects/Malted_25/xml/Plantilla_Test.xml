@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!DOCTYPE MALTED SYSTEM "../../templates/dtd/Frame.dtd">
+<MALTED
+ NAME="Test"
+ VERSION="1.2"
+ INTERACTION="MultipleChoice"
+ TITLE="MultipleChoice_000"
+ DESCRIPTION="Multiple Choice: Question-Answer, verification at any time"
+ SCREEN="800x600"
+ FITSCREEN="false"
+ CORRECT="audio/correct.mp3"
+ WRONG="audio/wrong.mp3"
+ LINKCOLOR="blue"
+ VLINKCOLOR="magenta"
+ LMS_INFORM="false"
+  FGCOLOR="black" BGCOLOR="white" BGIMAGE="image/fondo_papel1.jpg" DISPLAY="patch" ALIGNMENT="center" FONTNAME="Helvetica" FONTSTYLE="PLAIN" FONTSIZE="14"
+>
+<PARAM NAME="verifyText" VALUE=""/>
+<PARAM NAME="checkOnlyOne" VALUE="yes"/>
+<PARAM NAME="verify" VALUE="anyTime"/>
+   <BOUNDS UNIFORM="true" LEFT="349" TOP="420" WIDTH="200" HEIGHT="40" width="65" height="30" RANDOM="false" FGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/boton_anterior1.gif" VALUE="panel(Main)" ACTION="previous" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="right"/>
+         <MEDIA NAME="Main.cardNumber" BORDER_WIDTH="1" BORDER_COLOR="-857567" FGCOLOR="-ffcccd" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="18"/>
+         <MEDIA IMAGE="image/boton_siguiente1.gif" VALUE="panel(Main)" ACTION="next" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no" ALIGNMENT="left"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="170" TOP="5" WIDTH="530" HEIGHT="65" RANDOM="false" DISPLAY="no">
+         <MEDIA LABEL="Test" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="TimesRoman" FONTSTYLE="PLAIN" FONTSIZE="46"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="20" TOP="480" WIDTH="119" HEIGHT="106" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/bot_test.gif" VALUE="projects/Malted_25/html/Plantilla_Test.htm" ACTION="openURL" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="690" TOP="530" WIDTH="99" HEIGHT="63" RANDOM="false" DISPLAY="center">
+         <MEDIA IMAGE="image/boton_siguiente2.gif" VALUE="next" ACTION="courseLink" BORDER_WIDTH="1" BORDER_COLOR="-857567" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="110" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 2" VALUE="text/texto_ayuda2.rtf" ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="60" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Ayuda 1" VALUE="xml/ayuda.xml" ACTION="popOutFrame" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-3367" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="10" TOP="10" WIDTH="130" HEIGHT="45" RANDOM="false" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA LABEL="Instrucciones" VALUE="Elige la respuesta correcta." ACTION="popOutText" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-333301" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="16"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="180" TOP="480" WIDTH="533" HEIGHT="60" width="120" height="50" RANDOM="false" FGCOLOR="white" BGIMAGE="" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+         <MEDIA IMAGE="image/boton_comprobar0.gif" ROLLOVER_IMAGE="image/boton_comprobar1.gif" VALUE="panel(Main)" ACTION="verify" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-a851a5" DISPLAY="no"/>
+         <MEDIA IMAGE="image/boton_corregir0.gif" ROLLOVER_IMAGE="image/boton_corregir1.gif" VALUE="panel(Main)" ACTION="check" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-a851a5" DISPLAY="no"/>
+         <MEDIA IMAGE="image/boton_borrar0.gif" ROLLOVER_IMAGE="image/boton_borrar1.gif" ACTION="clear" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-9a6601" DISPLAY="no"/>
+         <MEDIA IMAGE="image/boton_borrartodo0.gif" ROLLOVER_IMAGE="image/boton_borrartodo1.gif" VALUE="panel(Main)" ACTION="clearAll" BORDER_WIDTH="1" BORDER_COLOR="-857567" BGCOLOR="-a851a5" DISPLAY="no"/>
+   </BOUNDS>
+   <BOUNDS UNIFORM="true" LEFT="165" TOP="95" WIDTH="591" HEIGHT="329" RANDOM="false" DISPLAY="center">
+         <PANEL NAME="Main" DISPLAY="no">
+                  <CARD NAME="1" BGCOLOR="-1145">
+                  <BOUNDS UNIFORM="true" LEFT="2" TOP="5" WIDTH="480" HEIGHT="40" RANDOM="false" DISPLAY="center" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+                        <MEDIA LABEL="1. &iquest;En qu&eacute; a&ntilde;o se public&oacute; la primera parte del &#x22;Quijote&#x22;?" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Answers" UNIFORM="true" LEFT="56" TOP="46" WIDTH="480" HEIGHT="40" width="100" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+                        <MEDIA LABEL="1600" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="1605" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="1615" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="2" TOP="115" WIDTH="480" HEIGHT="40" RANDOM="false" DISPLAY="center">
+                        <MEDIA LABEL="2. &iquest;Cu&aacute;nto crece el pelo en un mes aproximadamente?" BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Answers" UNIFORM="true" LEFT="59" TOP="156" WIDTH="480" HEIGHT="40" width="100" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+                        <MEDIA LABEL="0,8 cm." VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="1,2 cm." VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="2,1 cm." VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="3,5 cm." VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="2" TOP="225" WIDTH="480" HEIGHT="40" RANDOM="false" DISPLAY="center">
+                        <MEDIA LABEL="3. My birthday is ___ September the 20th." BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Answers" UNIFORM="true" LEFT="58" TOP="266" WIDTH="480" HEIGHT="40" width="100" height="30" RANDOM="true" CHECKBOX="true" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+                        <MEDIA LABEL="on" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="in" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="at" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  </CARD>
+                  <CARD NAME="2" BGCOLOR="-1145">
+                  <BOUNDS UNIFORM="true" LEFT="2" TOP="5" WIDTH="475" HEIGHT="40" RANDOM="false" DISPLAY="center">
+                        <MEDIA LABEL="4. El elefante africano es el animal m&aacute;s grande del mundo." BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Answers" UNIFORM="true" LEFT="50" TOP="46" WIDTH="350" HEIGHT="40" width="115" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14">
+                        <MEDIA LABEL="Verdadero" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                        <MEDIA LABEL="Falso" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="2" TOP="115" WIDTH="475" HEIGHT="40" RANDOM="false" DISPLAY="center">
+                        <MEDIA LABEL="5. Un soneto son 14 versos endecas&iacute;labos con rima consonante." BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Answers" UNIFORM="true" LEFT="50" TOP="156" WIDTH="350" HEIGHT="40" width="115" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center">
+                        <MEDIA LABEL="Verdadero" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                        <MEDIA LABEL="Falso" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS UNIFORM="true" LEFT="2" TOP="225" WIDTH="475" HEIGHT="40" RANDOM="false" DISPLAY="center">
+                        <MEDIA LABEL="6. La Segunda Guerra Mundial comenz&oacute; en 1936." BORDER_WIDTH="1" BORDER_COLOR="-857567" ALIGNMENT="left" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  <BOUNDS NAME="Answers" UNIFORM="true" LEFT="50" TOP="266" WIDTH="350" HEIGHT="40" width="115" height="30" RANDOM="false" CHECKBOX="true" BGCOLOR="white" DISPLAY="center">
+                        <MEDIA LABEL="Verdadero" VALUE="false" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                        <MEDIA LABEL="Falso" VALUE="true" CHECKBOX="true" BORDER_WIDTH="1" BORDER_COLOR="-857567" FONTNAME="Helvetica" FONTSTYLE="BOLD" FONTSIZE="14"/>
+                  </BOUNDS>
+                  </CARD>
+         </PANEL>
+   </BOUNDS>
+</MALTED>

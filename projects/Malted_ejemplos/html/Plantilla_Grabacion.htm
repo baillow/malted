@@ -1,0 +1,117 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Grabación</title>
+</head>
+
+<body>
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%">
+  <tr>
+    <td width="33%">&nbsp;</td>
+    <td width="33%">
+    <p align="center">
+
+<font SIZE="6" COLOR="#0000ff" face="Arial"><u><b>
+Grabación</b></u></font></td>
+    <td width="34%">
+    <p align="right"><a href="#" onclick="javascript:window.print();">
+        <img border="0" src="print.gif" width="100" height="26"></a></td>
+  </tr>
+</table>
+</b></u></font>
+<p align="justify"><font face="Arial">Esta plantilla no está basada en ninguna interacción 
+especial del programa, sino que usa las acciones de grabar y reproducir que se 
+pueden asociar a cualquier objeto.</font></p>
+<p>&nbsp;</p>
+<b><font SIZE="4" COLOR="#0000ff" face="Arial"><u>
+<p>ELEMENTOS NECESARIOS</p>
+</u></font>
+<p align="justify"><font face="Arial">1. </font></b><font face="Arial">En esta plantilla no es 
+necesario un panel con Nombre &quot;Main&quot;, ya que no está basada en ninguna 
+interacción del programa. Solo usaremos un panel si queremos presentar varias 
+tarjetas en el ejercicio.</font></p>
+<b>
+<p align="justify"><font face="Arial">2. </font></b><font face="Arial">Objeto con acción 
+&quot;<i><b>record</b></i>&quot; o &quot;<i><b>autoRecord</b></i>&quot; y valor el nombre del fichero que queramos grabar (no es 
+necesario que exista previamente):</font></p>
+<font COLOR="#ff0000">
+<p align="justify"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo: </font></font>
+<font face="Arial"><b>Acción</b><font COLOR="#ff0000"> </font>
+<font COLOR="#0000ff">record</font><font COLOR="#ff0000"> </font><b>Valor: </b>
+<font COLOR="#0000ff">audio/frase2.mp3 </font>(el programa puede grabar en 
+formato <b>wav</b> y <b>mp3</b>).</font></p>
+<p align="justify"><font face="Arial">Veamos las diferencias entre las acciones &quot;<i><b>record</b></i>&quot; y &quot;<i><b>autoRecord</b></i>&quot;:</font></p>
+<b>
+<p align="justify"><font face="Arial">record</font></b><font face="Arial">: al usar esta opción 
+aparece la grabadora de Malted, con los botones de grabar, reproducir, etc. y 
+con la que podemos ver gráficamente lo grabado.</font></p>
+<b>
+<p align="justify"><font face="Arial">autoRecord</font></b><font face="Arial">: usando esta 
+opción no aparece la grabadora en pantalla. La grabación comienza al pulsar el 
+botón de grabar (aparece entonces la palabra &quot;<i>Stop</i>&quot;) y termina cuando volvamos a 
+pulsarlo (vuelve a su apariencia original).</font></p>
+<p align="justify"><font face="Arial">Con el sistema operativo Windows, las grabaciones se 
+guardan dentro de <b><i>Documents and Settings/nombre_usuario/Malted_cache</i></b>. Estas grabaciones se guardan hasta que se produzca una nueva 
+grabación que las sustituya, o se borren manualmente.</font></p>
+<b>
+<p align="justify"><font face="Arial">3. </font></b><font face="Arial">Si queremos reproducir 
+nuestra grabación en cualquier momento, necesitaremos un objeto con acción 
+&quot;<i><b>play</b></i>&quot; y valor el nombre del fichero que hayamos grabado:</font></p>
+<font COLOR="#ff0000">
+<p align="justify"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo: </font></font>
+<font face="Arial"><b>Acción</b><font COLOR="#ff0000"> </font>
+<font COLOR="#0000ff">play</font><font COLOR="#ff0000"> </font><b>Valor: </b>
+</font><font COLOR="#0000ff"><font face="Arial">audio/frase2.mp3</font></p>
+</font><b>
+<p align="justify"><font face="Arial">4. </font></b><font face="Arial">Según el tipo de 
+ejercicio que queramos hacer, tendremos que presentar al alumno lo que queremos 
+que grabe. Esto normalmente será un objeto de texto (para que lo lea), un audio (para que repita), o 
+un objeto genérico con ambas cosas juntas.</font></p>
+<p align="justify"><font face="Arial">NOTA: Todos los demás elementos que componen esta 
+plantilla (los botones de ayuda e instrucciones, el icono de la mano para pasar 
+al siguiente ejercicio, etc.) no son necesarios, están ahí para servir de 
+ejemplo. Elimina los que no vayas a usar para tu ejercicio (como por ejemplo el 
+botón que abre esta explicación).</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>GRABACIÓN EN RAM</p>
+</b></u></font>
+<p align="justify"><font face="Arial">Otra posibilidad es realizar grabaciones que se almacenan 
+temporalmente en la memoria RAM, de manera que no se guardan. Para hacerlo, 
+simplemente tenemos que dejar vacío el campo valor de los objeto que lleven 
+asociada la acción &quot;<i><b>record</b></i>&quot; o &quot;<b><i>autoRecord</i></b>&quot;:</font></p>
+<p align="justify"><font face="Arial">a) Si usamos la acción &quot;<i><b>record</b></i>&quot; la grabación solo está 
+disponible mientras la grabadora de Malted está abierta, y podemos escucharla 
+usando los botones de la propia grabadora. En cuanto se cierra la grabadora la 
+grabación se pierde. En este caso no tiene sentido crear un botón para 
+reproducir la grabación.</font></p>
+<p align="justify"><font face="Arial">b) Si usamos un objeto con la acción &quot;<b><i>autoRecord</i></b>&quot; 
+debemos ponerle un nombre al objeto:</font></p>
+<font COLOR="#ff0000">
+<p align="justify"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo: </font></font><font face="Arial"><b>
+nombre objeto</b>
+</font><font COLOR="#0000ff"><font face="Arial">grabacion1</font></p>
+</font>
+<p align="justify"><font face="Arial">Para reproducir la grabación necesitaremos un objeto 
+con acción &quot;<b><i>ramPlay</i></b>&quot; y Valor el nombre del objeto que hace la grabación:</font></p>
+<font COLOR="#ff0000">
+<p align="justify"><font face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; ejemplo: </font></font><font face="Arial"><b>Acción</b>
+<font COLOR="#0000ff">ramPlay</font><font COLOR="#ff0000"> </font><b>Valor: </b>
+</font><font COLOR="#0000ff"><font face="Arial">grabacion1</font></p>
+</font>
+<p align="justify"><font face="Arial">Esta grabación solo está disponible mientras esté activo 
+el ejercicio.</font></p>
+<p>&nbsp;</p>
+<font SIZE="4" COLOR="#0000ff" face="Arial"><u><b>
+<p>PARÁMETROS CONFIGURABLES</p>
+</b></u></font>
+<p><font face="Arial">Esta plantilla no tiene parámetros configurables.</font></p>
+
+</body>
+
+</html>
