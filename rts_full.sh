@@ -2,12 +2,12 @@
 
 unset LD_LIBRARY_PATH;
 unset CLASSPATH;
-export JMF_HOME="/home/xchi/programs/Malted/jmf"
+export JMF_HOME="~/programs/Malted/jmf"
 export JAVA_HOME="/usr/lib/jvm/java-6-sun-1.6.0.24/jre"
 export CLASSPATH="${JMF_HOME}/lib/jmf.jar:${JMF_HOME}/lib/mp3plugin.jar:${JMF_HOME}/lib/mediaplayer.jar:${CLASSPATH}"
 export LD_LIBRARY_PATH="${JMF_HOME}/lib:${LD_LIBRARY_PATH}"
 
-cd /home/xchi/programs/Malted
+cd ~/programs/Malted
 
 if [ -z $JAVA_HOME ]
         then

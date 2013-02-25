@@ -3,9 +3,9 @@
 USER=`whoami`
 if [ $USER = "root" ];
 then
-    chmod -R a+r /home/xchi/programs/Malted/
-    chmod -R a+w /home/xchi/programs/Malted/
-    cp /home/xchi/programs/Malted/jmf/lib/*.jar /usr/lib/jvm/java-6-sun-1.6.0.00/jre/lib/ext
+    chmod -R a+r ~/programs/Malted/
+    chmod -R a+w ~/programs/Malted/
+    cp ~/programs/Malted/jmf/lib/*.jar /usr/lib/jvm/java-6-sun-1.6.0.00/jre/lib/ext
     DIRS_PLUGINS=`find /usr/lib -name "plugins" | grep "mozilla\|firefox"`
     for DIR_PLUGIN in $DIRS_PLUGINS
     do
